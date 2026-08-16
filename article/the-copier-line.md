@@ -1,0 +1,427 @@
+# The Copier Line: What ForecastBench's Market Scores Measure
+
+*Figures as of 11 August 2026. The leaderboard updates nightly. The method for recomputing
+every number here on any date is given in full, and the code is linked.*
+
+Of 527 forecasters on ForecastBench with enough resolved market questions to test, two beat the
+market price they were shown. They are **Cassi-2026-05-10** and the **superforecaster median**.
+
+Those are the two entries the parity debate is about.
+
+![Figure 1](../figures/fig1_vs_market.png)
+
+*Figure 1. Every entry's Brier score minus the market's Brier score on the same questions, with
+95% bootstrap intervals. This is the benchmark's own difficulty-adjusted market score. Two
+intervals sit entirely below zero.*
+
+## The question this answers
+
+FRI's July post is specifically about market questions. Its second heading reports that an AI
+system ranked above superforecasters on market questions for the first time, and the post argues
+these questions matter because they require judgment about novel events rather than data lookup.
+
+Three weeks later Good Judgment published a response and wrote, twice, that whether top-ranked
+systems are forecasting independently or aggregating market prices with extra steps remains
+entirely unexplored. They noted that FRI's own earlier work had documented one model correlating
+0.994 with the prices it was shown, and that the new post does not mention it.
+
+Both parties have converged on the market column as the thing that counts. Neither has published
+what it measures.
+
+One piece of outside evidence points the same way. The *Financial Times* ran a backtest putting an
+AI system, the market, and superforecasters side by side on Fed decisions with knowledge-cutoff
+controls. Reported secondhand through Good Judgment's summary, which is an interested source: the
+AI drew level with the market and no better, its own rationale for the April 2026 FOMC meeting said
+it relied heavily on market-based trackers and named the CME FedWatch Tool and Polymarket as
+outside-view anchors, and the FT concluded the system does not yet possess the judgment to see
+where the market errs and improve on it.
+
+That is one qualitative finding on a handful of Fed decisions. What follows is the same question
+asked of 423,396 resolved market forecasts, using the benchmark's own scoring rule.
+
+## The short version
+
+1. Of **527** entries, **2** beat the market price at 95% confidence, **88** are indistinguishable
+   from it, and **437** score below it.
+2. The two that clear are Cassi-2026-05-10 (−0.0220, CI −0.0403 to −0.0055) and the superforecaster
+   median (−0.0173, CI −0.0354 to −0.0016). The general public median sits significantly below the
+   market at +0.0200.
+3. The scoring rule implies a zero point. A forecaster submitting the price it was shown scores
+   **70.93** on the Brier Index. Superforecasters sit 4.67 above it, Cassi 5.67 above it.
+4. The published index is not comparable across dates. The superforecasters' adjusted score has
+   been **−0.0173** since July 2024, and their published index still fell 4.7 points in four months
+   because the rescaling anchor rose 36.9%.
+
+## Two different nulls
+
+FRI reports a bootstrap one-sided p-value of 0.41 for Cassi against the null that it is equally
+accurate as superforecasters, with 0.16 and 0.15 for xAI's submissions and 0.14 for Google
+DeepMind's. Their own caveat states that many of these confidence intervals overlap substantially
+and that the results are more consistent with parity than with outperformance.
+
+That test asks whether an AI matches the superforecasters. The test here asks whether either
+matches the price both were shown. Both results hold at once, and they are complementary. Cassi and the superforecasters cannot be separated from each other. Both can be
+separated from the market. Everyone else on the board cannot.
+
+## What Counts as a Market Question
+
+Each round contains 500 questions, 250 market and 250 dataset. Market questions come from `infer`,
+`manifold`, `metaculus`, and `polymarket`. Dataset questions are generated from `acled`,
+`dbnomics`, `fred`, `wikipedia`, and `yfinance`.
+
+Every question carries `freeze_datetime_value`, the source market's price on the day the question
+set was created, ten days before the forecast due date. That value is shown to forecasters in their
+prompts. Market questions take one forecast, dataset questions up to eight.
+
+Three leaderboards exist. The **preliminary** board scores dataset questions only. The
+**tournament** board adds market questions and produces the overall score, and it is the board the
+parity commentary cites. The **baseline** board holds forecast files without freeze values.
+
+The two boards use different difficulty adjustments, which the methodology addendum does not state.
+Across five consecutive days of published fixed-effects files, **0 of 2,987** market question fixed
+effects changed on the tournament board and **2,987 of 2,987** changed on the baseline board.
+Everything below concerns the tournament board.
+
+## How the Market Score Is Computed
+
+Everything after this section depends on it. All three functions are in `src/leaderboard/main.py`,
+MIT licensed.
+
+**Difficulty.** `two_way_fixed_effects()`, line 2348. Dataset questions get least squares on
+`brier_score ~ 1 | question_pk + model_pk`. Market questions on the tournament board take
+difficulty directly from the Brier score of a reference model called the Imputed Forecaster, with a
+code comment stating that the estimated question fixed effects are equivalent to the market Brier.
+
+Checking that reference model: its forecast equals `market_value_on_due_date` on 100% of resolved
+market rows, correlation 1.0000. So market question difficulty is the squared error of the market
+price on the forecast due date. The adjusted score is `brier_score − question_fixed_effect`, which
+is the y-axis of Figure 1.
+
+**Rescaling.** `rescale_difficulty_adjusted_brier()`, line 2954, shifts every score by 0.25 minus
+the Always 0.5 model's score. Since that model scores `0.25 − mean(difficulty)`, the shift equals
+mean difficulty. Call it **C**.
+
+**The index.** `apply_brier_index_transform()`, line 2985:
+`Brier Index = (1 − sqrt(rescaled_score)) × 100`. A square-root transform, 0 to 100, where 100 is
+perfect and 50 is always predicting 50%. Check: the superforecasters' adjusted market score is
+−0.0173 and C is 0.076935, so their rescaled score is 0.059635 and
+`(1 − √0.059635) × 100 = 75.58` against a published 75.6.
+
+**The overall score**, line 2610, is the mean of the dataset and market columns. Fifty-seven
+resolved market questions carry the same weight as 521 dataset questions.
+
+## Data and Methodology
+
+**Forecast data**: the processed forecast sets published at forecastbench.org. 2,065 files across
+33 rounds, 423,396 resolved market-question forecasts across 572 entries. Imputed forecasts are
+excluded throughout. Models need 95% coverage to appear on the leaderboard and missing forecasts
+are filled at 0.5.
+
+**Question fixed effects**: FRI's daily published files, 2026-08-07 to 2026-08-11, both boards.
+
+**Leaderboard history**: 239 git revisions of `leaderboards/csv/leaderboard_tournament.csv`, 121 of
+them after the metric change below.
+
+**The bootstrap**: for each entry with at least 50 resolved market questions, resample its questions
+2,000 times and take the 95% interval of the mean adjusted score. Reference and dummy models are
+excluded, leaving 527. A forecast is called "copied" when it falls within 0.5 percentage points of a
+price, the threshold FRI used when reporting GPT-4.5.
+
+### The metric break
+
+The leaderboard file reports raw Brier scores until 2026-03-04 and the Brier Index afterwards.
+Lower is better in one and higher in the other, and the two differ by roughly an order of
+magnitude. Anchoring a series across that date is a trap of a familiar kind: the file looks
+continuous, the column names do not change, and the values move by a factor of a thousand at a
+single commit. Every series here starts 2026-03-04.
+
+### Two market prices
+
+`market_value_on_due_date` is the price on the forecast due date. The freeze value shown in prompts
+is ten days older. Over 3,175 resolved market questions where both are known, the due-date price
+scores a Brier of 0.0767 and the freeze value 0.0843. **The benchmark measures difficulty using
+information better than any participant received.**
+
+That distinction sets the range of the copier line below, and it limits behavioural inference. A
+forecast resembling the due-date price is consistent with a model using the freeze value it was
+given and equally consistent with one pulling a live price at submission. External entries do not
+publish their prompt conditions. Every claim here about copying is a claim about resemblance to a
+price and says nothing about mechanism.
+
+## The Copier Line
+
+Because market question difficulty is the market's own Brier score, a forecaster submitting a price
+verbatim scores zero on the adjusted scale, and its index is `(1 − √C) × 100`. Two prices give two
+lines.
+
+| | Market Brier Index |
+|---|---|
+| Copier of the **due-date** price, the benchmark's implicit zero | 72.26 |
+| Copier of the **shown** price, what a prompt-copier actually scores | **70.93** |
+| Superforecaster median | 75.60 |
+| Cassi-2026-05-10 | 76.60 |
+
+Both rows are on the full question pool. The due-date line is `(1 − √C) × 100` using the published
+anchor C = 0.076935. The shown-price line carries forward the price penalty measured on the 3,175
+questions where both prices are known, δ = 0.084268 − 0.076674 = 0.007594, giving
+`(1 − √(C + δ)) × 100 = 70.93`. Computing both on the 3,175-question subset alone gives 72.31 and
+70.97: a 1.33-point gap on the full pool against 1.34 on the subset.
+
+The due-date line is unreachable by copying, since no participant saw that price. The shown-price
+line at 70.93 is the behavioural zero, the score for adding nothing to what was in the prompt.
+Superforecasters sit 4.67 above it, Cassi 5.67.
+
+Against the shown-price line, **204 of 273 leaderboard entries, 75%, score at or below it**. Against
+the due-date line the count is 239 of 273, 88%. Both counts compare published index values directly
+and require no name matching. Both lines move with C and must be recomputed per date; the due-date
+line stood at 76.31 in April.
+
+The bootstrap in Figure 1 is the stricter version of the same test and gives the harder number: two
+entries of 527.
+
+## What the Freeze Value Buys
+
+ForecastBench runs its own baseline models twice on identical question sets, once with the freeze
+value in the prompt and once without.
+
+Within a matched pair the question is the same, so the difficulty term cancels and the paired
+difference in adjusted score equals the paired difference in raw Brier. The advantage carries
+through to the leaderboard in full.
+
+Across 2,916 matched pairs over 30 runs:
+
+| | Price withheld | Price shown |
+|---|---|---|
+| Median Brier Index | 51.5 | 68.1 |
+| Median correlation with the market price | 0.375 | 0.903 |
+| Median share within 0.5pp of it | about 3% | about 11% |
+
+Median improvement: **15.66 Brier Index points**, and 29 of 30 runs improved. Without the price,
+ForecastBench's own baseline models score 51.5, close to the 50 that always predicting 50% would
+score. Given the price, they reach 68.1, still below the 70.97 they would score by submitting that
+price unchanged.
+
+Among all forecast sets in the processed data, of 533 with at least 50 resolved market
+questions including reference models, 77 correlate
+with the market price above 0.95 and 9 above 0.99. Among top-30 entries the share of forecasts
+within half a percentage point of the market price reaches 67% for red-lizard, 58% for blue-turtle,
+47% for green-plant, 45% for blue-croc, 42% for the voicetree-axiom entries, and 41% for
+big-green-leaf. Those are anonymised external submissions whose prompt conditions are unpublished.
+
+The humans had the price too. The human question set carries `freeze_datetime_value` on all 90 of
+its market questions, and superforecaster rationales use it. One reads, "I think the current market
+price of 36% is about right." Another describes updating toward a crowd consensus more confident
+than the forecaster's own view.
+
+Everyone started from the same anchor. Figure 1 shows who added to it.
+
+## The Published Index Is Not Comparable Across Dates
+
+This section has a shelf life. FRI has announced a fresh superforecaster round for autumn 2026,
+which will retire the specific numbers below. The mechanism will outlast them.
+
+Thirty-nine superforecasters forecast once, on 2024-07-21. On the 57 market questions from that
+round that have resolved, none imputed, their raw Brier is **0.0830** against the market's
+**0.1003**. Their adjusted score is the difference, **−0.0173**, and every term in it is frozen.
+Their forecasts are fixed, and their questions' difficulty is the market's Brier, fixed once a
+question resolves. Confirmed: no market question fixed effect changed across five consecutive days
+of published files.
+
+Their published index moved anyway. Inverting the transform recovers the anchor:
+
+| | 9 April 2026 | 10 August 2026 |
+|---|---|---|
+| Published market Brier Index | 80.3 | 75.6 |
+| Difficulty-adjusted score | −0.0173 | −0.0173 |
+| Rescaling anchor C | 0.0561 | 0.0769 |
+
+Inverting a published number is weak evidence alone. C should equal the mean market question fixed
+effect, which FRI publishes daily. Measured from the 2026-08-11 file: **0.076935**. Implied from the
+leaderboard: **0.0768**. Two unrelated sources agreeing to one part in ten thousand.
+
+![Figure 2](../figures/fig2_drift.png)
+
+*Figure 2. The published superforecaster market score against the copier line, recomputed daily.
+The shaded gap is the adjusted score, constant at −0.0173.*
+
+Gaps compress as well as levels. On 9 April the copier line stood at 76.31 and the superforecasters
+at 80.3, a margin of 3.99. On 10 August the line is 72.26 and they are at 75.6, a margin of 3.34.
+The adjusted score is identical on both dates. The index gap fell because the pool got harder.
+
+Good Judgment's April figures of 80.3 against 75.8 were correct when published. The board now reads
+75.6 against 76.6, first crossing 2026-06-29.
+
+## Extending FRI's Robustness Work
+
+FRI validated the difficulty adjustment by simulation, reporting a Spearman correlation of 0.91
+against ground truth for the difficulty-adjusted Brier score, compared with 0.81 for Peer Score,
+0.78 for absolute Brier Skill Score, and 0.64 for standard Brier. Their scenarios include sampling
+questions with above-median and below-median divergence between market difficulty and forecaster
+difficulty.
+
+Two checks on the live data, in the same spirit. The humans answered 57 questions from one round
+and AI entries answered pools of up to 3,076 across 33 rounds, and those sets are disjoint.
+
+**Platform mix.**
+
+| Platform | Human 57 | Full pool | Mean market Brier |
+|---|---|---|---|
+| `infer` | 17.5% | 8.3% | 0.0696 |
+| `manifold` | 28.1% | 23.7% | 0.0853 |
+| `metaculus` | 15.8% | 13.7% | 0.1279 |
+| `polymarket` | 38.6% | 54.4% | 0.0612 |
+
+Platform mix implies difficulty of 0.0799 for the human subset against 0.0768 for the pool. Actual
+mean difficulty of the human 57 is 0.1003, harder than the pool by 0.0234.
+
+**Whether that matters.** The adjustment subtracts the market's own Brier per question. It is
+neutral if a forecaster's edge over the market does not vary with question difficulty. It would not
+be neutral if beating the market gets easier on questions the market finds hard, which is plausible,
+since those are the questions where a price has least information to be right about.
+
+It is not neutral. Regressing the adjusted score on the question fixed effect returns −0.326, but
+that number is not the quantity of interest: the adjusted score is `brier − γ`, so the regression
+returns `Cov(brier, γ)/Var(γ) − 1` and the −1 is mechanical. The estimable part is the pass-through,
+`0.0147 / 0.0218 = **0.674**`. A one-unit rise in market difficulty raises the average forecaster's
+Brier by about two thirds of a unit, so forecasters close roughly a third of the gap on questions
+the market finds hard.
+
+The same effect shows up on a second method that never touches the outcome. Binning 423,396 resolved
+forecasts by how far the market price sat from 0.5:
+
+| Market price distance from 0.5 | Share of pool | Human 57 | Mean adjusted score |
+|---|---|---|---|
+| 0.00–0.15 (near coin flip) | 10.1% | 12.3% | +0.0525 |
+| 0.15–0.25 | 7.1% | 8.8% | +0.0694 |
+| 0.25–0.35 | 11.8% | 17.5% | +0.0979 |
+| 0.35–0.45 | 21.7% | 19.3% | +0.1016 |
+| 0.45–0.50 (near certain) | 49.3% | 42.1% | +0.0874 |
+
+**The average forecaster's edge over the market is largest exactly where the market is least
+certain.** The spread between the extreme bins is 0.035, twice the superforecasters' entire margin.
+That is a fact about what the market column measures, and it means a copier line is a pool average
+whose level depends on pool composition. Note also that half the market questions carry a price
+within 0.05 of 0 or 1, so the board is dominated by questions the market has already close to
+settled.
+
+**Sizing the effect on the human comparison.** Pool-wide bin means average 527 entries, 437 of which
+score below the market, and some sit near +0.20. The superforecasters belong to a different
+population, and strong forecasters have a visibly flatter difficulty profile: across the 90 entries
+that beat the market or are indistinguishable from it, the spread between extreme bins is 0.013
+rather than 0.035.
+
+Reweighting on that population, the human question mix moves the expected adjusted score by
+**+0.0006**, and the sign runs against the humans rather than for them. Their overweight sits in
+the middle bins and their underweight at the near-certain end, and the two nearly cancel. Correcting
+for it moves −0.0173 to −0.0179 against a 95% upper bound of −0.0016. The result is unaffected.
+
+The mechanism is real and sizeable. The human question mix happens not to exploit it.
+
+## Recommendation
+
+**Publish the copier line, and quote the adjusted score.** FRI's own rationale for setting the
+market weight to 1 is that forecasters should rank above the market only by outperforming it. The
+scoring code already computes the number that makes this visible. Drawing it costs one horizontal
+rule.
+
+The demand generalises past this benchmark. **Any evaluation that puts a strong baseline in the
+prompt is measuring incremental skill over that baseline, and almost none of them report it.**
+Retrieval-augmented QA hands the model the passage. Agentic benchmarks hand it the tooling and
+often the hints. Clinical benchmarks hand it the guideline. In each case there is a computable score
+for reproducing what was supplied, and in each case the leaderboard publishes the absolute number
+with that floor invisible.
+
+ForecastBench is the best worked example available, because its scoring rule already defines the
+line and its authors have already argued for why it matters.
+
+The autumn 2026 round is the moment to do it. A fresh superforecaster elicitation resets the
+baseline and retires the drift numbers in the previous section. The copier line survives that
+reset, because it is computed from the question pool rather than from any forecaster.
+
+## Eight Things This Doesn't Cover
+
+- The bootstrap covers 527 entries with at least 50 resolved market questions, from the processed
+  forecast sets. Matching those entries by name to the published leaderboard succeeds for 103 of
+  273 rows, which limits only the joint analyses: the leaderboard-restricted bootstrap split and
+  the per-entry copy rates quoted for named top-30 entries. The counts against the copier lines
+  compare published index values directly and need no matching.
+- The copier lines assume a copier faces a representative sample of market questions, and both move
+  with C.
+- Resemblance to a market price is not evidence of mechanism. Scoring uses the due-date price,
+  prompts showed a value ten days older, and external entries do not publish prompt conditions.
+- The paired freeze-value experiment covers ForecastBench's own baseline runs. External entries have
+  no paired condition.
+- The 0.5 percentage point threshold is FRI's, adopted for comparability. Widening it raises copy
+  rates steeply.
+- The anchor series inverts the published index assuming the superforecasters' adjusted score held
+  at −0.0173 throughout. Their resolved count moved 56 to 57 in July, shifting it marginally.
+- The bin analysis conditions on the market price, which is observable in advance, and not on any
+  richer notion of question difficulty. Bins are coarse, and the near-certain bin holds half the
+  pool. The reweighting uses the 90 entries at or above the market as the reference population; a
+  narrower reference would be noisier and a wider one mis-sized.
+- Two mechanisms are easy to conflate. Models more than a year past their training cutoff leave the
+  difficulty estimation. Separately, new models wait 50 days before joining the leaderboard. Neither
+  affects market question difficulty on the tournament board, which comes from the market.
+
+## What FRI Already Published
+
+Every effect here was disclosed by FRI first, and their July post hedges its own claim.
+
+The freeze-value advantage appears twice in the ICLR paper, where they report that the
+top-performing models all had access to the crowd forecast on market questions and that the best
+model without that access was less accurate.
+
+The difficulty adjustment, the market weight of 1, the rationale, and the simulation validation are
+in the methodology addendum. So is the stability analysis showing market rankings plateau around 0.8
+to 0.9 with top-quartile retention near 70% after 50 days, which is why new models wait 50 days.
+
+The July parity post states in its caveats that the confidence intervals overlap substantially and
+that the results are more consistent with parity than with outperformance. It also announces a fresh
+superforecaster round, updated dataset questions, and quantile questions for autumn 2026.
+
+A leaderboard excluding freeze-value models already exists and is published.
+
+The quarrel here is not with FRI's claim. It is with how the number travels downstream.
+
+## Reproduction
+
+```
+python copier_line.py --date 2026-08-11 --processed <extracted processed forecast sets>
+python figures.py --blob copier_line.2026-08-11.json
+```
+
+Analysis code and derived data: https://github.com/OJdominus/forecastbench-copier-line Inputs, all public:
+
+```
+git clone https://github.com/forecastingresearch/forecastbench-datasets.git
+git clone https://github.com/forecastingresearch/forecastbench.git
+curl -O https://www.forecastbench.org/assets/data/processed-forecast-sets/processed_forecast_sets.tar.gz
+# https://forecastbench.org/assets/data/question-fixed-effects/question_fixed_effects.YYYY-MM-DD.{tournament,baseline}_leaderboard.json
+```
+
+Leaderboard history requires a full clone. Data read 10 to 14 August 2026. Scoring rule at
+`src/leaderboard/main.py`, lines 2348, 2610, 2954, 2985.
+
+## References
+
+- Karger, Bastani, Yueh-Han, Jacobs, Halawi, Zhang, Tetlock. "ForecastBench: A Dynamic Benchmark of
+  AI Forecasting Capabilities." ICLR 2025. arXiv:2409.19839. *Benchmark design, freeze-value
+  baselines, July 2024 human comparison. The difficulty adjustment and Brier Index are not in it.*
+- Kucinskas, Bastani, Karger. "ForecastBench: Updated Ranking Methodology." FRI. *Difficulty-adjusted
+  Brier score, market weight, stale-model exclusion, simulation validation, stability analysis.*
+- Forecasting Research Institute. "AI models have likely reached parity with superforecasters on
+  ForecastBench." 16 July 2026. *The parity claim, its p-values, and its caveats.*
+- Good Judgment. "Not So Fast." 24 July 2026. *The frozen-baseline critique, the copying question
+  declared unexplored, and the FT summary. Good Judgment sells superforecasting services.*
+- Devlen, Lena. "What ForecastBench Doesn't Measure (Yet)." Good Judgment, 14 April 2026. *The
+  preliminary-versus-tournament distinction and the April figures, correct on publication.*
+- *Financial Times*, Fed-decision backtest, July 2026. *Cited via Good Judgment's summary for the
+  system's stated reliance on market trackers.*
+- ForecastBench codebase, `forecastingresearch/forecastbench`, MIT. *The scoring rule.*
+- Data: `forecastingresearch/forecastbench-datasets`, CC BY-SA 4.0, plus processed forecast sets and
+  question fixed-effects files from forecastbench.org.
+
+---
+
+Two forecasters out of 527 beat the price they were shown, and they are the two the parity debate
+is about.

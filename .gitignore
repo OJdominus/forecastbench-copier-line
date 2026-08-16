@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.DS_Store
+
+# large public inputs, fetched by the commands in README
+processed_forecast_sets.tar.gz
+forecast_sets.tar.gz
+forecastbench-processed-forecast-sets/
+forecastbench-datasets/

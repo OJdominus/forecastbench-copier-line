@@ -1,0 +1,5340 @@
+{
+ "date": "2026-08-11",
+ "generated_from": {
+  "n_question_rows": 423396,
+  "n_entries_total": 572,
+  "n_entries_tested": 531,
+  "min_questions": 50,
+  "n_resamples": 2000,
+  "seed": 11,
+  "n_questions_both_prices": 3175
+ },
+ "anchor": {
+  "C_published": 0.07693528718025333,
+  "C_reconstructed": 0.07667407591375908,
+  "agreement": 0.0002612112664942545,
+  "brier_freeze": 0.08426778135540905
+ },
+ "lines": {
+  "due_date_price": 72.26278904066716,
+  "shown_price": 70.97108659363754,
+  "penalty_index_points": -1.2917024470296212
+ },
+ "counts": {
+  "beats_market": 2,
+  "indistinguishable": 88,
+  "below_market": 441
+ },
+ "entries": [
+  {
+   "model": "Cassi-2026-05-10",
+   "n": 102,
+   "mean_adj": -0.02196306589187596,
+   "ci_lo": -0.04028472250140322,
+   "ci_hi": -0.005496699943225478,
+   "verdict": "beats market",
+   "is_reference": false,
+   "rank": 1
+  },
+  {
+   "model": "Superforecaster median forecast",
+   "n": 57,
+   "mean_adj": -0.017277136908844287,
+   "ci_lo": -0.03541002253821061,
+   "ci_hi": -0.001622036676421064,
+   "verdict": "beats market",
+   "is_reference": false,
+   "rank": 2
+  },
+  {
+   "model": "plastic-cactus",
+   "n": 102,
+   "mean_adj": -0.012282397319418544,
+   "ci_lo": -0.04153492204552551,
+   "ci_hi": 0.018072257009917624,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 3
+  },
+  {
+   "model": "ceramic-kettle",
+   "n": 103,
+   "mean_adj": -0.011056691144262505,
+   "ci_lo": -0.03245830072734877,
+   "ci_hi": 0.014626302187273444,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 4
+  },
+  {
+   "model": "Grok 4.20 (Beta, C)",
+   "n": 119,
+   "mean_adj": -0.0072305938106610596,
+   "ci_lo": -0.02225934815126474,
+   "ci_hi": 0.00660475732750128,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 5
+  },
+  {
+   "model": "Grok 4.20 (Beta, D)",
+   "n": 119,
+   "mean_adj": -0.0072305938106610596,
+   "ci_lo": -0.02188758287682955,
+   "ci_hi": 0.005777321166834501,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 6
+  },
+  {
+   "model": "CAIR_0705_03",
+   "n": 60,
+   "mean_adj": -0.006576528828652092,
+   "ci_lo": -0.017236780441145648,
+   "ci_hi": 0.00030546459112487813,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 7
+  },
+  {
+   "model": "fire hedgehog",
+   "n": 103,
+   "mean_adj": -0.005806458717078036,
+   "ci_lo": -0.019034673918383704,
+   "ci_hi": 0.005129087514684764,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 8
+  },
+  {
+   "model": "captain-jack",
+   "n": 103,
+   "mean_adj": -0.005460176581155708,
+   "ci_lo": -0.024267629195940527,
+   "ci_hi": 0.014936117548363746,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 9
+  },
+  {
+   "model": "WIND_03",
+   "n": 60,
+   "mean_adj": -0.005395075088235428,
+   "ci_lo": -0.014693648923888226,
+   "ci_hi": 0.0006767381529400587,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 10
+  },
+  {
+   "model": "dragon-brother",
+   "n": 103,
+   "mean_adj": -0.004600496969505226,
+   "ci_lo": -0.02325726762371322,
+   "ci_hi": 0.015979950346635848,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 11
+  },
+  {
+   "model": "futuresearch_ec_v3",
+   "n": 60,
+   "mean_adj": -0.004073981335985428,
+   "ci_lo": -0.011096936363023216,
+   "ci_hi": 0.00195856121108413,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 12
+  },
+  {
+   "model": "rice-demon",
+   "n": 103,
+   "mean_adj": -0.0037691959986314396,
+   "ci_lo": -0.024475348313168485,
+   "ci_hi": 0.019439919148525754,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 13
+  },
+  {
+   "model": "aj-v1",
+   "n": 603,
+   "mean_adj": -0.003307096574545147,
+   "ci_lo": -0.00939608373044324,
+   "ci_hi": 0.0025074226114213003,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 14
+  },
+  {
+   "model": "iron-compass",
+   "n": 103,
+   "mean_adj": -0.003287195998631434,
+   "ci_lo": -0.02830234937553523,
+   "ci_hi": 0.023231461056447435,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 15
+  },
+  {
+   "model": "futuresearch_gec_v3",
+   "n": 60,
+   "mean_adj": -0.003218981335985427,
+   "ci_lo": -0.010151664779747216,
+   "ci_hi": 0.002584139619929911,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 16
+  },
+  {
+   "model": "voicetree-decisionflow-v0_green",
+   "n": 119,
+   "mean_adj": -0.003187077035645925,
+   "ci_lo": -0.009909572622435948,
+   "ci_hi": 0.001917307239300522,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 17
+  },
+  {
+   "model": "fb_early_closer",
+   "n": 102,
+   "mean_adj": -0.003068699090757885,
+   "ci_lo": -0.02422688336935334,
+   "ci_hi": 0.019385022319137427,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 18
+  },
+  {
+   "model": "voicetree-decisionflow-v0",
+   "n": 119,
+   "mean_adj": -0.0028731326960587406,
+   "ci_lo": -0.008671642842048018,
+   "ci_hi": 0.002676528071387366,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 19
+  },
+  {
+   "model": "FB_forecaster",
+   "n": 102,
+   "mean_adj": -0.002849091247620629,
+   "ci_lo": -0.02406415137008768,
+   "ci_hi": 0.020715227548333402,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 20
+  },
+  {
+   "model": "green-plant",
+   "n": 60,
+   "mean_adj": -0.0026979177039546756,
+   "ci_lo": -0.014509926481196042,
+   "ci_hi": 0.009157579894654537,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 21
+  },
+  {
+   "model": "blue-turtle",
+   "n": 60,
+   "mean_adj": -0.0025797242039546824,
+   "ci_lo": -0.012189383975288778,
+   "ci_hi": 0.005541204458391489,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 22
+  },
+  {
+   "model": "ensemble (nocritique-1-99)",
+   "n": 102,
+   "mean_adj": -0.0024395501528661407,
+   "ci_lo": -0.020628643050152953,
+   "ci_hi": 0.014269652902811413,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 23
+  },
+  {
+   "model": "Cassi ensemble_2_crowdadj",
+   "n": 216,
+   "mean_adj": -0.0024043929898849297,
+   "ci_lo": -0.013260957170245252,
+   "ci_hi": 0.007093851746283465,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 24
+  },
+  {
+   "model": "ensemble (critique-1-99)",
+   "n": 102,
+   "mean_adj": -0.0023944913293367297,
+   "ci_lo": -0.01958205421378549,
+   "ci_hi": 0.014997334481796467,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 25
+  },
+  {
+   "model": "red-lizard",
+   "n": 60,
+   "mean_adj": -0.0023052198706213444,
+   "ci_lo": -0.012881882229873815,
+   "ci_hi": 0.004500218030350814,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 26
+  },
+  {
+   "model": "blue croc",
+   "n": 103,
+   "mean_adj": -0.00211986580445668,
+   "ci_lo": -0.016507107810414232,
+   "ci_hi": 0.013574174274739935,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 27
+  },
+  {
+   "model": "ensemble (critique-5-95)",
+   "n": 102,
+   "mean_adj": -0.002032914777032395,
+   "ci_lo": -0.019429099735855306,
+   "ci_hi": 0.014683597262972066,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 28
+  },
+  {
+   "model": "big green leaf",
+   "n": 103,
+   "mean_adj": -0.0011708626976605634,
+   "ci_lo": -0.015944991610133904,
+   "ci_hi": 0.014847523899953925,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 29
+  },
+  {
+   "model": "voicetree-decisionflow-v0_red",
+   "n": 119,
+   "mean_adj": -0.0009161991091421903,
+   "ci_lo": -0.008600348201767378,
+   "ci_hi": 0.006441000691254939,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 30
+  },
+  {
+   "model": "futuresearch_v3",
+   "n": 60,
+   "mean_adj": -0.0007806480026520941,
+   "ci_lo": -0.005320674174696469,
+   "ci_hi": 0.0034650372991375626,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 31
+  },
+  {
+   "model": "glass-lantern",
+   "n": 102,
+   "mean_adj": -0.0006579147770323934,
+   "ci_lo": -0.03298999316429165,
+   "ci_hi": 0.0337838383024887,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 32
+  },
+  {
+   "model": "voicetree-decisionflow-v1_scurve",
+   "n": 107,
+   "mean_adj": -0.0004643143166016187,
+   "ci_lo": -0.008162071528471366,
+   "ci_hi": 0.006419303326090064,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 33
+  },
+  {
+   "model": "voicetree-decisionflow-v1",
+   "n": 107,
+   "mean_adj": -0.0003287204168539565,
+   "ci_lo": -0.005713155346974783,
+   "ci_hi": 0.004943904670990049,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 34
+  },
+  {
+   "model": "mantic-2026-01-16",
+   "n": 179,
+   "mean_adj": -0.00019580929354081573,
+   "ci_lo": -0.004956587718589329,
+   "ci_hi": 0.004833386430655156,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 35
+  },
+  {
+   "model": "voicetree-decisionflow-v1_scurve_inverse",
+   "n": 107,
+   "mean_adj": 0.00033232080780959823,
+   "ci_lo": -0.015513641373700492,
+   "ci_hi": 0.01474017306735287,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 36
+  },
+  {
+   "model": "Grok 4.20 (Beta, B)",
+   "n": 127,
+   "mean_adj": 0.0006445750655740257,
+   "ci_lo": -0.016438453617921598,
+   "ci_hi": 0.014700790396090832,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 37
+  },
+  {
+   "model": "Summer",
+   "n": 103,
+   "mean_adj": 0.0011925954617180773,
+   "ci_lo": -0.01040391567865196,
+   "ci_hi": 0.015137903649417632,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 38
+  },
+  {
+   "model": "Gemini",
+   "n": 398,
+   "mean_adj": 0.001248303072973958,
+   "ci_lo": -0.008222749884282217,
+   "ci_hi": 0.010516945310814171,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 39
+  },
+  {
+   "model": "Spring",
+   "n": 103,
+   "mean_adj": 0.0016512680034171043,
+   "ci_lo": -0.011567835692570666,
+   "ci_hi": 0.01745639691540106,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 40
+  },
+  {
+   "model": "silver-anchor",
+   "n": 103,
+   "mean_adj": 0.0017679787586501116,
+   "ci_lo": -0.02565040314817699,
+   "ci_hi": 0.03517526519327596,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 41
+  },
+  {
+   "model": "foresight-32b-V2",
+   "n": 63,
+   "mean_adj": 0.0018602171449739076,
+   "ci_lo": -0.02173882496830405,
+   "ci_hi": 0.019089217914109807,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 42
+  },
+  {
+   "model": "brass-apple",
+   "n": 102,
+   "mean_adj": 0.0020031636543401546,
+   "ci_lo": -0.018441454679478785,
+   "ci_hi": 0.026423099668196226,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 43
+  },
+  {
+   "model": "CLOUD_03",
+   "n": 90,
+   "mean_adj": 0.002072025541896731,
+   "ci_lo": -0.011057164674593445,
+   "ci_hi": 0.018361615020410588,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 44
+  },
+  {
+   "model": "gpt-5.5-2026-04-23-high-web-search-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.002111561246410161,
+   "ci_lo": -0.00933154310784402,
+   "ci_hi": 0.012719928224578413,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 45
+  },
+  {
+   "model": "excited-seal",
+   "n": 1366,
+   "mean_adj": 0.002229277944549185,
+   "ci_lo": -0.0028229013785648896,
+   "ci_hi": 0.007645439607644753,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 46
+  },
+  {
+   "model": "voicetree-axiom-1",
+   "n": 103,
+   "mean_adj": 0.0024972559107860367,
+   "ci_lo": -0.00969628550607789,
+   "ci_hi": 0.016649007130319363,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 47
+  },
+  {
+   "model": "gold-anchor",
+   "n": 60,
+   "mean_adj": 0.002618214164014574,
+   "ci_lo": -0.03352616769136289,
+   "ci_hi": 0.04587081859578259,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 48
+  },
+  {
+   "model": "claude-opus-4-8-adaptive-thinking-max-web-search-128000-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.00272712690297582,
+   "ci_lo": -0.007723363370063322,
+   "ci_hi": 0.013205619124613939,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 49
+  },
+  {
+   "model": "claude-opus-4-8-adaptive-thinking-max-web-search-128000",
+   "n": 99,
+   "mean_adj": 0.0029019450847940016,
+   "ci_lo": -0.013511117489225875,
+   "ci_hi": 0.016606852790345933,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 50
+  },
+  {
+   "model": "supersonic",
+   "n": 119,
+   "mean_adj": 0.002997146341649874,
+   "ci_lo": -0.013425215416793153,
+   "ci_hi": 0.021920851571928544,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 51
+  },
+  {
+   "model": "Grok-4-0709 (zero shot with freeze values)",
+   "n": 669,
+   "mean_adj": 0.003060209369417742,
+   "ci_lo": 0.00014844626528415483,
+   "ci_hi": 0.006235814531557017,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 52
+  },
+  {
+   "model": "CLOUD_01",
+   "n": 90,
+   "mean_adj": 0.0030687600974522882,
+   "ci_lo": -0.0043746747328845806,
+   "ci_hi": 0.01543469044289548,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 53
+  },
+  {
+   "model": "BLF",
+   "n": 107,
+   "mean_adj": 0.0031262739567468117,
+   "ci_lo": -0.02403627351743811,
+   "ci_hi": 0.03038488898781515,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 54
+  },
+  {
+   "model": "limeforecast ensemble_crowdadj",
+   "n": 147,
+   "mean_adj": 0.0035656113669609757,
+   "ci_lo": -0.014104268218507078,
+   "ci_hi": 0.022722100785840332,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 55
+  },
+  {
+   "model": "blf-ensemble-opus45-gpt55",
+   "n": 303,
+   "mean_adj": 0.003572309107447557,
+   "ci_lo": -0.006085721397986204,
+   "ci_hi": 0.014062713632974752,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 56
+  },
+  {
+   "model": "mantic-light-2025-10-testing",
+   "n": 605,
+   "mean_adj": 0.003655346456749679,
+   "ci_lo": -0.002435827248205838,
+   "ci_hi": 0.010175266479213362,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 57
+  },
+  {
+   "model": "bronze-hat",
+   "n": 102,
+   "mean_adj": 0.0037127889550912577,
+   "ci_lo": -0.028614092118797903,
+   "ci_hi": 0.04030649261222478,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 58
+  },
+  {
+   "model": "Grok 4.20 (Beta, A)",
+   "n": 127,
+   "mean_adj": 0.0037445888451015843,
+   "ci_lo": -0.014528256037679892,
+   "ci_hi": 0.01878142999059087,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 59
+  },
+  {
+   "model": "Claude-3-7-Sonnet-20250219 (scratchpad with freeze values)",
+   "n": 3031,
+   "mean_adj": 0.003926042700876843,
+   "ci_lo": 0.002296274549917723,
+   "ci_hi": 0.005595351793588035,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 60
+  },
+  {
+   "model": "voicetree-axiom-0",
+   "n": 103,
+   "mean_adj": 0.004018697381960795,
+   "ci_lo": -0.009032849808551577,
+   "ci_hi": 0.018560777384464662,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 61
+  },
+  {
+   "model": "gpt-5.5-2026-04-23-high-web-search",
+   "n": 99,
+   "mean_adj": 0.004401238014086931,
+   "ci_lo": -0.011729782852804968,
+   "ci_hi": 0.019203938545364552,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 62
+  },
+  {
+   "model": "Gemini-3-Pro-Preview (zero shot with freeze values)",
+   "n": 692,
+   "mean_adj": 0.004437796689637996,
+   "ci_lo": -0.0004491935912648051,
+   "ci_hi": 0.009298149723446902,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 63
+  },
+  {
+   "model": "voicetree-axiom-2",
+   "n": 103,
+   "mean_adj": 0.004992537668387977,
+   "ci_lo": -0.004214463869558212,
+   "ci_hi": 0.01670740456870662,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 64
+  },
+  {
+   "model": "Grok-4-Fast-Reasoning (zero shot with freeze values)",
+   "n": 1057,
+   "mean_adj": 0.00504771611575933,
+   "ci_lo": 0.0012114055629680882,
+   "ci_hi": 0.008910743191446364,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 65
+  },
+  {
+   "model": "Foresight-32B",
+   "n": 108,
+   "mean_adj": 0.005676780597985441,
+   "ci_lo": -0.016082506621876786,
+   "ci_hi": 0.02919562627729304,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 66
+  },
+  {
+   "model": "yellow mouse",
+   "n": 147,
+   "mean_adj": 0.005774935176484783,
+   "ci_lo": -0.01070963860957129,
+   "ci_hi": 0.021083210967334946,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 67
+  },
+  {
+   "model": "deneb",
+   "n": 62,
+   "mean_adj": 0.005897441290552865,
+   "ci_lo": -0.04125038777758866,
+   "ci_hi": 0.06332716564956438,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 68
+  },
+  {
+   "model": "GLM-4.6 (zero shot with freeze values)",
+   "n": 124,
+   "mean_adj": 0.006572527188848021,
+   "ci_lo": 0.0005819682166423973,
+   "ci_hi": 0.012967859756330694,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 69
+  },
+  {
+   "model": "megaflash",
+   "n": 107,
+   "mean_adj": 0.006834744468557263,
+   "ci_lo": -0.0069313486123892595,
+   "ci_hi": 0.022533002911946192,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 70
+  },
+  {
+   "model": "MiniMax-M2.7 (zero shot with freeze values)",
+   "n": 80,
+   "mean_adj": 0.007109024862618782,
+   "ci_lo": -0.027769037493016496,
+   "ci_hi": 0.047968846437664275,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 71
+  },
+  {
+   "model": "Claude-Opus-4-5-20251101 (zero shot with freeze values)",
+   "n": 336,
+   "mean_adj": 0.007110756224090868,
+   "ci_lo": 0.002136133478449771,
+   "ci_hi": 0.012709382431064366,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 72
+  },
+  {
+   "model": "DeepSeek-R1 (scratchpad with freeze values)",
+   "n": 2127,
+   "mean_adj": 0.0071982719393837895,
+   "ci_lo": 0.00499217708099265,
+   "ci_hi": 0.009688506881108139,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 73
+  },
+  {
+   "model": "GPT-4.5-Preview-2025-02-27 (scratchpad with freeze values)",
+   "n": 917,
+   "mean_adj": 0.007408286595411719,
+   "ci_lo": 0.003599362516777563,
+   "ci_hi": 0.011444623381738656,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 74
+  },
+  {
+   "model": "gemini-3-1-pro_thk-high_srch-brave-long_crwd-1_data-tool-1_market-tool-0_tries-1",
+   "n": 147,
+   "mean_adj": 0.007461686196892951,
+   "ci_lo": -0.014394665999815301,
+   "ci_hi": 0.030369519964828756,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 75
+  },
+  {
+   "model": "Qwen3-235B-A22B-Fp8-Tput (scratchpad with freeze values)",
+   "n": 2546,
+   "mean_adj": 0.007487174291714261,
+   "ci_lo": 0.0048605581221031775,
+   "ci_hi": 0.010092951439283715,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 76
+  },
+  {
+   "model": "Grok-4-1-Fast-Reasoning (zero shot with freeze values)",
+   "n": 1193,
+   "mean_adj": 0.008273971195551231,
+   "ci_lo": 0.0036942733237687623,
+   "ci_hi": 0.012781606302190595,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 77
+  },
+  {
+   "model": "fb_early_closer_v2",
+   "n": 103,
+   "mean_adj": 0.008954163224669534,
+   "ci_lo": -0.009594767452185194,
+   "ci_hi": 0.028292767835537146,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 78
+  },
+  {
+   "model": "fb_forecaster_v2",
+   "n": 103,
+   "mean_adj": 0.008974551574184097,
+   "ci_lo": -0.008123124395951127,
+   "ci_hi": 0.028676569433839175,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 79
+  },
+  {
+   "model": "Grok 4.20 (Preview)",
+   "n": 112,
+   "mean_adj": 0.009720410442878807,
+   "ci_lo": -0.01629099595761635,
+   "ci_hi": 0.035960185276963624,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 80
+  },
+  {
+   "model": "Gemini-3-Flash-Preview (zero shot with freeze values)",
+   "n": 908,
+   "mean_adj": 0.010219620289385884,
+   "ci_lo": 0.004045413032222533,
+   "ci_hi": 0.016526773478898263,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 81
+  },
+  {
+   "model": "foresight-v4",
+   "n": 60,
+   "mean_adj": 0.010506935330681248,
+   "ci_lo": 0.0008595197873618242,
+   "ci_hi": 0.020200904722764815,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 82
+  },
+  {
+   "model": "Gemini-2.5-Flash-Preview-04-17 (scratchpad with freeze values)",
+   "n": 423,
+   "mean_adj": 0.01087361158477457,
+   "ci_lo": 0.006128508121678513,
+   "ci_hi": 0.01619381911119354,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 83
+  },
+  {
+   "model": "green tree",
+   "n": 147,
+   "mean_adj": 0.010935302115260292,
+   "ci_lo": -0.011232354947427664,
+   "ci_hi": 0.029663980127107057,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 84
+  },
+  {
+   "model": "Claude-Sonnet-4-20250514 (scratchpad with freeze values)",
+   "n": 848,
+   "mean_adj": 0.011204543237535211,
+   "ci_lo": 0.005794013280341986,
+   "ci_hi": 0.01655070847822045,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 85
+  },
+  {
+   "model": "GPT-4.5-Preview-2025-02-27 (zero shot with freeze values)",
+   "n": 925,
+   "mean_adj": 0.011576641470463053,
+   "ci_lo": 0.006482608664142293,
+   "ci_hi": 0.01700028557657501,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 86
+  },
+  {
+   "model": "foresight-v4 (low effort)",
+   "n": 60,
+   "mean_adj": 0.011590251997347905,
+   "ci_lo": 0.0010084234604974501,
+   "ci_hi": 0.02310658303842464,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 87
+  },
+  {
+   "model": "Grok-beta (zero shot with freeze values)",
+   "n": 828,
+   "mean_adj": 0.011621721616312598,
+   "ci_lo": 0.005711624791874449,
+   "ci_hi": 0.017465067379623708,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 88
+  },
+  {
+   "model": "CAIR_02",
+   "n": 90,
+   "mean_adj": 0.012127085097452287,
+   "ci_lo": -0.00363890607522412,
+   "ci_hi": 0.03269220155830383,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 89
+  },
+  {
+   "model": "CAIR_03",
+   "n": 90,
+   "mean_adj": 0.012127085097452287,
+   "ci_lo": -0.00529624110735919,
+   "ci_hi": 0.03147476338545723,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 90
+  },
+  {
+   "model": "CAIR_01",
+   "n": 90,
+   "mean_adj": 0.012127085097452287,
+   "ci_lo": -0.004059510257323392,
+   "ci_hi": 0.033010302285980286,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 91
+  },
+  {
+   "model": "steel-feather",
+   "n": 102,
+   "mean_adj": 0.01256851659551662,
+   "ci_lo": -0.014140690216834055,
+   "ci_hi": 0.03913594732808849,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 92
+  },
+  {
+   "model": "GPT-4o-2024-05-13 (scratchpad with freeze values)",
+   "n": 3085,
+   "mean_adj": 0.01262965937916933,
+   "ci_lo": 0.00989949581626577,
+   "ci_hi": 0.015451581060294562,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 93
+  },
+  {
+   "model": "QwQ-32B-Preview (scratchpad with freeze values)",
+   "n": 1222,
+   "mean_adj": 0.012662388971029897,
+   "ci_lo": 0.008390364290699379,
+   "ci_hi": 0.0168423621791984,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 94
+  },
+  {
+   "model": "GPT-5-2025-08-07 (zero shot with freeze values)",
+   "n": 636,
+   "mean_adj": 0.012665239559748763,
+   "ci_lo": 0.006436460423872463,
+   "ci_hi": 0.019643545627473655,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 95
+  },
+  {
+   "model": "Gemini-3.1-Pro-Preview (zero shot with freeze values)",
+   "n": 1024,
+   "mean_adj": 0.012946275895055086,
+   "ci_lo": 0.005847754802731802,
+   "ci_hi": 0.01980369861551286,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 96
+  },
+  {
+   "model": "Cassi ensemble_2",
+   "n": 216,
+   "mean_adj": 0.01300808928048544,
+   "ci_lo": -0.0022820674548562512,
+   "ci_hi": 0.030179213271046685,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 97
+  },
+  {
+   "model": "Gemini-2.5-Pro (zero shot with freeze values)",
+   "n": 1818,
+   "mean_adj": 0.013045605397308592,
+   "ci_lo": 0.008392634056833468,
+   "ci_hi": 0.017700365768205974,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 98
+  },
+  {
+   "model": "Llama-3.3-70B-Instruct-Turbo (scratchpad with freeze values)",
+   "n": 3038,
+   "mean_adj": 0.013109020443427486,
+   "ci_lo": 0.010484908953728922,
+   "ci_hi": 0.01571376785155649,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 99
+  },
+  {
+   "model": "GPT-4.1-2025-04-14 (scratchpad with freeze values)",
+   "n": 2232,
+   "mean_adj": 0.013233648876162084,
+   "ci_lo": 0.010051621616758771,
+   "ci_hi": 0.01645190090421778,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 100
+  },
+  {
+   "model": "Claude-Haiku-4-5-20251001 (zero shot with freeze values)",
+   "n": 1811,
+   "mean_adj": 0.013283149948951488,
+   "ci_lo": 0.00855685778613833,
+   "ci_hi": 0.018144309108454344,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 101
+  },
+  {
+   "model": "Meta-Llama-3.1-405B-Instruct-Turbo (scratchpad with freeze values)",
+   "n": 884,
+   "mean_adj": 0.013473069059034365,
+   "ci_lo": 0.009178570096215031,
+   "ci_hi": 0.018451480879974703,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 102
+  },
+  {
+   "model": "Claude-Sonnet-4-6 (zero shot with freeze values)",
+   "n": 1025,
+   "mean_adj": 0.013596223327668012,
+   "ci_lo": 0.007067663572303801,
+   "ci_hi": 0.019833277061533153,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 103
+  },
+  {
+   "model": "O3-2025-04-16 (zero shot with freeze values)",
+   "n": 1040,
+   "mean_adj": 0.01378624591389233,
+   "ci_lo": 0.008050597875916783,
+   "ci_hi": 0.01989609537402758,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 104
+  },
+  {
+   "model": "GPT-5.2-2025-12-11 (zero shot with freeze values)",
+   "n": 909,
+   "mean_adj": 0.01391113699078684,
+   "ci_lo": 0.005857765517724079,
+   "ci_hi": 0.02169756075705945,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 105
+  },
+  {
+   "model": "GLM-4.5-Air-FP8 (scratchpad with freeze values)",
+   "n": 371,
+   "mean_adj": 0.014005399126498593,
+   "ci_lo": 0.008884136146930888,
+   "ci_hi": 0.020144846613097313,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 106
+  },
+  {
+   "model": "Claude-Sonnet-4-5-20250929 (zero shot with freeze values)",
+   "n": 1754,
+   "mean_adj": 0.01410724782986656,
+   "ci_lo": 0.009276018101099619,
+   "ci_hi": 0.018865573648430247,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 107
+  },
+  {
+   "model": "foresight-v3",
+   "n": 581,
+   "mean_adj": 0.014167038311686456,
+   "ci_lo": 0.0018588321287007785,
+   "ci_hi": 0.026655335095516694,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 108
+  },
+  {
+   "model": "glm-5.2-12000-zero-shot-with-freeze-values",
+   "n": 51,
+   "mean_adj": 0.014498413245912268,
+   "ci_lo": -0.0034410278978659324,
+   "ci_hi": 0.03701286879337972,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 109
+  },
+  {
+   "model": "O3-2025-04-16 (scratchpad with freeze values)",
+   "n": 435,
+   "mean_adj": 0.014603447876890614,
+   "ci_lo": 0.008127660084228083,
+   "ci_hi": 0.02104327964688253,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 110
+  },
+  {
+   "model": "grok-4.3-high-web-x-search",
+   "n": 91,
+   "mean_adj": 0.014812435540481426,
+   "ci_lo": -0.007053708987430084,
+   "ci_hi": 0.0340301399895993,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 111
+  },
+  {
+   "model": "Claude-Opus-4-1-20250805 (scratchpad with freeze values)",
+   "n": 415,
+   "mean_adj": 0.014837244845497224,
+   "ci_lo": 0.007196746681118575,
+   "ci_hi": 0.023859594491906694,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 112
+  },
+  {
+   "model": "Anton",
+   "n": 201,
+   "mean_adj": 0.01510410973202638,
+   "ci_lo": 0.003829140942545889,
+   "ci_hi": 0.02766916149136916,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 113
+  },
+  {
+   "model": "glm-5.1-zero-shot-with-freeze-values",
+   "n": 56,
+   "mean_adj": 0.015151375858957277,
+   "ci_lo": 0.00308902817377424,
+   "ci_hi": 0.02865967723104871,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 114
+  },
+  {
+   "model": "Meta-Llama-3.1-405B-Instruct-Turbo (zero shot with freeze values)",
+   "n": 890,
+   "mean_adj": 0.015159487074843362,
+   "ci_lo": 0.008702964744083492,
+   "ci_hi": 0.022115434547913506,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 115
+  },
+  {
+   "model": "CAIR_0705_02",
+   "n": 60,
+   "mean_adj": 0.015304619442181245,
+   "ci_lo": -0.0051347389176194394,
+   "ci_hi": 0.03272771206122358,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 116
+  },
+  {
+   "model": "Gemini-2.5-Pro-Preview-03-25 (zero shot with freeze values)",
+   "n": 91,
+   "mean_adj": 0.015336205594780305,
+   "ci_lo": 0.0024136558217380303,
+   "ci_hi": 0.029814304794788977,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 117
+  },
+  {
+   "model": "GLM-4.7 (zero shot with freeze values)",
+   "n": 57,
+   "mean_adj": 0.01551977738418594,
+   "ci_lo": 0.0019586517210917714,
+   "ci_hi": 0.03121872407486578,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 118
+  },
+  {
+   "model": "bob-s",
+   "n": 60,
+   "mean_adj": 0.015808168664014577,
+   "ci_lo": -0.001288070287718779,
+   "ci_hi": 0.03362933514506883,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 119
+  },
+  {
+   "model": "gemini-3.5-flash-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.01585160012124855,
+   "ci_lo": 0.0022032866787512657,
+   "ci_hi": 0.03201000210764217,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 120
+  },
+  {
+   "model": "O4-Mini-2025-04-16 (scratchpad with freeze values)",
+   "n": 1796,
+   "mean_adj": 0.016036021497704115,
+   "ci_lo": 0.01150253449357542,
+   "ci_hi": 0.020896610050271207,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 121
+  },
+  {
+   "model": "gpt-5.5-2026-04-23-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.016078765791864708,
+   "ci_lo": 0.003379868325342909,
+   "ci_hi": 0.02936359669814431,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 122
+  },
+  {
+   "model": "WIND_02",
+   "n": 60,
+   "mean_adj": 0.016123159083864576,
+   "ci_lo": -0.0026233758922664424,
+   "ci_hi": 0.03381121119196119,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 123
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (zero shot with freeze values)",
+   "n": 1696,
+   "mean_adj": 0.01613212970926701,
+   "ci_lo": 0.011913213963025108,
+   "ci_hi": 0.020436392552255305,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 124
+  },
+  {
+   "model": "Claude-3-7-Sonnet-20250219 (zero shot with freeze values)",
+   "n": 3736,
+   "mean_adj": 0.0162088527949608,
+   "ci_lo": 0.013550636718416728,
+   "ci_hi": 0.01912127212355073,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 125
+  },
+  {
+   "model": "Mistral-Large-2407 (zero shot with freeze values)",
+   "n": 3101,
+   "mean_adj": 0.01655539838754259,
+   "ci_lo": 0.013450292191853255,
+   "ci_hi": 0.019757236512631823,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 126
+  },
+  {
+   "model": "Claude-Opus-4-20250514 (scratchpad with freeze values)",
+   "n": 433,
+   "mean_adj": 0.016745537138499595,
+   "ci_lo": 0.009702333854657205,
+   "ci_hi": 0.024459461298338068,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 127
+  },
+  {
+   "model": "WIND_01",
+   "n": 60,
+   "mean_adj": 0.016827332995581246,
+   "ci_lo": -0.0012166913194326331,
+   "ci_hi": 0.03448174894271484,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 128
+  },
+  {
+   "model": "claude-sonnet-4-6-adaptive-thinking-16000-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.016944535993884912,
+   "ci_lo": 0.0030994985089506594,
+   "ci_hi": 0.03261259956968807,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 129
+  },
+  {
+   "model": "vati-2.0-raw-market",
+   "n": 90,
+   "mean_adj": 0.01699917189627451,
+   "ci_lo": -0.0033173528600531086,
+   "ci_hi": 0.040808177868058695,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 130
+  },
+  {
+   "model": "Gemma-4-31B-It (zero shot with freeze values)",
+   "n": 584,
+   "mean_adj": 0.01712294212681937,
+   "ci_lo": 0.005728585909951895,
+   "ci_hi": 0.02864150875785815,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 131
+  },
+  {
+   "model": "GPT-5.5-2026-04-23 (zero shot with freeze values)",
+   "n": 295,
+   "mean_adj": 0.017129099707302923,
+   "ci_lo": 0.0044992810453142445,
+   "ci_hi": 0.02997790279110503,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 132
+  },
+  {
+   "model": "DeepSeek-V3 (scratchpad with freeze values)",
+   "n": 2176,
+   "mean_adj": 0.017272567667879657,
+   "ci_lo": 0.01419487771129147,
+   "ci_hi": 0.02071552715597003,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 133
+  },
+  {
+   "model": "Mistral-Large-2411 (zero shot with freeze values)",
+   "n": 1348,
+   "mean_adj": 0.017319053500862422,
+   "ci_lo": 0.012044758978388213,
+   "ci_hi": 0.02269625127424196,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 134
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20241022 (zero shot with freeze values)",
+   "n": 3074,
+   "mean_adj": 0.017434090936511618,
+   "ci_lo": 0.014100907555774297,
+   "ci_hi": 0.02086916462414669,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 135
+  },
+  {
+   "model": "O4-Mini-2025-04-16 (zero shot with freeze values)",
+   "n": 1789,
+   "mean_adj": 0.017442843238357902,
+   "ci_lo": 0.012816907006451706,
+   "ci_hi": 0.022355561446215012,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 136
+  },
+  {
+   "model": "gemma-4-31b-it-zero-shot-with-freeze-values",
+   "n": 91,
+   "mean_adj": 0.017611628128816323,
+   "ci_lo": 0.004755423685967,
+   "ci_hi": 0.033301152580461284,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 137
+  },
+  {
+   "model": "Gemini-2.0-Flash-Lite-001 (scratchpad with freeze values)",
+   "n": 822,
+   "mean_adj": 0.017775950554446293,
+   "ci_lo": 0.010482023940454391,
+   "ci_hi": 0.026044951578813254,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 138
+  },
+  {
+   "model": "ensemble",
+   "n": 685,
+   "mean_adj": 0.017789024365436973,
+   "ci_lo": 0.007177896104087619,
+   "ci_hi": 0.02780674657004955,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 139
+  },
+  {
+   "model": "gemini-3.1-pro-preview-high-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.01789580872115764,
+   "ci_lo": 0.004329971591844964,
+   "ci_hi": 0.03448722437175442,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 140
+  },
+  {
+   "model": "Llama-4-Maverick-17B-128E-Instruct-FP8 (scratchpad with freeze values)",
+   "n": 1721,
+   "mean_adj": 0.018023651171816958,
+   "ci_lo": 0.014127551930575239,
+   "ci_hi": 0.02220238435642303,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 141
+  },
+  {
+   "model": "vati-2.0-opus",
+   "n": 60,
+   "mean_adj": 0.01833129402419791,
+   "ci_lo": -0.0008964525630602594,
+   "ci_hi": 0.038462182598959276,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 142
+  },
+  {
+   "model": "grok-4.3-high-web-x-search-zero-shot-with-freeze-values",
+   "n": 89,
+   "mean_adj": 0.01841358619698992,
+   "ci_lo": 0.0059289968862878215,
+   "ci_hi": 0.03225314060397637,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 143
+  },
+  {
+   "model": "mantic-2026-03-01",
+   "n": 128,
+   "mean_adj": 0.01850331477101414,
+   "ci_lo": -0.011592336334148773,
+   "ci_hi": 0.04808280531646677,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 144
+  },
+  {
+   "model": "Grok-beta (scratchpad with freeze values)",
+   "n": 828,
+   "mean_adj": 0.01864214353628954,
+   "ci_lo": 0.012381777549529956,
+   "ci_hi": 0.02497635443626994,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 145
+  },
+  {
+   "model": "glm-5.2-zero-shot-with-freeze-values",
+   "n": 61,
+   "mean_adj": 0.018900393054314603,
+   "ci_lo": 0.0035718593475703568,
+   "ci_hi": 0.038680293749230134,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 146
+  },
+  {
+   "model": "Kimi-K2-Instruct (scratchpad with freeze values)",
+   "n": 903,
+   "mean_adj": 0.019029550337085196,
+   "ci_lo": 0.01263639764197731,
+   "ci_hi": 0.025713035426805884,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 147
+  },
+  {
+   "model": "gemini-3.1-pro-preview-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.019090472862571782,
+   "ci_lo": 0.0047034782268276015,
+   "ci_hi": 0.0365423847138582,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 148
+  },
+  {
+   "model": "MiniMax-M2.5 (zero shot with freeze values)",
+   "n": 67,
+   "mean_adj": 0.01911349398611493,
+   "ci_lo": 0.004178205425618445,
+   "ci_hi": 0.036855814671295145,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 149
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (scratchpad with freeze values)",
+   "n": 5386,
+   "mean_adj": 0.01918801730948415,
+   "ci_lo": 0.01649010231502243,
+   "ci_hi": 0.021996303037454448,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 150
+  },
+  {
+   "model": "Gemini-2.5-Flash (zero shot with freeze values)",
+   "n": 1003,
+   "mean_adj": 0.019394842213082727,
+   "ci_lo": 0.012955945176279652,
+   "ci_hi": 0.026411909328506965,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 151
+  },
+  {
+   "model": "Gemini-3.5-Flash (zero shot with freeze values)",
+   "n": 295,
+   "mean_adj": 0.0194258115717097,
+   "ci_lo": 0.004836790389557157,
+   "ci_hi": 0.034764803554559624,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 152
+  },
+  {
+   "model": "CAIR_0705_01",
+   "n": 60,
+   "mean_adj": 0.01946025747384791,
+   "ci_lo": 0.004052986835637692,
+   "ci_hi": 0.03624099505771501,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 153
+  },
+  {
+   "model": "Public median forecast",
+   "n": 57,
+   "mean_adj": 0.019980125152559224,
+   "ci_lo": 0.0010673827920289567,
+   "ci_hi": 0.03999937456441111,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 154
+  },
+  {
+   "model": "Kimi-K2-Instruct (zero shot with freeze values)",
+   "n": 1557,
+   "mean_adj": 0.02022739280977412,
+   "ci_lo": 0.0151369047117858,
+   "ci_hi": 0.02558800150835733,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 155
+  },
+  {
+   "model": "claude-sonnet-5-adaptive-thinking-16000-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.020251692559541477,
+   "ci_lo": 0.0050245672679739796,
+   "ci_hi": 0.037850573162039367,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 156
+  },
+  {
+   "model": "Magistral-Medium-2506 (scratchpad with freeze values)",
+   "n": 1280,
+   "mean_adj": 0.02038921014921523,
+   "ci_lo": 0.014859768418774283,
+   "ci_hi": 0.026215488526376743,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 157
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (scratchpad with freeze values)",
+   "n": 1695,
+   "mean_adj": 0.02054271640778755,
+   "ci_lo": 0.01618034006459063,
+   "ci_hi": 0.025082756888066236,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 158
+  },
+  {
+   "model": "claude-sonnet-4-6-1024-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.020584411798073136,
+   "ci_lo": 0.0064200383402258625,
+   "ci_hi": 0.0354249837944033,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 159
+  },
+  {
+   "model": "Qwen2.5-72B-Instruct-Turbo (zero shot with freeze values)",
+   "n": 890,
+   "mean_adj": 0.02068640384850775,
+   "ci_lo": 0.01529490068746618,
+   "ci_hi": 0.02646437893001313,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 160
+  },
+  {
+   "model": "GLM-5.1 (zero shot with freeze values)",
+   "n": 573,
+   "mean_adj": 0.020826312137937567,
+   "ci_lo": 0.009301847656889437,
+   "ci_hi": 0.03264319329078236,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 161
+  },
+  {
+   "model": "grok-4.20-0309-reasoning-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.020876106700955615,
+   "ci_lo": 0.006618152292409099,
+   "ci_hi": 0.037208410390883837,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 162
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (zero shot with freeze values)",
+   "n": 2402,
+   "mean_adj": 0.021054084549455256,
+   "ci_lo": 0.016438959764768928,
+   "ci_hi": 0.026033194130899173,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 163
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20241022 (scratchpad with freeze values)",
+   "n": 3022,
+   "mean_adj": 0.021123761275820618,
+   "ci_lo": 0.017115725767451996,
+   "ci_hi": 0.02506275198064756,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 164
+  },
+  {
+   "model": "DeepSeek-V3 (zero shot with freeze values)",
+   "n": 2190,
+   "mean_adj": 0.021228227915451016,
+   "ci_lo": 0.017347264355633656,
+   "ci_hi": 0.02547794344228225,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 165
+  },
+  {
+   "model": "Qwen3-235B-A22B-Thinking-2507 (zero shot with freeze values)",
+   "n": 763,
+   "mean_adj": 0.021625173659422948,
+   "ci_lo": 0.011188648299116546,
+   "ci_hi": 0.03251772912414954,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 166
+  },
+  {
+   "model": "GLM-5 (zero shot with freeze values)",
+   "n": 441,
+   "mean_adj": 0.02171495385304576,
+   "ci_lo": 0.012263812652134285,
+   "ci_hi": 0.0317713283857066,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 167
+  },
+  {
+   "model": "Llama-4-Scout-17B-16E-Instruct (scratchpad with freeze values)",
+   "n": 1733,
+   "mean_adj": 0.02187608983084444,
+   "ci_lo": 0.01773452357827762,
+   "ci_hi": 0.026235332704026296,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 168
+  },
+  {
+   "model": "Llama-3.3-70B-Instruct-Turbo (zero shot with freeze values)",
+   "n": 3022,
+   "mean_adj": 0.022063488947892812,
+   "ci_lo": 0.01812873551844252,
+   "ci_hi": 0.026421234565720004,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 169
+  },
+  {
+   "model": "carb-bomb-nano",
+   "n": 90,
+   "mean_adj": 0.022124357319674517,
+   "ci_lo": 0.003341211323328947,
+   "ci_hi": 0.04362767559757854,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 170
+  },
+  {
+   "model": "kimi-k2.6-16000-zero-shot-with-freeze-values",
+   "n": 83,
+   "mean_adj": 0.022397449772200907,
+   "ci_lo": 0.00642374701468074,
+   "ci_hi": 0.04036990297242029,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 171
+  },
+  {
+   "model": "capella",
+   "n": 112,
+   "mean_adj": 0.022634428925021672,
+   "ci_lo": 0.00538544240379738,
+   "ci_hi": 0.04009895854882703,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 172
+  },
+  {
+   "model": "GPT-4.1-2025-04-14 (zero shot with freeze values)",
+   "n": 4057,
+   "mean_adj": 0.022706563265006804,
+   "ci_lo": 0.01905305542958172,
+   "ci_hi": 0.02647490286054755,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 173
+  },
+  {
+   "model": "Gemini-2.5-Flash-Preview-04-17 (zero shot with freeze values)",
+   "n": 421,
+   "mean_adj": 0.022888358372529952,
+   "ci_lo": 0.01426969560154113,
+   "ci_hi": 0.03254656441387823,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 174
+  },
+  {
+   "model": "vati-2.0",
+   "n": 189,
+   "mean_adj": 0.02300256065531382,
+   "ci_lo": 0.008445832030938323,
+   "ci_hi": 0.039028819415029656,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 175
+  },
+  {
+   "model": "Kimi-K2-Thinking (zero shot with freeze values)",
+   "n": 123,
+   "mean_adj": 0.023011925140235034,
+   "ci_lo": 0.0010477195259030005,
+   "ci_hi": 0.04985416133402246,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 176
+  },
+  {
+   "model": "rigel",
+   "n": 108,
+   "mean_adj": 0.023291496246133594,
+   "ci_lo": 0.00019173142198162423,
+   "ci_hi": 0.04551223551853131,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 177
+  },
+  {
+   "model": "claude-opus-4-8-adaptive-thinking-high-24000-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.023352844074692996,
+   "ci_lo": 0.0025718299850664016,
+   "ci_hi": 0.04681175468277449,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 178
+  },
+  {
+   "model": "polaris",
+   "n": 209,
+   "mean_adj": 0.02345919341729853,
+   "ci_lo": 0.012044760986144253,
+   "ci_hi": 0.03713942268248749,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 179
+  },
+  {
+   "model": "GPT-5-Mini-2025-08-07 (zero shot with freeze values)",
+   "n": 2223,
+   "mean_adj": 0.02424863321007289,
+   "ci_lo": 0.018541115548311775,
+   "ci_hi": 0.02979868221673402,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 180
+  },
+  {
+   "model": "Mistral-Large-2411 (scratchpad with freeze values)",
+   "n": 1347,
+   "mean_adj": 0.024520630068128723,
+   "ci_lo": 0.019871531492121883,
+   "ci_hi": 0.029811153464645572,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 181
+  },
+  {
+   "model": "Kimi-K2-Instruct-0905 (zero shot with freeze values)",
+   "n": 782,
+   "mean_adj": 0.02478214396549199,
+   "ci_lo": 0.015563943037556703,
+   "ci_hi": 0.03498189877469941,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 182
+  },
+  {
+   "model": "GPT-5.1-2025-11-13 (zero shot with freeze values)",
+   "n": 1158,
+   "mean_adj": 0.02558037410784583,
+   "ci_lo": 0.018508163527549793,
+   "ci_hi": 0.03307575246461393,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 183
+  },
+  {
+   "model": "GPT-5.4-2026-03-05 (zero shot with freeze values)",
+   "n": 750,
+   "mean_adj": 0.025611795444258047,
+   "ci_lo": 0.014686768694995725,
+   "ci_hi": 0.03655889250189309,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 184
+  },
+  {
+   "model": "bob",
+   "n": 60,
+   "mean_adj": 0.025648101997347905,
+   "ci_lo": 0.007084693121337465,
+   "ci_hi": 0.04598586499841975,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 185
+  },
+  {
+   "model": "Claude-Opus-4-7 (zero shot with freeze values)",
+   "n": 295,
+   "mean_adj": 0.025800714114082586,
+   "ci_lo": 0.00943984999335859,
+   "ci_hi": 0.04406243710906111,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 186
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (scratchpad with freeze values)",
+   "n": 2392,
+   "mean_adj": 0.02581981243782335,
+   "ci_lo": 0.02128811644987744,
+   "ci_hi": 0.03093757793190969,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 187
+  },
+  {
+   "model": "Claude-Opus-4-6 (zero shot with freeze values)",
+   "n": 688,
+   "mean_adj": 0.026165943658757934,
+   "ci_lo": 0.0160712984454809,
+   "ci_hi": 0.036165026709732734,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 188
+  },
+  {
+   "model": "Grok-4.3 (zero shot with freeze values)",
+   "n": 397,
+   "mean_adj": 0.026501096289858115,
+   "ci_lo": 0.011948169990513976,
+   "ci_hi": 0.04132509215870118,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 189
+  },
+  {
+   "model": "gemini-3.1-pro-preview-high-web-search-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.026625866801965718,
+   "ci_lo": 0.00947010992819909,
+   "ci_hi": 0.045732618056725995,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 190
+  },
+  {
+   "model": "denim-shears",
+   "n": 60,
+   "mean_adj": 0.02675745199734791,
+   "ci_lo": -0.0035155008775589777,
+   "ci_hi": 0.06941093126781693,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 191
+  },
+  {
+   "model": "minimax-m3-adaptive-thinking-12000-zero-shot-with-freeze-values",
+   "n": 98,
+   "mean_adj": 0.02679186843124865,
+   "ci_lo": 0.010387091104190801,
+   "ci_hi": 0.04729834766818835,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 192
+  },
+  {
+   "model": "jforecast-router",
+   "n": 99,
+   "mean_adj": 0.02682639892317783,
+   "ci_lo": 0.01082237239622609,
+   "ci_hi": 0.04413129775837842,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 193
+  },
+  {
+   "model": "sonnet_search_nocrowd",
+   "n": 128,
+   "mean_adj": 0.027229966346871984,
+   "ci_lo": -0.011139550713869307,
+   "ci_hi": 0.06810683410778523,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 194
+  },
+  {
+   "model": "wyrm-warlord-nano",
+   "n": 90,
+   "mean_adj": 0.027325401764118955,
+   "ci_lo": 0.006510030957938695,
+   "ci_hi": 0.05151520881386097,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 195
+  },
+  {
+   "model": "cosmic",
+   "n": 60,
+   "mean_adj": 0.027331822462711992,
+   "ci_lo": -0.019103736801994915,
+   "ci_hi": 0.07955868960746246,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 196
+  },
+  {
+   "model": "foresight-v3-05-2026",
+   "n": 204,
+   "mean_adj": 0.02748886355961767,
+   "ci_lo": 0.004846293647971112,
+   "ci_hi": 0.05168442239036205,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 197
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (zero shot with freeze values)",
+   "n": 2399,
+   "mean_adj": 0.027676558198027446,
+   "ci_lo": 0.02330341465880675,
+   "ci_hi": 0.032327810135676316,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 198
+  },
+  {
+   "model": "Grok-4.20-0309-Reasoning (zero shot with freeze values)",
+   "n": 501,
+   "mean_adj": 0.027794456217982627,
+   "ci_lo": 0.014791600868718243,
+   "ci_hi": 0.0410800685079806,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 199
+  },
+  {
+   "model": "Qwen2.5-72B-Instruct-Turbo (scratchpad with freeze values)",
+   "n": 883,
+   "mean_adj": 0.027819444676826337,
+   "ci_lo": 0.021917000285028423,
+   "ci_hi": 0.033995214768693695,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 200
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (zero shot with freeze values)",
+   "n": 5934,
+   "mean_adj": 0.029217009350064962,
+   "ci_lo": 0.025734605838887946,
+   "ci_hi": 0.03272692787909194,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 201
+  },
+  {
+   "model": "GPT-4o (scratchpad with freeze values)",
+   "n": 563,
+   "mean_adj": 0.029411471537647112,
+   "ci_lo": 0.01948071298502742,
+   "ci_hi": 0.039808896134722625,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 202
+  },
+  {
+   "model": "grok-4.3-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.02962164205449097,
+   "ci_lo": 0.011274038382027568,
+   "ci_hi": 0.0518809528898571,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 203
+  },
+  {
+   "model": "arcturus",
+   "n": 220,
+   "mean_adj": 0.03040446598493116,
+   "ci_lo": 0.014019723244376107,
+   "ci_hi": 0.048129264725862216,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 204
+  },
+  {
+   "model": "O3-2025-04-16 (scratchpad)",
+   "n": 434,
+   "mean_adj": 0.030525318429588517,
+   "ci_lo": 0.018839285289655408,
+   "ci_hi": 0.042990188797052964,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 205
+  },
+  {
+   "model": "vati-2.0-soft-market",
+   "n": 90,
+   "mean_adj": 0.03077866691150784,
+   "ci_lo": 0.011684325436065887,
+   "ci_hi": 0.05500793999115777,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 206
+  },
+  {
+   "model": "Grok-beta (zero shot)",
+   "n": 825,
+   "mean_adj": 0.030834264337891718,
+   "ci_lo": 0.021180779120342868,
+   "ci_hi": 0.04063113364820549,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 207
+  },
+  {
+   "model": "Mistral-Large-2407 (scratchpad with freeze values)",
+   "n": 3092,
+   "mean_adj": 0.03094330288538499,
+   "ci_lo": 0.027063641003390083,
+   "ci_hi": 0.0347955198445578,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 208
+  },
+  {
+   "model": "claude-sonnet-4-5-20250929-1024-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.03106153094337986,
+   "ci_lo": 0.009718613948099827,
+   "ci_hi": 0.05636504674450418,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 209
+  },
+  {
+   "model": "claude-opus-4-7-1024-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.03200144003428895,
+   "ci_lo": 0.011525913371031348,
+   "ci_hi": 0.05521598295780994,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 210
+  },
+  {
+   "model": "Claude-3-7-Sonnet-20250219 (scratchpad)",
+   "n": 3029,
+   "mean_adj": 0.032490288983061354,
+   "ci_lo": 0.028514158041277157,
+   "ci_hi": 0.03662357256963866,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 211
+  },
+  {
+   "model": "PAUL",
+   "n": 107,
+   "mean_adj": 0.0325581450909148,
+   "ci_lo": 0.004588204337664631,
+   "ci_hi": 0.05925351227750052,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 212
+  },
+  {
+   "model": "Grok-4.20-Beta-0309-Reasoning (zero shot with freeze values)",
+   "n": 246,
+   "mean_adj": 0.03269157556091152,
+   "ci_lo": 0.015500286728708559,
+   "ci_hi": 0.050264964765811514,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 213
+  },
+  {
+   "model": "Gemini-3.1-Flash-Lite (zero shot with freeze values)",
+   "n": 288,
+   "mean_adj": 0.033803700270878104,
+   "ci_lo": 0.015975660924511532,
+   "ci_hi": 0.05566686294213741,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 214
+  },
+  {
+   "model": "gpt-5.4-2026-03-05-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.034110126902975824,
+   "ci_lo": 0.0018466234600454014,
+   "ci_hi": 0.07038474241264525,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 215
+  },
+  {
+   "model": "gemini-3.1-flash-lite-zero-shot-with-freeze-values",
+   "n": 98,
+   "mean_adj": 0.03467287271622294,
+   "ci_lo": 0.007782686494288406,
+   "ci_hi": 0.06760590411776443,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 216
+  },
+  {
+   "model": "skipper-morgan-nano",
+   "n": 90,
+   "mean_adj": 0.034995268430785625,
+   "ci_lo": 0.008456774927574793,
+   "ci_hi": 0.06881976139987439,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 217
+  },
+  {
+   "model": "gemini-3.1-pro-preview-high-web-search",
+   "n": 99,
+   "mean_adj": 0.03512366225651117,
+   "ci_lo": 0.008550644142781729,
+   "ci_hi": 0.0665572035773178,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 218
+  },
+  {
+   "model": "Grok-4-Fast-Non-Reasoning (zero shot with freeze values)",
+   "n": 1059,
+   "mean_adj": 0.03586454177937452,
+   "ci_lo": 0.0276786599054163,
+   "ci_hi": 0.045067028473380906,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 219
+  },
+  {
+   "model": "Grok-4-1-Fast-Non-Reasoning (zero shot with freeze values)",
+   "n": 1191,
+   "mean_adj": 0.0359551406350064,
+   "ci_lo": 0.027575829392501992,
+   "ci_hi": 0.04476997569233103,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 220
+  },
+  {
+   "model": "bootis",
+   "n": 212,
+   "mean_adj": 0.03601721003762072,
+   "ci_lo": 0.021571560055095515,
+   "ci_hi": 0.05231390105544928,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 221
+  },
+  {
+   "model": "Claude-Opus-4-1-20250805 (zero shot with freeze values)",
+   "n": 2051,
+   "mean_adj": 0.0361902532073191,
+   "ci_lo": 0.028717132324631946,
+   "ci_hi": 0.043497238223978454,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 222
+  },
+  {
+   "model": "GPT-5.4-Mini-2026-03-17 (zero shot with freeze values)",
+   "n": 750,
+   "mean_adj": 0.03624662467092471,
+   "ci_lo": 0.02418678907437548,
+   "ci_hi": 0.049131750549518856,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 223
+  },
+  {
+   "model": "Claude-Opus-4-8 (zero shot with freeze values)",
+   "n": 193,
+   "mean_adj": 0.03700198171456821,
+   "ci_lo": 0.009617155505235415,
+   "ci_hi": 0.06589146188765173,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 224
+  },
+  {
+   "model": "alice-s",
+   "n": 90,
+   "mean_adj": 0.037521112875230064,
+   "ci_lo": 0.007027245892479528,
+   "ci_hi": 0.07074479483873745,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 225
+  },
+  {
+   "model": "claude-haiku-4-5-20251001-1024-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.037622924882773794,
+   "ci_lo": 0.013929628485525578,
+   "ci_hi": 0.06872990721774054,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 226
+  },
+  {
+   "model": "gpt-5-mini-2025-08-07-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.03791255367065259,
+   "ci_lo": 0.015904053217439318,
+   "ci_hi": 0.06484453941487904,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 227
+  },
+  {
+   "model": "Claude-Opus-4-1-20250805 (scratchpad)",
+   "n": 411,
+   "mean_adj": 0.03902451047447451,
+   "ci_lo": 0.023206628911788853,
+   "ci_hi": 0.05538577410613025,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 228
+  },
+  {
+   "model": "Gemini-3.1-Flash-Lite-Preview (zero shot with freeze values)",
+   "n": 449,
+   "mean_adj": 0.0395583793816347,
+   "ci_lo": 0.02297163672827247,
+   "ci_hi": 0.05720761683366429,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 229
+  },
+  {
+   "model": "calibra",
+   "n": 402,
+   "mean_adj": 0.04023220215589746,
+   "ci_lo": 0.025013161375421766,
+   "ci_hi": 0.05609547961958273,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 230
+  },
+  {
+   "model": "GPT-4.5-Preview-2025-02-27 (scratchpad)",
+   "n": 913,
+   "mean_adj": 0.040455228729957195,
+   "ci_lo": 0.03194653171321366,
+   "ci_hi": 0.04839658198856446,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 231
+  },
+  {
+   "model": "DeepSeek-R1 (scratchpad)",
+   "n": 1953,
+   "mean_adj": 0.04049242643818096,
+   "ci_lo": 0.03512267783152438,
+   "ci_hi": 0.0459099728783459,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 232
+  },
+  {
+   "model": "Gemini-2.0-Flash-Lite-001 (zero shot with freeze values)",
+   "n": 827,
+   "mean_adj": 0.04065891226397447,
+   "ci_lo": 0.029282837855165417,
+   "ci_hi": 0.05175757825547839,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 233
+  },
+  {
+   "model": "minimax-m2.7-12000-zero-shot-with-freeze-values",
+   "n": 95,
+   "mean_adj": 0.04159379354983203,
+   "ci_lo": 0.016948291117949158,
+   "ci_hi": 0.07171542894088753,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 234
+  },
+  {
+   "model": "GPT-4o-2024-11-20 (zero shot with freeze values with web search)",
+   "n": 458,
+   "mean_adj": 0.04159506065138784,
+   "ci_lo": 0.027593488356833253,
+   "ci_hi": 0.056357882919962375,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 235
+  },
+  {
+   "model": "copper-teapot",
+   "n": 102,
+   "mean_adj": 0.04162665372294419,
+   "ci_lo": -0.0034930594922648757,
+   "ci_hi": 0.09194967058984042,
+   "verdict": "indistinguishable",
+   "is_reference": false,
+   "rank": 236
+  },
+  {
+   "model": "open-flash-med-search05-tools11-data",
+   "n": 127,
+   "mean_adj": 0.04183136611080509,
+   "ci_lo": 0.016911779778629038,
+   "ci_hi": 0.06635709636482226,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 237
+  },
+  {
+   "model": "Kimi-K2-Thinking (zero shot)",
+   "n": 209,
+   "mean_adj": 0.0418923233550125,
+   "ci_lo": 0.01413909070340611,
+   "ci_hi": 0.07080827544274065,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 238
+  },
+  {
+   "model": "tungsten-feather",
+   "n": 60,
+   "mean_adj": 0.04196624966401456,
+   "ci_lo": 0.01438367686359058,
+   "ci_hi": 0.08106569809772368,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 239
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20241022 (scratchpad)",
+   "n": 3026,
+   "mean_adj": 0.04328780959288931,
+   "ci_lo": 0.03833221590656966,
+   "ci_hi": 0.047920834198344434,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 240
+  },
+  {
+   "model": "Llama-3-70b-Chat-Hf (zero shot with freeze values)",
+   "n": 1514,
+   "mean_adj": 0.04452147483556317,
+   "ci_lo": 0.0364501577843711,
+   "ci_hi": 0.0519521939712986,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 241
+  },
+  {
+   "model": "canopus",
+   "n": 220,
+   "mean_adj": 0.04492924133720389,
+   "ci_lo": 0.026619938154892962,
+   "ci_hi": 0.06328923259665185,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 242
+  },
+  {
+   "model": "DeepSeek-V3.1 (zero shot with freeze values)",
+   "n": 1514,
+   "mean_adj": 0.04519349855268007,
+   "ci_lo": 0.03702732622892078,
+   "ci_hi": 0.05400437679425354,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 243
+  },
+  {
+   "model": "centauri",
+   "n": 214,
+   "mean_adj": 0.045470694412078766,
+   "ci_lo": 0.029274141575566244,
+   "ci_hi": 0.06163974992211103,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 244
+  },
+  {
+   "model": "claude-opus-4-8-1024-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.04621027841812733,
+   "ci_lo": 0.017147395081208473,
+   "ci_hi": 0.08083101268297448,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 245
+  },
+  {
+   "model": "O4-Mini-2025-04-16 (scratchpad)",
+   "n": 1793,
+   "mean_adj": 0.04628892565648558,
+   "ci_lo": 0.039332440114010866,
+   "ci_hi": 0.05338155409349259,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 246
+  },
+  {
+   "model": "orcas",
+   "n": 172,
+   "mean_adj": 0.0466006152653428,
+   "ci_lo": 0.01713655273575345,
+   "ci_hi": 0.08003307136201081,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 247
+  },
+  {
+   "model": "O4-Mini-2025-04-16 (zero shot)",
+   "n": 1789,
+   "mean_adj": 0.0473445232714902,
+   "ci_lo": 0.03943861069937243,
+   "ci_hi": 0.05476486501391967,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 248
+  },
+  {
+   "model": "Ensemble",
+   "n": 382,
+   "mean_adj": 0.047383717764038435,
+   "ci_lo": 0.032945477688733064,
+   "ci_hi": 0.06214655214391055,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 249
+  },
+  {
+   "model": "Gemini-2.5-Flash-Preview-04-17 (scratchpad)",
+   "n": 422,
+   "mean_adj": 0.047472866423017956,
+   "ci_lo": 0.03405473612818066,
+   "ci_hi": 0.06180928905877259,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 250
+  },
+  {
+   "model": "DeepSeek-V4-Pro (zero shot with freeze values)",
+   "n": 209,
+   "mean_adj": 0.04777111657030367,
+   "ci_lo": 0.021409301356902825,
+   "ci_hi": 0.07697321217338635,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 251
+  },
+  {
+   "model": "GPT-4o-2024-11-20 (scratchpad with freeze values with web search)",
+   "n": 454,
+   "mean_adj": 0.04817445554970428,
+   "ci_lo": 0.03551565577153935,
+   "ci_hi": 0.06251495313882771,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 252
+  },
+  {
+   "model": "GPT-4.1-2025-04-14 (scratchpad)",
+   "n": 2231,
+   "mean_adj": 0.04832283326117706,
+   "ci_lo": 0.04108521531779139,
+   "ci_hi": 0.055499620586545895,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 253
+  },
+  {
+   "model": "GPT-4o (scratchpad with news with freeze values)",
+   "n": 565,
+   "mean_adj": 0.048393360735643834,
+   "ci_lo": 0.036524450064458064,
+   "ci_hi": 0.060754739811311784,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 254
+  },
+  {
+   "model": "alice",
+   "n": 90,
+   "mean_adj": 0.04876402398634117,
+   "ci_lo": 0.006806253475674397,
+   "ci_hi": 0.09507302960898956,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 255
+  },
+  {
+   "model": "GLM-4.5-Air-FP8 (scratchpad)",
+   "n": 328,
+   "mean_adj": 0.049026889654631506,
+   "ci_lo": 0.031692952723228154,
+   "ci_hi": 0.06620661003878212,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 256
+  },
+  {
+   "model": "O3-2025-04-16 (zero shot)",
+   "n": 1039,
+   "mean_adj": 0.04905095706380494,
+   "ci_lo": 0.0380928837381454,
+   "ci_hi": 0.05971959563134007,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 257
+  },
+  {
+   "model": "Llama-3.2-3B-Instruct-Turbo (zero shot)",
+   "n": 277,
+   "mean_adj": 0.049059521538610505,
+   "ci_lo": 0.019705475685202378,
+   "ci_hi": 0.07944152004005452,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 258
+  },
+  {
+   "model": "bigdipper",
+   "n": 112,
+   "mean_adj": 0.05071362981787881,
+   "ci_lo": 0.016801417469442078,
+   "ci_hi": 0.08977369376274395,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 259
+  },
+  {
+   "model": "Llama-3.3-70B-Instruct-Turbo (zero shot)",
+   "n": 2997,
+   "mean_adj": 0.051510548851809945,
+   "ci_lo": 0.04675557432151914,
+   "ci_hi": 0.056537348993630936,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 260
+  },
+  {
+   "model": "GPT-4-0613 (zero shot with freeze values)",
+   "n": 566,
+   "mean_adj": 0.0518480145009956,
+   "ci_lo": 0.038635732479531434,
+   "ci_hi": 0.06519537395434255,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 261
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (scratchpad with news with freeze values)",
+   "n": 561,
+   "mean_adj": 0.05238812646773786,
+   "ci_lo": 0.03894628869962114,
+   "ci_hi": 0.06518554589984718,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 262
+  },
+  {
+   "model": "Claude-Sonnet-4-20250514 (scratchpad)",
+   "n": 847,
+   "mean_adj": 0.05266508201606329,
+   "ci_lo": 0.041962814645032175,
+   "ci_hi": 0.06347499197439933,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 263
+  },
+  {
+   "model": "GLM-4.5-Air-FP8 (zero shot with freeze values)",
+   "n": 637,
+   "mean_adj": 0.05269502778620132,
+   "ci_lo": 0.036126257951219556,
+   "ci_hi": 0.06794915677960832,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 264
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20241022 (zero shot)",
+   "n": 3055,
+   "mean_adj": 0.052972184014211096,
+   "ci_lo": 0.04713598202766501,
+   "ci_hi": 0.058922693347881014,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 265
+  },
+  {
+   "model": "gpt-5.4-nano-2026-03-17-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.052996238014086934,
+   "ci_lo": 0.021415280848296133,
+   "ci_hi": 0.08992851751758664,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 266
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (scratchpad with freeze values)",
+   "n": 2391,
+   "mean_adj": 0.05336959787276555,
+   "ci_lo": 0.04795546349559807,
+   "ci_hi": 0.05911150249488947,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 267
+  },
+  {
+   "model": "Meta-Llama-3.1-405B-Instruct-Turbo (zero shot)",
+   "n": 880,
+   "mean_adj": 0.05339791540852259,
+   "ci_lo": 0.04370934011271814,
+   "ci_hi": 0.06359927571249667,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 268
+  },
+  {
+   "model": "orion",
+   "n": 165,
+   "mean_adj": 0.0538684044592403,
+   "ci_lo": 0.023321462017497307,
+   "ci_hi": 0.08709034108573882,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 269
+  },
+  {
+   "model": "Qwen3-235B-A22B-Fp8-Tput (scratchpad)",
+   "n": 2337,
+   "mean_adj": 0.05440293872906703,
+   "ci_lo": 0.04804311172620649,
+   "ci_hi": 0.060604312766734204,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 270
+  },
+  {
+   "model": "GPT-4.5-Preview-2025-02-27 (zero shot)",
+   "n": 924,
+   "mean_adj": 0.05451947621230552,
+   "ci_lo": 0.04351458048747083,
+   "ci_hi": 0.06518536156265871,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 271
+  },
+  {
+   "model": "QwQ-32B-Preview (scratchpad)",
+   "n": 1197,
+   "mean_adj": 0.054640093423205034,
+   "ci_lo": 0.04707708193570804,
+   "ci_hi": 0.06272875009260387,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 272
+  },
+  {
+   "model": "Claude-Opus-4-20250514 (scratchpad)",
+   "n": 432,
+   "mean_adj": 0.05469989556371574,
+   "ci_lo": 0.0416637882412169,
+   "ci_hi": 0.06836327689421824,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 273
+  },
+  {
+   "model": "Grok-beta (scratchpad)",
+   "n": 827,
+   "mean_adj": 0.05583216620463685,
+   "ci_lo": 0.047942690847554245,
+   "ci_hi": 0.06380427805227654,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 274
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (zero shot)",
+   "n": 1698,
+   "mean_adj": 0.05631852901030945,
+   "ci_lo": 0.04948188462174321,
+   "ci_hi": 0.0628219799916646,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 275
+  },
+  {
+   "model": "Llama-3-70b-Chat-Hf (scratchpad with freeze values)",
+   "n": 1512,
+   "mean_adj": 0.056386428695210336,
+   "ci_lo": 0.04991997083556089,
+   "ci_hi": 0.06326350788460398,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 276
+  },
+  {
+   "model": "Gemini-2.0-Flash-Lite-001 (scratchpad)",
+   "n": 825,
+   "mean_adj": 0.0580167604850927,
+   "ci_lo": 0.04861809565041707,
+   "ci_hi": 0.06788549600728755,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 277
+  },
+  {
+   "model": "claude-3-5-haiku-20241022",
+   "n": 439,
+   "mean_adj": 0.058131022938018403,
+   "ci_lo": 0.04555500313930366,
+   "ci_hi": 0.0708588619581731,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 278
+  },
+  {
+   "model": "Llama-4-Scout-17B-16E-Instruct (scratchpad)",
+   "n": 1725,
+   "mean_adj": 0.05865498267404176,
+   "ci_lo": 0.05192122703594448,
+   "ci_hi": 0.06547563154566582,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 279
+  },
+  {
+   "model": "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) geometric mean with news",
+   "n": 239,
+   "mean_adj": 0.058780769687716346,
+   "ci_lo": 0.04282552447104786,
+   "ci_hi": 0.07289503524785401,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 280
+  },
+  {
+   "model": "pro-high-brave-c1-t1",
+   "n": 119,
+   "mean_adj": 0.0588110070587408,
+   "ci_lo": 0.023474606157322133,
+   "ci_hi": 0.09434239031919926,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 281
+  },
+  {
+   "model": "GPT-5-Nano-2025-08-07 (zero shot with freeze values)",
+   "n": 2226,
+   "mean_adj": 0.05940982695290519,
+   "ci_lo": 0.05098760227595125,
+   "ci_hi": 0.06767919972793983,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 282
+  },
+  {
+   "model": "DeepSeek-V3 (scratchpad)",
+   "n": 2175,
+   "mean_adj": 0.06042986632986845,
+   "ci_lo": 0.0548112362583789,
+   "ci_hi": 0.06624605252020432,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 283
+  },
+  {
+   "model": "Gemini-2.5-Flash-Preview-04-17 (zero shot)",
+   "n": 422,
+   "mean_adj": 0.060612872158489414,
+   "ci_lo": 0.0441586651878843,
+   "ci_hi": 0.07775545919887866,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 284
+  },
+  {
+   "model": "GLM-4.6 (zero shot)",
+   "n": 72,
+   "mean_adj": 0.06090626019378457,
+   "ci_lo": 0.017566451779140076,
+   "ci_hi": 0.10806088368911607,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 285
+  },
+  {
+   "model": "Kimi-K2-Instruct (scratchpad)",
+   "n": 901,
+   "mean_adj": 0.061323662183314157,
+   "ci_lo": 0.04949516287674371,
+   "ci_hi": 0.07346655315345467,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 286
+  },
+  {
+   "model": "sirius",
+   "n": 204,
+   "mean_adj": 0.06155323074812062,
+   "ci_lo": 0.038903099139898076,
+   "ci_hi": 0.08359837246196317,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 287
+  },
+  {
+   "model": "Gemini-1.5-Flash (zero shot with freeze values)",
+   "n": 565,
+   "mean_adj": 0.061902624331028215,
+   "ci_lo": 0.04647928885988123,
+   "ci_hi": 0.07790108467130205,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 288
+  },
+  {
+   "model": "Gemini-2.5-Pro-Preview-03-25 (zero shot)",
+   "n": 154,
+   "mean_adj": 0.06324469906421976,
+   "ci_lo": 0.03605155547186246,
+   "ci_hi": 0.09473261577149153,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 289
+  },
+  {
+   "model": "Claude-Opus-4-5-20251101 (zero shot)",
+   "n": 335,
+   "mean_adj": 0.0633870465411777,
+   "ci_lo": 0.04206136741023407,
+   "ci_hi": 0.08530771077468498,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 290
+  },
+  {
+   "model": "Grok-4-0709 (zero shot)",
+   "n": 662,
+   "mean_adj": 0.06445873816074142,
+   "ci_lo": 0.05082877248573657,
+   "ci_hi": 0.07889771076043554,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 291
+  },
+  {
+   "model": "Llama-4-Maverick-17B-128E-Instruct-FP8 (scratchpad)",
+   "n": 1707,
+   "mean_adj": 0.06454644014078256,
+   "ci_lo": 0.05827441114154473,
+   "ci_hi": 0.07053985926943315,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 292
+  },
+  {
+   "model": "Meta-Llama-3.1-405B-Instruct-Turbo (scratchpad)",
+   "n": 880,
+   "mean_adj": 0.06458983185751734,
+   "ci_lo": 0.05586061015719293,
+   "ci_hi": 0.07362215394242504,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 293
+  },
+  {
+   "model": "Llama-4-Scout-17B-16E-Instruct (zero shot with freeze values)",
+   "n": 2167,
+   "mean_adj": 0.06496013855111613,
+   "ci_lo": 0.057625006627736286,
+   "ci_hi": 0.07264409416992085,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 294
+  },
+  {
+   "model": "GPT-5-2025-08-07 (zero shot)",
+   "n": 635,
+   "mean_adj": 0.06531323370414324,
+   "ci_lo": 0.049226041772171866,
+   "ci_hi": 0.08199914585279171,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 295
+  },
+  {
+   "model": "gpt-5.4-mini-2026-03-17-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.06570767235752127,
+   "ci_lo": 0.028987471240918997,
+   "ci_hi": 0.10906769382107367,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 296
+  },
+  {
+   "model": "Llama-3.2-3B-Instruct-Turbo (zero shot with freeze values)",
+   "n": 439,
+   "mean_adj": 0.06589838789892098,
+   "ci_lo": 0.040680462637799425,
+   "ci_hi": 0.09363235567121364,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 297
+  },
+  {
+   "model": "Gemini-3-Pro-Preview (zero shot)",
+   "n": 689,
+   "mean_adj": 0.06598866445390542,
+   "ci_lo": 0.047587710336414756,
+   "ci_hi": 0.08431270995355553,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 298
+  },
+  {
+   "model": "GPT-4o-2024-11-20 (scratchpad with web search)",
+   "n": 456,
+   "mean_adj": 0.06603775218837052,
+   "ci_lo": 0.05365739971724362,
+   "ci_hi": 0.07911490644088323,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 299
+  },
+  {
+   "model": "Claude-3-7-Sonnet-20250219 (zero shot)",
+   "n": 3727,
+   "mean_adj": 0.06620407701831393,
+   "ci_lo": 0.06104358537195396,
+   "ci_hi": 0.07151982869710234,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 300
+  },
+  {
+   "model": "Claude-Sonnet-4-20250514 (zero shot)",
+   "n": 1004,
+   "mean_adj": 0.06661895826738684,
+   "ci_lo": 0.054741760486157504,
+   "ci_hi": 0.07871255373682232,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 301
+  },
+  {
+   "model": "GPT-4-0613 (scratchpad with freeze values)",
+   "n": 557,
+   "mean_adj": 0.06762573736854097,
+   "ci_lo": 0.05265120092740263,
+   "ci_hi": 0.08386459981676155,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 302
+  },
+  {
+   "model": "Llama-3.3-70B-Instruct-Turbo (scratchpad)",
+   "n": 3026,
+   "mean_adj": 0.06772615093821036,
+   "ci_lo": 0.06330167268328687,
+   "ci_hi": 0.07246300201965877,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 303
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (scratchpad with news with freeze values)",
+   "n": 565,
+   "mean_adj": 0.06806979468790561,
+   "ci_lo": 0.05413539118944704,
+   "ci_hi": 0.08193668754494986,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 304
+  },
+  {
+   "model": "GPT-5.4-Nano-2026-03-17 (zero shot with freeze values)",
+   "n": 750,
+   "mean_adj": 0.06830120132425804,
+   "ci_lo": 0.053611681927339117,
+   "ci_hi": 0.08327243205799716,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 305
+  },
+  {
+   "model": "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) geometric mean log odds with news",
+   "n": 239,
+   "mean_adj": 0.0683470712270264,
+   "ci_lo": 0.05322008219749459,
+   "ci_hi": 0.08429818312294363,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 306
+  },
+  {
+   "model": "LLM Crowd (gpt-4o, claude-3.5-sonnet, gemini-1.5-pro) median with news",
+   "n": 239,
+   "mean_adj": 0.06840386424541399,
+   "ci_lo": 0.05360511740317232,
+   "ci_hi": 0.08500280914158032,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 307
+  },
+  {
+   "model": "GPT-4.1-2025-04-14 (zero shot)",
+   "n": 4047,
+   "mean_adj": 0.0692346624359152,
+   "ci_lo": 0.06257559754730042,
+   "ci_hi": 0.07597301675973701,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 308
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (scratchpad)",
+   "n": 5402,
+   "mean_adj": 0.06948775923314246,
+   "ci_lo": 0.06554182269051785,
+   "ci_hi": 0.07331475090520016,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 309
+  },
+  {
+   "model": "O3-Mini-2025-01-31 (scratchpad)",
+   "n": 1693,
+   "mean_adj": 0.07011082600578153,
+   "ci_lo": 0.0632475699647906,
+   "ci_hi": 0.0765575135158041,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 310
+  },
+  {
+   "model": "GPT-4o-2024-05-13 (scratchpad)",
+   "n": 3090,
+   "mean_adj": 0.0702955660564744,
+   "ci_lo": 0.06522343844898279,
+   "ci_hi": 0.07576733394625766,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 311
+  },
+  {
+   "model": "Gemini-1.5-Pro (scratchpad with freeze values)",
+   "n": 557,
+   "mean_adj": 0.07049614623354501,
+   "ci_lo": 0.05753244102922655,
+   "ci_hi": 0.08353353919238023,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 312
+  },
+  {
+   "model": "Claude-Opus-4-1-20250805 (zero shot)",
+   "n": 1745,
+   "mean_adj": 0.0707334633083687,
+   "ci_lo": 0.05999543600650052,
+   "ci_hi": 0.08065462577398391,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 313
+  },
+  {
+   "model": "DeepSeek-V3 (zero shot)",
+   "n": 2190,
+   "mean_adj": 0.0717204586947442,
+   "ci_lo": 0.06529331624714076,
+   "ci_hi": 0.0779243945430785,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 314
+  },
+  {
+   "model": "Llama-3-8b-Chat-Hf (zero shot with freeze values)",
+   "n": 1015,
+   "mean_adj": 0.07184631705082362,
+   "ci_lo": 0.05820717293870611,
+   "ci_hi": 0.08590286151550536,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 315
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (zero shot)",
+   "n": 5850,
+   "mean_adj": 0.07241083464441085,
+   "ci_lo": 0.06787696886832659,
+   "ci_hi": 0.0770010946528391,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 316
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (zero shot)",
+   "n": 2388,
+   "mean_adj": 0.07328606884709045,
+   "ci_lo": 0.0664045492065943,
+   "ci_hi": 0.08007968829746698,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 317
+  },
+  {
+   "model": "Kimi-K2-Instruct-0905 (zero shot)",
+   "n": 772,
+   "mean_adj": 0.07337334694581375,
+   "ci_lo": 0.05787286673316236,
+   "ci_hi": 0.0878164952159038,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 318
+  },
+  {
+   "model": "Gemini-1.5-Pro (scratchpad with news with freeze values)",
+   "n": 553,
+   "mean_adj": 0.07359302776216303,
+   "ci_lo": 0.06033756194675935,
+   "ci_hi": 0.08744023823542375,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 319
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (scratchpad with news)",
+   "n": 561,
+   "mean_adj": 0.07364673480428222,
+   "ci_lo": 0.06005201469626524,
+   "ci_hi": 0.08799394972261067,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 320
+  },
+  {
+   "model": "GPT-4o-2024-05-13 (zero shot with freeze values)",
+   "n": 3087,
+   "mean_adj": 0.07439678541683656,
+   "ci_lo": 0.06601404606549417,
+   "ci_hi": 0.0829720844393371,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 321
+  },
+  {
+   "model": "Fathom-Search-4B (prompt 2)",
+   "n": 112,
+   "mean_adj": 0.07447578606787883,
+   "ci_lo": 0.04101487911055202,
+   "ci_hi": 0.11295106835067821,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 322
+  },
+  {
+   "model": "Mistral-Large-2407 (zero shot)",
+   "n": 3097,
+   "mean_adj": 0.07520300765039915,
+   "ci_lo": 0.0691118034216168,
+   "ci_hi": 0.08135983057729029,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 323
+  },
+  {
+   "model": "Kimi-K2-Instruct (zero shot)",
+   "n": 1538,
+   "mean_adj": 0.0752956384763645,
+   "ci_lo": 0.06586163315236529,
+   "ci_hi": 0.08495423560242996,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 324
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (scratchpad with freeze values)",
+   "n": 558,
+   "mean_adj": 0.07588368703913743,
+   "ci_lo": 0.062318561794578314,
+   "ci_hi": 0.09012576284259312,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 325
+  },
+  {
+   "model": "Qwen2.5-72B-Instruct-Turbo (zero shot)",
+   "n": 890,
+   "mean_adj": 0.07615078856450268,
+   "ci_lo": 0.06556818512696232,
+   "ci_hi": 0.08576264113490437,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 326
+  },
+  {
+   "model": "Mistral-Large-2411 (zero shot)",
+   "n": 1342,
+   "mean_adj": 0.07691948963603865,
+   "ci_lo": 0.0670683381547128,
+   "ci_hi": 0.08726959975090892,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 327
+  },
+  {
+   "model": "GPT-4o-2024-05-13 (zero shot)",
+   "n": 2839,
+   "mean_adj": 0.07746447232986191,
+   "ci_lo": 0.07067963020176525,
+   "ci_hi": 0.08375851194413209,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 328
+  },
+  {
+   "model": "Grok-4-Fast-Reasoning (zero shot)",
+   "n": 1051,
+   "mean_adj": 0.07747437869111094,
+   "ci_lo": 0.06424075474827919,
+   "ci_hi": 0.09090689255016321,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 329
+  },
+  {
+   "model": "Qwen2.5-72B-Instruct-Turbo (scratchpad)",
+   "n": 889,
+   "mean_adj": 0.07821561431724677,
+   "ci_lo": 0.06870768713428019,
+   "ci_hi": 0.08784493495876476,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 330
+  },
+  {
+   "model": "GPT-4o (scratchpad with news)",
+   "n": 564,
+   "mean_adj": 0.07889568005320957,
+   "ci_lo": 0.06438807111224876,
+   "ci_hi": 0.09378389274749227,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 331
+  },
+  {
+   "model": "Fathom-Search-4B (prompt 1)",
+   "n": 112,
+   "mean_adj": 0.07897852713930739,
+   "ci_lo": 0.04452562578560131,
+   "ci_hi": 0.11827236063591673,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 332
+  },
+  {
+   "model": "GPT-4o (scratchpad with SECOND news)",
+   "n": 563,
+   "mean_adj": 0.08007965118878267,
+   "ci_lo": 0.06476784733082996,
+   "ci_hi": 0.09536613300158935,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 333
+  },
+  {
+   "model": "Gemini-2.5-Flash (zero shot)",
+   "n": 1004,
+   "mean_adj": 0.08053142293337467,
+   "ci_lo": 0.06657794710572372,
+   "ci_hi": 0.09466197282766647,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 334
+  },
+  {
+   "model": "Gemini-2.5-Pro (zero shot)",
+   "n": 1809,
+   "mean_adj": 0.08078860985011106,
+   "ci_lo": 0.0690734021052039,
+   "ci_hi": 0.092445772716755,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 335
+  },
+  {
+   "model": "Claude-Sonnet-4-5-20250929 (zero shot)",
+   "n": 1754,
+   "mean_adj": 0.08121784684360601,
+   "ci_lo": 0.06947121669523462,
+   "ci_hi": 0.09271208103073952,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 336
+  },
+  {
+   "model": "Llama-4-Maverick-17B-128E-Instruct-FP8 (zero shot)",
+   "n": 753,
+   "mean_adj": 0.08155018487634598,
+   "ci_lo": 0.067320044584676,
+   "ci_hi": 0.0969969860052393,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 337
+  },
+  {
+   "model": "GPT-4o (scratchpad)",
+   "n": 560,
+   "mean_adj": 0.08162813127011866,
+   "ci_lo": 0.06678715836497018,
+   "ci_hi": 0.09686527912394434,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 338
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (zero shot)",
+   "n": 2394,
+   "mean_adj": 0.08259580903961701,
+   "ci_lo": 0.07526238703398826,
+   "ci_hi": 0.09003781401286585,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 339
+  },
+  {
+   "model": "Mistral-Large-Latest (scratchpad with freeze values)",
+   "n": 565,
+   "mean_adj": 0.08268373745551484,
+   "ci_lo": 0.06839206650574875,
+   "ci_hi": 0.09620952661875545,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 340
+  },
+  {
+   "model": "Gemini-2.0-Flash-Lite-001 (zero shot)",
+   "n": 827,
+   "mean_adj": 0.08302168152651442,
+   "ci_lo": 0.06976167931620625,
+   "ci_hi": 0.0961718917962871,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 341
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (superforecaster with news 3)",
+   "n": 563,
+   "mean_adj": 0.08307087705023915,
+   "ci_lo": 0.0698790995440022,
+   "ci_hi": 0.09717780764898416,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 342
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (scratchpad with freeze values)",
+   "n": 564,
+   "mean_adj": 0.08365039608529103,
+   "ci_lo": 0.06820992295816644,
+   "ci_hi": 0.1002208194794434,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 343
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (zero shot with freeze values)",
+   "n": 566,
+   "mean_adj": 0.08412014741360611,
+   "ci_lo": 0.06388503945831688,
+   "ci_hi": 0.10344656628128143,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 344
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (scratchpad)",
+   "n": 2389,
+   "mean_adj": 0.08416626041307884,
+   "ci_lo": 0.07757468904175994,
+   "ci_hi": 0.0908250559663618,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 345
+  },
+  {
+   "model": "GPT-4o (zero shot with freeze values)",
+   "n": 561,
+   "mean_adj": 0.08416967507398901,
+   "ci_lo": 0.06480008457738691,
+   "ci_hi": 0.10345520504818141,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 346
+  },
+  {
+   "model": "Grok-4-1-Fast-Reasoning (zero shot)",
+   "n": 1171,
+   "mean_adj": 0.08419365636110726,
+   "ci_lo": 0.06935667238974286,
+   "ci_hi": 0.09848785580757233,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 347
+  },
+  {
+   "model": "Claude-Sonnet-4-20250514 (zero shot with freeze values)",
+   "n": 1678,
+   "mean_adj": 0.08452052038446341,
+   "ci_lo": 0.07241814929797204,
+   "ci_hi": 0.0963210873376868,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 348
+  },
+  {
+   "model": "Qwen3-235B-A22B-Fp8-Tput (zero shot)",
+   "n": 1188,
+   "mean_adj": 0.08501565065019384,
+   "ci_lo": 0.0733892632630886,
+   "ci_hi": 0.09786713548120714,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 349
+  },
+  {
+   "model": "GPT-4o (superforecaster with news 1)",
+   "n": 564,
+   "mean_adj": 0.08514703501581497,
+   "ci_lo": 0.06733242617404127,
+   "ci_hi": 0.10178048458497095,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 350
+  },
+  {
+   "model": "Qwen3-235B-A22B-Thinking-2507 (zero shot)",
+   "n": 665,
+   "mean_adj": 0.08609716714220757,
+   "ci_lo": 0.06803748282546432,
+   "ci_hi": 0.10497240804947494,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 351
+  },
+  {
+   "model": "Kimi-K2.5 (zero shot)",
+   "n": 87,
+   "mean_adj": 0.08624332019956203,
+   "ci_lo": 0.03281597006251787,
+   "ci_hi": 0.14411207104153495,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 352
+  },
+  {
+   "model": "Claude-Haiku-4-5-20251001 (zero shot)",
+   "n": 1811,
+   "mean_adj": 0.08654123446579302,
+   "ci_lo": 0.07553083570642702,
+   "ci_hi": 0.0970994666967767,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 353
+  },
+  {
+   "model": "Llama-3-70b-Chat-Hf (zero shot)",
+   "n": 1505,
+   "mean_adj": 0.08713872781284752,
+   "ci_lo": 0.07838410448316004,
+   "ci_hi": 0.09563188158624049,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 354
+  },
+  {
+   "model": "Gemini-1.5-Pro (zero shot with freeze values)",
+   "n": 275,
+   "mean_adj": 0.08746879321398553,
+   "ci_lo": 0.06523868649532559,
+   "ci_hi": 0.11058080674556112,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 355
+  },
+  {
+   "model": "GPT-5-Mini-2025-08-07 (zero shot)",
+   "n": 2223,
+   "mean_adj": 0.09012102295602963,
+   "ci_lo": 0.07971311912037701,
+   "ci_hi": 0.10040067891990383,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 356
+  },
+  {
+   "model": "GPT-5-Nano-2025-08-07 (zero shot)",
+   "n": 2221,
+   "mean_adj": 0.09074582510093802,
+   "ci_lo": 0.08091383185601426,
+   "ci_hi": 0.10156826312369344,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 357
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (zero shot with freeze values)",
+   "n": 552,
+   "mean_adj": 0.09135992214563876,
+   "ci_lo": 0.07311141393171626,
+   "ci_hi": 0.11015587520286134,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 358
+  },
+  {
+   "model": "GPT-4-0613 (scratchpad)",
+   "n": 559,
+   "mean_adj": 0.09205295200618707,
+   "ci_lo": 0.07835454069567449,
+   "ci_hi": 0.10512545973776131,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 359
+  },
+  {
+   "model": "Mistral-Large-Latest (zero shot with freeze values)",
+   "n": 566,
+   "mean_adj": 0.092337955514807,
+   "ci_lo": 0.07522926100743257,
+   "ci_hi": 0.11068754867335681,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 360
+  },
+  {
+   "model": "Gemini-1.5-Pro (scratchpad with news)",
+   "n": 556,
+   "mean_adj": 0.09423207897455511,
+   "ci_lo": 0.07817238248601387,
+   "ci_hi": 0.110655813777275,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 361
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (scratchpad with news with freeze values)",
+   "n": 562,
+   "mean_adj": 0.09486196025533844,
+   "ci_lo": 0.080958004565004,
+   "ci_hi": 0.10987352853386459,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 362
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (scratchpad with news)",
+   "n": 563,
+   "mean_adj": 0.09491557400517923,
+   "ci_lo": 0.08069963959141487,
+   "ci_hi": 0.11039359356609137,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 363
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (superforecaster with news 1)",
+   "n": 561,
+   "mean_adj": 0.09590573970184059,
+   "ci_lo": 0.08043367030173369,
+   "ci_hi": 0.11243018378402875,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 364
+  },
+  {
+   "model": "GPT-4o (superforecaster with news 3)",
+   "n": 565,
+   "mean_adj": 0.09666880619231795,
+   "ci_lo": 0.08267984834536479,
+   "ci_hi": 0.11089935902769943,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 365
+  },
+  {
+   "model": "Gemini-1.5-Flash (scratchpad with freeze values)",
+   "n": 562,
+   "mean_adj": 0.09668949613809745,
+   "ci_lo": 0.07968954724195308,
+   "ci_hi": 0.11373892080136852,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 366
+  },
+  {
+   "model": "Qwen3-235B-A22B-Fp8-Tput (zero shot with freeze values)",
+   "n": 2272,
+   "mean_adj": 0.09818413215326831,
+   "ci_lo": 0.08718650433780059,
+   "ci_hi": 0.10908541289206743,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 367
+  },
+  {
+   "model": "Gemini-1.5-Pro (scratchpad)",
+   "n": 558,
+   "mean_adj": 0.09848352926078395,
+   "ci_lo": 0.08295153441651694,
+   "ci_hi": 0.11351133309132558,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 368
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (scratchpad)",
+   "n": 2365,
+   "mean_adj": 0.10032490348497781,
+   "ci_lo": 0.09387477856318924,
+   "ci_hi": 0.10681773744715067,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 369
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (superforecaster with news 3)",
+   "n": 563,
+   "mean_adj": 0.10064651641316102,
+   "ci_lo": 0.0842697114407795,
+   "ci_hi": 0.11698900907084116,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 370
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (scratchpad)",
+   "n": 565,
+   "mean_adj": 0.10147679874099051,
+   "ci_lo": 0.08919067844232427,
+   "ci_hi": 0.11477280987136423,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 371
+  },
+  {
+   "model": "Llama-4-Scout-17B-16E-Instruct (zero shot)",
+   "n": 2163,
+   "mean_adj": 0.10185987308871663,
+   "ci_lo": 0.093117600921719,
+   "ci_hi": 0.11073631806698228,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 372
+  },
+  {
+   "model": "vega",
+   "n": 429,
+   "mean_adj": 0.10187163275361853,
+   "ci_lo": 0.08159275835893047,
+   "ci_hi": 0.12407909213144928,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 373
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (superforecaster with news 1)",
+   "n": 563,
+   "mean_adj": 0.10262042382886359,
+   "ci_lo": 0.08478264363153873,
+   "ci_hi": 0.1197944294324906,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 374
+  },
+  {
+   "model": "Gemini-1.5-Pro (superforecaster with news 3)",
+   "n": 559,
+   "mean_adj": 0.10270847619898663,
+   "ci_lo": 0.08620277084599895,
+   "ci_hi": 0.1182332155814066,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 375
+  },
+  {
+   "model": "GLM-4.5-Air-FP8 (zero shot)",
+   "n": 615,
+   "mean_adj": 0.10300443466919756,
+   "ci_lo": 0.08526892422107067,
+   "ci_hi": 0.1222094280083884,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 376
+  },
+  {
+   "model": "Mistral-Large-2411 (scratchpad)",
+   "n": 1346,
+   "mean_adj": 0.10325535036733485,
+   "ci_lo": 0.09433955409156008,
+   "ci_hi": 0.11189350647378017,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 377
+  },
+  {
+   "model": "GPT-4o (zero shot)",
+   "n": 538,
+   "mean_adj": 0.10393269416294716,
+   "ci_lo": 0.08536234559447196,
+   "ci_hi": 0.12238423834650515,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 378
+  },
+  {
+   "model": "GPT-4o-2024-11-20 (zero shot with web search)",
+   "n": 448,
+   "mean_adj": 0.10488454523374717,
+   "ci_lo": 0.0825018053570134,
+   "ci_hi": 0.12694770697826754,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 379
+  },
+  {
+   "model": "Gemini-1.5-Flash (scratchpad with news with freeze values)",
+   "n": 560,
+   "mean_adj": 0.1049141694090546,
+   "ci_lo": 0.08856512952134223,
+   "ci_hi": 0.12218998953997988,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 380
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (scratchpad with SECOND news)",
+   "n": 564,
+   "mean_adj": 0.10501417949791707,
+   "ci_lo": 0.08866113462280815,
+   "ci_hi": 0.12124159790119791,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 381
+  },
+  {
+   "model": "Gemini-1.5-Pro (zero shot)",
+   "n": 271,
+   "mean_adj": 0.10556861840636107,
+   "ci_lo": 0.07754833637627918,
+   "ci_hi": 0.13429855322070056,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 382
+  },
+  {
+   "model": "Mistral-Large-2407 (scratchpad)",
+   "n": 3099,
+   "mean_adj": 0.10708457005307497,
+   "ci_lo": 0.10143421891547695,
+   "ci_hi": 0.11268403683480407,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 383
+  },
+  {
+   "model": "GPT-5.2-2025-12-11 (zero shot)",
+   "n": 906,
+   "mean_adj": 0.10752392561640152,
+   "ci_lo": 0.09032368272725655,
+   "ci_hi": 0.12582202261058292,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 384
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (superforecaster with news 1)",
+   "n": 562,
+   "mean_adj": 0.10833099036755496,
+   "ci_lo": 0.08937239192563591,
+   "ci_hi": 0.1266278266964101,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 385
+  },
+  {
+   "model": "GLM-5 (zero shot)",
+   "n": 404,
+   "mean_adj": 0.11213148765403479,
+   "ci_lo": 0.08329088980121453,
+   "ci_hi": 0.14071373463725712,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 386
+  },
+  {
+   "model": "glm-5.2",
+   "n": 66,
+   "mean_adj": 0.11215170197745984,
+   "ci_lo": 0.05755291112347264,
+   "ci_hi": 0.16908823478981305,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 387
+  },
+  {
+   "model": "Claude-Opus-4-6 (zero shot)",
+   "n": 688,
+   "mean_adj": 0.11254686412387421,
+   "ci_lo": 0.09211503753198853,
+   "ci_hi": 0.13451507873804025,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 388
+  },
+  {
+   "model": "GPT-5.1-2025-11-13 (zero shot)",
+   "n": 1164,
+   "mean_adj": 0.11263760763135544,
+   "ci_lo": 0.09828263664729338,
+   "ci_hi": 0.12803952899768975,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 389
+  },
+  {
+   "model": "DeepSeek-V3.1 (zero shot)",
+   "n": 1514,
+   "mean_adj": 0.11264124292121003,
+   "ci_lo": 0.1002973192655272,
+   "ci_hi": 0.12386067847501743,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 390
+  },
+  {
+   "model": "Gemini-3-Flash-Preview (zero shot)",
+   "n": 904,
+   "mean_adj": 0.1136460239009754,
+   "ci_lo": 0.09308359807320557,
+   "ci_hi": 0.1343243525663453,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 391
+  },
+  {
+   "model": "Grok-4.20-0309-Non-Reasoning (zero shot with freeze values)",
+   "n": 504,
+   "mean_adj": 0.11460500753017719,
+   "ci_lo": 0.09046601406964912,
+   "ci_hi": 0.13950763245878575,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 392
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (superforecaster with news 1)",
+   "n": 561,
+   "mean_adj": 0.11720385083059127,
+   "ci_lo": 0.09775803266844367,
+   "ci_hi": 0.13668743977054032,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 393
+  },
+  {
+   "model": "gpt-5-nano-2025-08-07-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.11745818033731924,
+   "ci_lo": 0.07119782921679202,
+   "ci_hi": 0.16491274380275917,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 394
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (zero shot)",
+   "n": 553,
+   "mean_adj": 0.11783778017937055,
+   "ci_lo": 0.10121233071368226,
+   "ci_hi": 0.13433461408152686,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 395
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (scratchpad with news with freeze values)",
+   "n": 564,
+   "mean_adj": 0.11820417626531096,
+   "ci_lo": 0.10313448546341719,
+   "ci_hi": 0.13369066525755122,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 396
+  },
+  {
+   "model": "Llama-3-8b-Chat-Hf (zero shot)",
+   "n": 1005,
+   "mean_adj": 0.11838859742959607,
+   "ci_lo": 0.1014799373521594,
+   "ci_hi": 0.13508563790887335,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 397
+  },
+  {
+   "model": "Gemini-1.5-Flash (scratchpad)",
+   "n": 559,
+   "mean_adj": 0.11899699006862839,
+   "ci_lo": 0.1037886008957323,
+   "ci_hi": 0.13524478783655183,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 398
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (scratchpad with news)",
+   "n": 564,
+   "mean_adj": 0.11900927972502819,
+   "ci_lo": 0.10526554461708751,
+   "ci_hi": 0.13332452178357454,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 399
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (scratchpad)",
+   "n": 566,
+   "mean_adj": 0.11905342181631562,
+   "ci_lo": 0.10407871934189288,
+   "ci_hi": 0.13447695497872694,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 400
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (zero shot)",
+   "n": 564,
+   "mean_adj": 0.11931171276216428,
+   "ci_lo": 0.1009166474420193,
+   "ci_hi": 0.1384586312107779,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 401
+  },
+  {
+   "model": "GPT-5.5-2026-04-23 (zero shot)",
+   "n": 295,
+   "mean_adj": 0.12013868797848937,
+   "ci_lo": 0.08842916121527776,
+   "ci_hi": 0.15410286308111676,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 402
+  },
+  {
+   "model": "Gemini-1.5-Pro (superforecaster with news 1)",
+   "n": 563,
+   "mean_adj": 0.12017901424795496,
+   "ci_lo": 0.10153162140849023,
+   "ci_hi": 0.1385224126240592,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 403
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (zero shot with freeze values)",
+   "n": 2401,
+   "mean_adj": 0.1201926326226505,
+   "ci_lo": 0.11251199151021124,
+   "ci_hi": 0.12776825399148692,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 404
+  },
+  {
+   "model": "Magistral-Medium-2506 (scratchpad)",
+   "n": 1137,
+   "mean_adj": 0.12124876253765818,
+   "ci_lo": 0.10844820470006913,
+   "ci_hi": 0.13422749525988978,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 405
+  },
+  {
+   "model": "Grok-4-Fast-Non-Reasoning (zero shot)",
+   "n": 1043,
+   "mean_adj": 0.12148511756746355,
+   "ci_lo": 0.10601744741004593,
+   "ci_hi": 0.13644085042356174,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 406
+  },
+  {
+   "model": "Mistral-Large-Latest (scratchpad)",
+   "n": 566,
+   "mean_adj": 0.12209689043822373,
+   "ci_lo": 0.10733607570621033,
+   "ci_hi": 0.136928246291846,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 407
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (scratchpad with news with freeze values)",
+   "n": 564,
+   "mean_adj": 0.12226335185470127,
+   "ci_lo": 0.106903116524249,
+   "ci_hi": 0.13872241098137006,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 408
+  },
+  {
+   "model": "Claude-Sonnet-4-6 (zero shot)",
+   "n": 1025,
+   "mean_adj": 0.12237008005515745,
+   "ci_lo": 0.10411304756021639,
+   "ci_hi": 0.14086872316627433,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 409
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (superforecaster with news 1)",
+   "n": 562,
+   "mean_adj": 0.12270577100631451,
+   "ci_lo": 0.1040618830378645,
+   "ci_hi": 0.14045345884351917,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 410
+  },
+  {
+   "model": "Grok-4.20-Beta-0309-Non-Reasoning (zero shot with freeze values)",
+   "n": 246,
+   "mean_adj": 0.12275227860969203,
+   "ci_lo": 0.09061232268357043,
+   "ci_hi": 0.1556998363028979,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 411
+  },
+  {
+   "model": "Gemini-1.5-Flash (scratchpad with news)",
+   "n": 562,
+   "mean_adj": 0.12347134744496546,
+   "ci_lo": 0.10675998830915312,
+   "ci_hi": 0.14009375619077954,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 412
+  },
+  {
+   "model": "Grok-4.20-0309-Reasoning (zero shot)",
+   "n": 504,
+   "mean_adj": 0.12370511864128829,
+   "ci_lo": 0.09978556359168013,
+   "ci_hi": 0.1477888483676367,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 413
+  },
+  {
+   "model": "claude-sonnet-4-6-1024",
+   "n": 99,
+   "mean_adj": 0.12382820771105665,
+   "ci_lo": 0.07540709918168881,
+   "ci_hi": 0.1705878074313294,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 414
+  },
+  {
+   "model": "GPT-4-0613 (zero shot)",
+   "n": 561,
+   "mean_adj": 0.12446712017092015,
+   "ci_lo": 0.10977954795614059,
+   "ci_hi": 0.1396969279645196,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 415
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (zero shot with freeze values)",
+   "n": 566,
+   "mean_adj": 0.12448966196559852,
+   "ci_lo": 0.10189690660075253,
+   "ci_hi": 0.14655802915804844,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 416
+  },
+  {
+   "model": "GPT-4o (superforecaster with news 2)",
+   "n": 565,
+   "mean_adj": 0.12459649556795335,
+   "ci_lo": 0.10729019641834221,
+   "ci_hi": 0.1427512532665107,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 417
+  },
+  {
+   "model": "Llama-4-Maverick-17B-128E-Instruct-FP8 (zero shot with freeze values)",
+   "n": 1553,
+   "mean_adj": 0.12489019731974726,
+   "ci_lo": 0.10912057261350595,
+   "ci_hi": 0.13972362147065634,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 418
+  },
+  {
+   "model": "Llama-3-70b-Chat-Hf (scratchpad)",
+   "n": 1511,
+   "mean_adj": 0.12508300635834002,
+   "ci_lo": 0.11745604889619052,
+   "ci_hi": 0.13289142131150025,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 419
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (superforecaster with news 3)",
+   "n": 565,
+   "mean_adj": 0.12510057178053133,
+   "ci_lo": 0.11088159156608807,
+   "ci_hi": 0.13897187142777773,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 420
+  },
+  {
+   "model": "Grok-4.3 (zero shot)",
+   "n": 396,
+   "mean_adj": 0.12684328128048908,
+   "ci_lo": 0.09802370121296394,
+   "ci_hi": 0.15653754970823683,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 421
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (scratchpad with news)",
+   "n": 565,
+   "mean_adj": 0.12747873542413488,
+   "ci_lo": 0.11197229889051234,
+   "ci_hi": 0.1431024373722579,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 422
+  },
+  {
+   "model": "GLM-5.1 (zero shot)",
+   "n": 518,
+   "mean_adj": 0.12838890693938193,
+   "ci_lo": 0.09816195881429134,
+   "ci_hi": 0.15972785453598126,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 423
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (superforecaster with news 2)",
+   "n": 566,
+   "mean_adj": 0.12902602089794105,
+   "ci_lo": 0.11006241074712506,
+   "ci_hi": 0.1480493379912262,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 424
+  },
+  {
+   "model": "grok-4.20-0309-non-reasoning-zero-shot-with-freeze-values",
+   "n": 99,
+   "mean_adj": 0.12916558144843038,
+   "ci_lo": 0.06863097398760283,
+   "ci_hi": 0.1934491715085925,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 425
+  },
+  {
+   "model": "Gemma-4-31B-It (zero shot)",
+   "n": 532,
+   "mean_adj": 0.13057296799540877,
+   "ci_lo": 0.1035182673476312,
+   "ci_hi": 0.1569952866199677,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 426
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (superforecaster with news 3)",
+   "n": 565,
+   "mean_adj": 0.13123032026670953,
+   "ci_lo": 0.1172602288542545,
+   "ci_hi": 0.14558953049940557,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 427
+  },
+  {
+   "model": "Gemini-1.5-Pro (superforecaster with news 2)",
+   "n": 562,
+   "mean_adj": 0.13124650442182723,
+   "ci_lo": 0.11073259554005148,
+   "ci_hi": 0.1515569096590327,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 428
+  },
+  {
+   "model": "GPT-4-Turbo-2024-04-09 (superforecaster with news 2)",
+   "n": 564,
+   "mean_adj": 0.13227090774935318,
+   "ci_lo": 0.1135272277006687,
+   "ci_hi": 0.1514412868672423,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 429
+  },
+  {
+   "model": "Gemini-3.1-Pro-Preview (zero shot)",
+   "n": 1024,
+   "mean_adj": 0.13262103912747694,
+   "ci_lo": 0.11248484258498308,
+   "ci_hi": 0.15508471102492552,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 430
+  },
+  {
+   "model": "Grok-4.20-Beta-0309-Reasoning (zero shot)",
+   "n": 245,
+   "mean_adj": 0.13355749672646627,
+   "ci_lo": 0.10100618782346447,
+   "ci_hi": 0.16792831724067486,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 431
+  },
+  {
+   "model": "claude-sonnet-4-6-adaptive-thinking-16000",
+   "n": 99,
+   "mean_adj": 0.13435144003428895,
+   "ci_lo": 0.08351984881712293,
+   "ci_hi": 0.1851413716274381,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 432
+  },
+  {
+   "model": "Mistral-Large-Latest (zero shot)",
+   "n": 566,
+   "mean_adj": 0.13436776102126263,
+   "ci_lo": 0.11607263818765708,
+   "ci_hi": 0.1527227477844767,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 433
+  },
+  {
+   "model": "gpt-5.5-2026-04-23",
+   "n": 99,
+   "mean_adj": 0.1353589955898445,
+   "ci_lo": 0.08156110794855498,
+   "ci_hi": 0.19631778362386731,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 434
+  },
+  {
+   "model": "Claude-2.1 (zero shot with freeze values)",
+   "n": 559,
+   "mean_adj": 0.135717104542361,
+   "ci_lo": 0.11152021900695579,
+   "ci_hi": 0.15971537362201887,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 435
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (scratchpad with news)",
+   "n": 564,
+   "mean_adj": 0.1358330306676257,
+   "ci_lo": 0.11933452275570358,
+   "ci_hi": 0.15213606054843395,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 436
+  },
+  {
+   "model": "grok-4.3",
+   "n": 97,
+   "mean_adj": 0.13643858312777946,
+   "ci_lo": 0.08752685744483148,
+   "ci_hi": 0.18509673599448032,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 437
+  },
+  {
+   "model": "Magistral-Medium-2506 (zero shot with freeze values)",
+   "n": 70,
+   "mean_adj": 0.136952484688134,
+   "ci_lo": 0.06433432958034256,
+   "ci_hi": 0.21508999341150492,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 438
+  },
+  {
+   "model": "Claude-3-Opus-20240229 (superforecaster with news 3)",
+   "n": 565,
+   "mean_adj": 0.13699164127528254,
+   "ci_lo": 0.11909428522948204,
+   "ci_hi": 0.15560021674338254,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 439
+  },
+  {
+   "model": "Gemini-1.5-Flash (zero shot)",
+   "n": 558,
+   "mean_adj": 0.1378551476052171,
+   "ci_lo": 0.11771479615056371,
+   "ci_hi": 0.1585290947442299,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 440
+  },
+  {
+   "model": "Claude-3-5-Sonnet-20240620 (superforecaster with news 2)",
+   "n": 563,
+   "mean_adj": 0.13811759320809255,
+   "ci_lo": 0.11862770763991132,
+   "ci_hi": 0.1577777202731612,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 441
+  },
+  {
+   "model": "claude-opus-4-8-adaptive-thinking-high-24000",
+   "n": 99,
+   "mean_adj": 0.13870800569085456,
+   "ci_lo": 0.08865741453018637,
+   "ci_hi": 0.19518374645243614,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 442
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (zero shot)",
+   "n": 560,
+   "mean_adj": 0.1393994744629648,
+   "ci_lo": 0.11492381377490805,
+   "ci_hi": 0.16541731477566632,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 443
+  },
+  {
+   "model": "Claude-2.1 (scratchpad with news with freeze values)",
+   "n": 392,
+   "mean_adj": 0.13983991516510139,
+   "ci_lo": 0.11754943057858198,
+   "ci_hi": 0.1626529853729592,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 444
+  },
+  {
+   "model": "Claude-Opus-4-7 (zero shot)",
+   "n": 295,
+   "mean_adj": 0.13990257852086224,
+   "ci_lo": 0.10406411612384639,
+   "ci_hi": 0.17708792669953707,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 445
+  },
+  {
+   "model": "Llama-3-8b-Chat-Hf (scratchpad with freeze values)",
+   "n": 1015,
+   "mean_adj": 0.14008125293883733,
+   "ci_lo": 0.12606954408588128,
+   "ci_hi": 0.15466631738099146,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 446
+  },
+  {
+   "model": "glm-5.1",
+   "n": 52,
+   "mean_adj": 0.14080031896969258,
+   "ci_lo": 0.07298631398236909,
+   "ci_hi": 0.2121281417932751,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 447
+  },
+  {
+   "model": "Gemini-3.5-Flash (zero shot)",
+   "n": 294,
+   "mean_adj": 0.14158753300562707,
+   "ci_lo": 0.10360839002604626,
+   "ci_hi": 0.18000391964263537,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 448
+  },
+  {
+   "model": "Claude-2.1 (scratchpad with freeze values)",
+   "n": 313,
+   "mean_adj": 0.14223992306479866,
+   "ci_lo": 0.11298727785562163,
+   "ci_hi": 0.1710157743140727,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 449
+  },
+  {
+   "model": "QwQ-32B-Preview (zero shot with freeze values)",
+   "n": 727,
+   "mean_adj": 0.14262441249278351,
+   "ci_lo": 0.11982470297669533,
+   "ci_hi": 0.16556126805395674,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 450
+  },
+  {
+   "model": "Grok-4-1-Fast-Non-Reasoning (zero shot)",
+   "n": 1158,
+   "mean_adj": 0.1426497288412902,
+   "ci_lo": 0.12622466485546616,
+   "ci_hi": 0.16035185752739012,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 451
+  },
+  {
+   "model": "Mixtral-8x22B-Instruct-V0.1 (superforecaster with news 2)",
+   "n": 566,
+   "mean_adj": 0.14301221906013187,
+   "ci_lo": 0.12725605397013912,
+   "ci_hi": 0.15943487389901884,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 452
+  },
+  {
+   "model": "claude-sonnet-5-adaptive-thinking-16000",
+   "n": 99,
+   "mean_adj": 0.1432271976100465,
+   "ci_lo": 0.08914461729806762,
+   "ci_hi": 0.20386917218470393,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 453
+  },
+  {
+   "model": "Gemini-1.5-Flash (superforecaster with news 3)",
+   "n": 565,
+   "mean_adj": 0.1432638169609172,
+   "ci_lo": 0.12711596081678467,
+   "ci_hi": 0.16122100350457588,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 454
+  },
+  {
+   "model": "GPT-5.4-2026-03-05 (zero shot)",
+   "n": 750,
+   "mean_adj": 0.1445788483109247,
+   "ci_lo": 0.12283801484785888,
+   "ci_hi": 0.16790232290851012,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 455
+  },
+  {
+   "model": "Claude-2.1 (scratchpad)",
+   "n": 236,
+   "mean_adj": 0.14485025955464506,
+   "ci_lo": 0.11596733014603801,
+   "ci_hi": 0.17215728302414235,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 456
+  },
+  {
+   "model": "Mistral-Large-Latest (scratchpad with news with freeze values)",
+   "n": 565,
+   "mean_adj": 0.1455560347409905,
+   "ci_lo": 0.12798625373529365,
+   "ci_hi": 0.16305473763999107,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 457
+  },
+  {
+   "model": "Mistral-Large-Latest (superforecaster with news 1)",
+   "n": 564,
+   "mean_adj": 0.14585255739439873,
+   "ci_lo": 0.12619898780979366,
+   "ci_hi": 0.16545967725390187,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 458
+  },
+  {
+   "model": "grok-4.20-0309-reasoning",
+   "n": 99,
+   "mean_adj": 0.14698780367065262,
+   "ci_lo": 0.09276129634283016,
+   "ci_hi": 0.20481486162731694,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 459
+  },
+  {
+   "model": "Qwen1.5-110B-Chat (superforecaster with news 2)",
+   "n": 563,
+   "mean_adj": 0.1472996827598716,
+   "ci_lo": 0.13115047260674076,
+   "ci_hi": 0.16496218106580163,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 460
+  },
+  {
+   "model": "Gemini-1.5-Flash (superforecaster with news 2)",
+   "n": 340,
+   "mean_adj": 0.14836024353070026,
+   "ci_lo": 0.12488970601354424,
+   "ci_hi": 0.17270508299822734,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 461
+  },
+  {
+   "model": "claude-opus-4-7-1024",
+   "n": 99,
+   "mean_adj": 0.14980295518580408,
+   "ci_lo": 0.09804973548117543,
+   "ci_hi": 0.20674411052551872,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 462
+  },
+  {
+   "model": "Always 0",
+   "n": 7853,
+   "mean_adj": 0.1501695784607621,
+   "ci_lo": 0.14145531638319753,
+   "ci_hi": 0.15890890643039132,
+   "verdict": "below market",
+   "is_reference": true,
+   "rank": 463
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (scratchpad with freeze values)",
+   "n": 426,
+   "mean_adj": 0.15129466657161583,
+   "ci_lo": 0.1281292476290185,
+   "ci_hi": 0.17553594039133846,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 464
+  },
+  {
+   "model": "Claude-Opus-4-8 (zero shot)",
+   "n": 193,
+   "mean_adj": 0.15161330554876512,
+   "ci_lo": 0.10380045714100551,
+   "ci_hi": 0.2020208265529331,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 465
+  },
+  {
+   "model": "minimax-m3-adaptive-thinking-12000",
+   "n": 99,
+   "mean_adj": 0.15181154104438993,
+   "ci_lo": 0.10224759680746226,
+   "ci_hi": 0.2072089640632025,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 466
+  },
+  {
+   "model": "Mistral-Large-Latest (scratchpad with news)",
+   "n": 566,
+   "mean_adj": 0.1522846996255029,
+   "ci_lo": 0.13518595288448748,
+   "ci_hi": 0.16958445369537514,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 467
+  },
+  {
+   "model": "Claude-2.1 (scratchpad with news)",
+   "n": 346,
+   "mean_adj": 0.15262175862264352,
+   "ci_lo": 0.12839366879463213,
+   "ci_hi": 0.17858353104144903,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 468
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (scratchpad)",
+   "n": 402,
+   "mean_adj": 0.15337909936785132,
+   "ci_lo": 0.1313116367033957,
+   "ci_hi": 0.17356597855189956,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 469
+  },
+  {
+   "model": "claude-opus-4-8-1024",
+   "n": 99,
+   "mean_adj": 0.15563426831711719,
+   "ci_lo": 0.09607333118936255,
+   "ci_hi": 0.21405804776315784,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 470
+  },
+  {
+   "model": "gemma-4-31b-it",
+   "n": 86,
+   "mean_adj": 0.15884410506847998,
+   "ci_lo": 0.09482365859106939,
+   "ci_hi": 0.22698276756993171,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 471
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (scratchpad with freeze values)",
+   "n": 2392,
+   "mean_adj": 0.15983194239408685,
+   "ci_lo": 0.15187308850169876,
+   "ci_hi": 0.16788170572934047,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 472
+  },
+  {
+   "model": "claude-sonnet-4-5-20250929-1024",
+   "n": 99,
+   "mean_adj": 0.16038917740802633,
+   "ci_lo": 0.10901083424966233,
+   "ci_hi": 0.21312752171404561,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 473
+  },
+  {
+   "model": "GPT-5.4-Mini-2026-03-17 (zero shot)",
+   "n": 749,
+   "mean_adj": 0.16114662403630645,
+   "ci_lo": 0.14072188255469645,
+   "ci_hi": 0.1832615229907431,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 474
+  },
+  {
+   "model": "Mistral-Large-Latest (superforecaster with news 3)",
+   "n": 566,
+   "mean_adj": 0.16133880741702233,
+   "ci_lo": 0.1445737508097562,
+   "ci_hi": 0.17849880004334034,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 475
+  },
+  {
+   "model": "GPT-5.4-Nano-2026-03-17 (zero shot)",
+   "n": 750,
+   "mean_adj": 0.16140820199092473,
+   "ci_lo": 0.14064964542168548,
+   "ci_hi": 0.18432274241110755,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 476
+  },
+  {
+   "model": "Claude-Opus-4-20250514 (zero shot with freeze values)",
+   "n": 369,
+   "mean_adj": 0.1624284996614247,
+   "ci_lo": 0.13024757476084814,
+   "ci_hi": 0.19601517221141487,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 477
+  },
+  {
+   "model": "claude-haiku-4-5-20251001-1024",
+   "n": 99,
+   "mean_adj": 0.16265173296358187,
+   "ci_lo": 0.1066489184744513,
+   "ci_hi": 0.21876231464112147,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 478
+  },
+  {
+   "model": "Llama-2-70b-Chat-Hf (scratchpad with freeze values)",
+   "n": 564,
+   "mean_adj": 0.16688283582432487,
+   "ci_lo": 0.15080478900608374,
+   "ci_hi": 0.18194159354938733,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 479
+  },
+  {
+   "model": "kimi-k2.6-16000",
+   "n": 91,
+   "mean_adj": 0.16711452564105936,
+   "ci_lo": 0.11184600742154416,
+   "ci_hi": 0.22354452831710148,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 480
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (zero shot)",
+   "n": 2397,
+   "mean_adj": 0.1693470005383316,
+   "ci_lo": 0.1616642470785059,
+   "ci_hi": 0.1770950416491782,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 481
+  },
+  {
+   "model": "Claude-2.1 (zero shot)",
+   "n": 556,
+   "mean_adj": 0.1718838319221199,
+   "ci_lo": 0.1533099470659582,
+   "ci_hi": 0.19056919543470094,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 482
+  },
+  {
+   "model": "DeepSeek-R1 (zero shot with freeze values)",
+   "n": 1458,
+   "mean_adj": 0.17190842566085276,
+   "ci_lo": 0.15466099312655818,
+   "ci_hi": 0.1887336103726769,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 483
+  },
+  {
+   "model": "Llama-2-70b-Chat-Hf (scratchpad)",
+   "n": 564,
+   "mean_adj": 0.1723064273481882,
+   "ci_lo": 0.1580313626509106,
+   "ci_hi": 0.18887658407092955,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 484
+  },
+  {
+   "model": "Mistral-Large-Latest (superforecaster with news 2)",
+   "n": 566,
+   "mean_adj": 0.1742054869753262,
+   "ci_lo": 0.1548637511505959,
+   "ci_hi": 0.19290449089508968,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 485
+  },
+  {
+   "model": "Gemini-1.5-Flash (superforecaster with news 1)",
+   "n": 562,
+   "mean_adj": 0.17519502017404284,
+   "ci_lo": 0.15358625434334253,
+   "ci_hi": 0.19681676827886127,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 486
+  },
+  {
+   "model": "gpt-5.4-2026-03-05",
+   "n": 99,
+   "mean_adj": 0.17591862185247076,
+   "ci_lo": 0.11540629567442304,
+   "ci_hi": 0.24031306598341648,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 487
+  },
+  {
+   "model": "Llama-3-8b-Chat-Hf (scratchpad)",
+   "n": 1015,
+   "mean_adj": 0.17915255394045554,
+   "ci_lo": 0.16595006567519396,
+   "ci_hi": 0.19262156841378242,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 488
+  },
+  {
+   "model": "GPT-3.5-Turbo-0125 (zero shot with freeze values)",
+   "n": 566,
+   "mean_adj": 0.1811514298923548,
+   "ci_lo": 0.15463576229984696,
+   "ci_hi": 0.20690166637922727,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 489
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (scratchpad with news with freeze values)",
+   "n": 556,
+   "mean_adj": 0.18183244979222463,
+   "ci_lo": 0.1652777059872116,
+   "ci_hi": 0.19809898691323097,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 490
+  },
+  {
+   "model": "Claude-2.1 (superforecaster with news 3)",
+   "n": 463,
+   "mean_adj": 0.18195874403753154,
+   "ci_lo": 0.15932230734947123,
+   "ci_hi": 0.20360559140966922,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 491
+  },
+  {
+   "model": "gpt-5.4-mini-2026-03-17",
+   "n": 99,
+   "mean_adj": 0.18424983397368286,
+   "ci_lo": 0.12489662578269244,
+   "ci_hi": 0.24914412874922603,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 492
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (superforecaster with news 3)",
+   "n": 282,
+   "mean_adj": 0.18711659306819448,
+   "ci_lo": 0.16134735477534878,
+   "ci_hi": 0.212454326550386,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 493
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (superforecaster with news 1)",
+   "n": 303,
+   "mean_adj": 0.18789565672381214,
+   "ci_lo": 0.16111860793896957,
+   "ci_hi": 0.21417494066410162,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 494
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (scratchpad with news with freeze values)",
+   "n": 334,
+   "mean_adj": 0.18792702368393235,
+   "ci_lo": 0.16290215187656476,
+   "ci_hi": 0.21375623180971548,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 495
+  },
+  {
+   "model": "Always 0.5",
+   "n": 7853,
+   "mean_adj": 0.1885307143324035,
+   "ci_lo": 0.1853042289926794,
+   "ci_hi": 0.1917506540759458,
+   "verdict": "below market",
+   "is_reference": true,
+   "rank": 496
+  },
+  {
+   "model": "Claude-2.1 (superforecaster with news 2)",
+   "n": 284,
+   "mean_adj": 0.18863024918433235,
+   "ci_lo": 0.15819881556860496,
+   "ci_hi": 0.21823499248499373,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 497
+  },
+  {
+   "model": "DeepSeek-V4-Pro (zero shot)",
+   "n": 198,
+   "mean_adj": 0.18889215325010086,
+   "ci_lo": 0.1417272065331689,
+   "ci_hi": 0.24356862279680286,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 498
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (scratchpad with news)",
+   "n": 331,
+   "mean_adj": 0.19281466839863415,
+   "ci_lo": 0.16860762175007832,
+   "ci_hi": 0.21702454921559047,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 499
+  },
+  {
+   "model": "gemini-3.5-flash",
+   "n": 99,
+   "mean_adj": 0.19426964225651117,
+   "ci_lo": 0.12616344157118747,
+   "ci_hi": 0.2665411534409977,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 500
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (superforecaster with news 2)",
+   "n": 563,
+   "mean_adj": 0.1981377053677668,
+   "ci_lo": 0.17976892493611912,
+   "ci_hi": 0.21598676930182548,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 501
+  },
+  {
+   "model": "Grok-4.20-0309-Non-Reasoning (zero shot)",
+   "n": 504,
+   "mean_adj": 0.19959389840319305,
+   "ci_lo": 0.16997975537171459,
+   "ci_hi": 0.22903402095431483,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 502
+  },
+  {
+   "model": "Claude-2.1 (superforecaster with news 1)",
+   "n": 319,
+   "mean_adj": 0.20084673449462362,
+   "ci_lo": 0.17241629122086674,
+   "ci_hi": 0.22940973424601319,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 503
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (scratchpad)",
+   "n": 2390,
+   "mean_adj": 0.20166696604166462,
+   "ci_lo": 0.1939209649973675,
+   "ci_hi": 0.20956173610156956,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 504
+  },
+  {
+   "model": "Llama-3.2-3B-Instruct-Turbo (scratchpad)",
+   "n": 889,
+   "mean_adj": 0.20272493611983394,
+   "ci_lo": 0.18848583421983622,
+   "ci_hi": 0.2181594503322138,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 505
+  },
+  {
+   "model": "gpt-5-mini-2025-08-07",
+   "n": 99,
+   "mean_adj": 0.20363052084236977,
+   "ci_lo": 0.1436481158510682,
+   "ci_hi": 0.2640821530155753,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 506
+  },
+  {
+   "model": "Llama-3.2-3B-Instruct-Turbo (scratchpad with freeze values)",
+   "n": 890,
+   "mean_adj": 0.20382319204484528,
+   "ci_lo": 0.18878546094381823,
+   "ci_hi": 0.21936514057404616,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 507
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (scratchpad with news)",
+   "n": 547,
+   "mean_adj": 0.20421079826771288,
+   "ci_lo": 0.1884852102804579,
+   "ci_hi": 0.22033298841831883,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 508
+  },
+  {
+   "model": "minimax-m2.7-12000",
+   "n": 93,
+   "mean_adj": 0.20454495238418213,
+   "ci_lo": 0.13344062103784546,
+   "ci_hi": 0.27627986161729057,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 509
+  },
+  {
+   "model": "Grok-4.20-Beta-0309-Non-Reasoning (zero shot)",
+   "n": 246,
+   "mean_adj": 0.206128669504001,
+   "ci_lo": 0.16937778844387724,
+   "ci_hi": 0.24509935505885835,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 510
+  },
+  {
+   "model": "GPT-3.5-Turbo-0125 (scratchpad with freeze values)",
+   "n": 566,
+   "mean_adj": 0.20777806314140396,
+   "ci_lo": 0.19054643106495098,
+   "ci_hi": 0.22597603345829378,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 511
+  },
+  {
+   "model": "DeepSeek-R1 (zero shot)",
+   "n": 217,
+   "mean_adj": 0.20789646698024403,
+   "ci_lo": 0.1618525762623303,
+   "ci_hi": 0.2567007826640879,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 512
+  },
+  {
+   "model": "gemini-3.1-flash-lite",
+   "n": 98,
+   "mean_adj": 0.20897879176933268,
+   "ci_lo": 0.1369831362662113,
+   "ci_hi": 0.28325048152426624,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 513
+  },
+  {
+   "model": "Mixtral-8x7B-Instruct-V0.1 (superforecaster with news 2)",
+   "n": 323,
+   "mean_adj": 0.2108821521231436,
+   "ci_lo": 0.18141687958063205,
+   "ci_hi": 0.2397896297786024,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 514
+  },
+  {
+   "model": "Gemini-3.1-Flash-Lite (zero shot)",
+   "n": 286,
+   "mean_adj": 0.21177106115676336,
+   "ci_lo": 0.16446825879944774,
+   "ci_hi": 0.25893770948514394,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 515
+  },
+  {
+   "model": "gemini-3.1-pro-preview",
+   "n": 99,
+   "mean_adj": 0.2122737026605516,
+   "ci_lo": 0.1354943829797856,
+   "ci_hi": 0.2828618378825236,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 516
+  },
+  {
+   "model": "GPT-3.5-Turbo-0125 (scratchpad)",
+   "n": 566,
+   "mean_adj": 0.2122824801025347,
+   "ci_lo": 0.19374048248355333,
+   "ci_hi": 0.22980724568261016,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 517
+  },
+  {
+   "model": "Gemini-3.1-Flash-Lite-Preview (zero shot)",
+   "n": 439,
+   "mean_adj": 0.2156655907506587,
+   "ci_lo": 0.17783498672089634,
+   "ci_hi": 0.2519689966717697,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 518
+  },
+  {
+   "model": "gpt-5-nano-2025-08-07",
+   "n": 99,
+   "mean_adj": 0.21696299558984447,
+   "ci_lo": 0.15818911139611205,
+   "ci_hi": 0.2811196423699602,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 519
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (superforecaster with news 3)",
+   "n": 538,
+   "mean_adj": 0.2212962243032604,
+   "ci_lo": 0.20347147104696814,
+   "ci_hi": 0.23990335390390194,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 520
+  },
+  {
+   "model": "gemini-3.1-pro-preview-high",
+   "n": 99,
+   "mean_adj": 0.225185349125198,
+   "ci_lo": 0.1584318055728249,
+   "ci_hi": 0.29742958080878507,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 521
+  },
+  {
+   "model": "Llama-2-70b-Chat-Hf (zero shot with freeze values)",
+   "n": 556,
+   "mean_adj": 0.22643194248504223,
+   "ci_lo": 0.2020069082511743,
+   "ci_hi": 0.2509533427120759,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 522
+  },
+  {
+   "model": "gpt-5.4-nano-2026-03-17",
+   "n": 99,
+   "mean_adj": 0.2352313289231778,
+   "ci_lo": 0.16832682069323798,
+   "ci_hi": 0.29934278273273934,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 523
+  },
+  {
+   "model": "grok-4.20-0309-non-reasoning",
+   "n": 99,
+   "mean_adj": 0.245600945084794,
+   "ci_lo": 0.16660971752186574,
+   "ci_hi": 0.3242000163625284,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 524
+  },
+  {
+   "model": "Claude-Opus-4-20250514 (zero shot)",
+   "n": 113,
+   "mean_adj": 0.2507223798381978,
+   "ci_lo": 0.19529298511676024,
+   "ci_hi": 0.3119677683994236,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 525
+  },
+  {
+   "model": "Claude-3-Haiku-20240307 (superforecaster with news 1)",
+   "n": 560,
+   "mean_adj": 0.25618117978896565,
+   "ci_lo": 0.2351295713257959,
+   "ci_hi": 0.2780063127191962,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 526
+  },
+  {
+   "model": "QwQ-32B-Preview (zero shot)",
+   "n": 104,
+   "mean_adj": 0.25680003143471536,
+   "ci_lo": 0.196025865144293,
+   "ci_hi": 0.31649255178816044,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 527
+  },
+  {
+   "model": "Llama-2-70b-Chat-Hf (zero shot)",
+   "n": 540,
+   "mean_adj": 0.265211644450067,
+   "ci_lo": 0.24334687334115937,
+   "ci_hi": 0.2869439449526862,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 528
+  },
+  {
+   "model": "GPT-3.5-Turbo-0125 (zero shot)",
+   "n": 566,
+   "mean_adj": 0.26752135112726966,
+   "ci_lo": 0.2426851064947083,
+   "ci_hi": 0.2917243219904476,
+   "verdict": "below market",
+   "is_reference": false,
+   "rank": 529
+  },
+  {
+   "model": "Random Uniform",
+   "n": 7853,
+   "mean_adj": 0.2737312989475119,
+   "ci_lo": 0.266393100284071,
+   "ci_hi": 0.2809256737639982,
+   "verdict": "below market",
+   "is_reference": true,
+   "rank": 530
+  },
+  {
+   "model": "Always 1",
+   "n": 7853,
+   "mean_adj": 0.726891850204045,
+   "ci_lo": 0.7164739521170579,
+   "ci_hi": 0.7374704535511164,
+   "verdict": "below market",
+   "is_reference": true,
+   "rank": 531
+  }
+ ]
+}
