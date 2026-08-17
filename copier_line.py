@@ -87,6 +87,7 @@ def load_forecasts(processed_dir: Path) -> pd.DataFrame:
         if not d or "forecasts" not in d:
             continue
         model, due = d.get("model"), d.get("forecast_due_date")
+        run_key, variant = d.get("model_run_key"), d.get("forecast_variant_key")
         for x in d["forecasts"]:
             if x.get("source") not in MARKET_SOURCES:
                 continue
@@ -95,10 +96,12 @@ def load_forecasts(processed_dir: Path) -> pd.DataFrame:
             mv, rt, fc = x.get("market_value_on_due_date"), x.get("resolved_to"), x.get("forecast")
             if mv is None or rt is None or fc is None:
                 continue
-            rows.append((model, due, x["source"], str(x["id"]),
+            rows.append((model, due, x["source"], str(x["id"]), run_key, variant,
                          float(fc), float(mv), float(rt)))
-    df = pd.DataFrame(rows, columns=["model", "due", "source", "id",
+    df = pd.DataFrame(rows, columns=["model", "due", "source", "qid",
+                                     "run_key", "variant",
                                      "forecast", "market", "outcome"])
+    df["id"] = df.qid
     df["brier"] = (df.forecast - df.outcome) ** 2
     df["gamma"] = (df.market - df.outcome) ** 2      # question difficulty
     df["adj"] = df.brier - df.gamma                  # adjusted score, market-relative
@@ -125,6 +128,66 @@ def bootstrap(df: pd.DataFrame) -> pd.DataFrame:
     r = pd.DataFrame(out).sort_values("mean_adj").reset_index(drop=True)
     r["rank"] = np.arange(1, len(r) + 1)
     return r
+
+
+def freeze_pairs(df: pd.DataFrame, C: float) -> dict:
+    """ForecastBench runs its own baselines with and without the market price in the prompt.
+    Within a matched pair the question is identical, so the difficulty term cancels."""
+    p = df[df.run_key.notna() & df.variant.notna()].copy()
+    if p.empty:
+        return {}
+    p["shown"] = p.variant.str.contains("with-freeze-values")
+    key = ["run_key", "due", "source", "qid"]
+    a, b = p[p.shown].set_index(key), p[~p.shown].set_index(key)
+    common = a.index.intersection(b.index)
+    if len(common) == 0:
+        return {}
+    m = pd.DataFrame({
+        "run": [i[0] for i in common],
+        "adj_shown": a.loc[common, "adj"].values,
+        "adj_hidden": b.loc[common, "adj"].values,
+    })
+    g = m.groupby("run").agg(n=("adj_shown", "size"),
+                             adj_shown=("adj_shown", "mean"),
+                             adj_hidden=("adj_hidden", "mean"))
+    g = g[g.n >= 50]
+    g["index_shown"] = index_from(g.adj_shown + C)
+    g["index_hidden"] = index_from(g.adj_hidden + C)
+    return dict(n_pairs=int(len(m)), n_runs=int(len(g)),
+                median_index_shown=float(g.index_shown.median()),
+                median_index_hidden=float(g.index_hidden.median()),
+                n_improved=int((g.adj_shown < g.adj_hidden).sum()),
+                runs=g.reset_index().to_dict(orient="records"))
+
+
+def difficulty_bins(df: pd.DataFrame, human_prices, strong_models) -> dict:
+    """Adjusted score by how far the market price sat from 0.5. Conditions on the price,
+    which is observable in advance, never on the outcome."""
+    edges = [-0.001, 0.05, 0.15, 0.25, 0.35, 0.5]
+    labels = ["0.45-0.50", "0.35-0.45", "0.25-0.35", "0.15-0.25", "0.00-0.15"]
+    d = df.copy()
+    d["unc"] = 0.5 - (d.market - 0.5).abs()
+    d["bin"] = pd.cut(d.unc, edges, labels=labels)
+
+    def table(sub):
+        t = sub.groupby("bin", observed=True).agg(n=("adj", "size"), mean_adj=("adj", "mean"))
+        t["share"] = 100 * t.n / t.n.sum()
+        return t.reindex(labels)
+
+    allt = table(d)
+    strong = table(d[d.model.isin(strong_models)])
+    hp = pd.Series(human_prices, dtype="float64")
+    hu = 0.5 - (hp - 0.5).abs()
+    hshare = (100 * pd.cut(hu, edges, labels=labels).value_counts(normalize=True)
+              .reindex(labels)).fillna(0)
+    return {
+        "labels": labels,
+        "distance_from_half": ["0.45-0.50", "0.35-0.45", "0.25-0.35", "0.15-0.25", "0.00-0.15"],
+        "pool_share": allt.share.tolist(),
+        "human_share": hshare.tolist(),
+        "mean_adj_all": allt.mean_adj.tolist(),
+        "mean_adj_strong": strong.mean_adj.tolist(),
+    }
 
 
 def main() -> None:
@@ -161,8 +224,14 @@ def main() -> None:
     C_reconstructed = float(q.gamma.mean())
     B_freeze = float(q.brier_freeze.mean())
 
+    human = df[df.model == "Superforecaster median forecast"]
+    human_prices = human.market.tolist()
+    print(f"  human market questions: {len(human_prices)}")
+
     print("\nbootstrapping")
     r = bootstrap(df)
+    strong = set(r[(~r.is_reference) &
+                   (r.verdict.isin(["beats market", "indistinguishable"]))].model)
     counts = r.verdict.value_counts().to_dict()
 
     blob = {
@@ -183,15 +252,23 @@ def main() -> None:
             "brier_freeze": B_freeze,
         },
         "lines": {
+            # both on the full pool: the shown-price line carries forward the price
+            # penalty measured where both prices are known
             "due_date_price": index_from(C_published),
-            "shown_price": index_from(B_freeze),
-            "penalty_index_points": index_from(B_freeze) - index_from(C_published),
+            "shown_price": index_from(C_published + (B_freeze - C_reconstructed)),
+            "price_penalty_brier": B_freeze - C_reconstructed,
+            "penalty_index_points": (index_from(C_published + (B_freeze - C_reconstructed))
+                                     - index_from(C_published)),
+            "subset_only": {"due_date_price": index_from(C_reconstructed),
+                            "shown_price": index_from(B_freeze)},
         },
         "counts": {
             "beats_market": int(counts.get("beats market", 0)),
             "indistinguishable": int(counts.get("indistinguishable", 0)),
             "below_market": int(counts.get("below market", 0)),
         },
+        "freeze_pairs": freeze_pairs(df, C_published),
+        "difficulty_bins": difficulty_bins(df, human_prices, strong),
         "entries": r.to_dict(orient="records"),
     }
 

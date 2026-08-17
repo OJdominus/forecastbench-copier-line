@@ -17,13 +17,311 @@
  },
  "lines": {
   "due_date_price": 72.26278904066716,
-  "shown_price": 70.97108659363754,
-  "penalty_index_points": -1.2917024470296212
+  "shown_price": 70.92612983761823,
+  "price_penalty_brier": 0.007593705441649973,
+  "penalty_index_points": -1.3366592030489244,
+  "subset_only": {
+   "due_date_price": 72.30991586979934,
+   "shown_price": 70.97108659363754
+  }
  },
  "counts": {
   "beats_market": 2,
   "indistinguishable": 88,
   "below_market": 441
+ },
+ "freeze_pairs": {
+  "n_pairs": 2916,
+  "n_runs": 30,
+  "median_index_shown": 68.07538986906675,
+  "median_index_hidden": 51.52928766171545,
+  "n_improved": 29,
+  "runs": [
+   {
+    "run": "claude-haiku-4-5-20251001-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.0376229248827738,
+    "adj_hidden": 0.16265173296358187,
+    "index_shown": 66.15355084162783,
+    "index_hidden": 51.05237287223871
+   },
+   {
+    "run": "claude-opus-4-7-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.03200144003428895,
+    "adj_hidden": 0.14980295518580408,
+    "index_shown": 66.99443573962986,
+    "index_hidden": 52.38296078439385
+   },
+   {
+    "run": "claude-opus-4-8-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.04621027841812733,
+    "adj_hidden": 0.15563426831711724,
+    "index_shown": 64.90789752688211,
+    "index_hidden": 51.774534165301155
+   },
+   {
+    "run": "claude-opus-4-8-run-variant-03",
+    "n": 99,
+    "adj_shown": 0.023352844074692996,
+    "adj_hidden": 0.1387080056908546,
+    "index_shown": 68.33169861597463,
+    "index_hidden": 53.56259127910905
+   },
+   {
+    "run": "claude-opus-4-8-run-variant-04",
+    "n": 99,
+    "adj_shown": 0.0027271269029758185,
+    "adj_hidden": 0.0029019450847940008,
+    "index_shown": 71.77546916541762,
+    "index_hidden": 71.74451694537018
+   },
+   {
+    "run": "claude-sonnet-4-5-20250929-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.031061530943379864,
+    "adj_hidden": 0.16038917740802633,
+    "index_shown": 67.13713066032834,
+    "index_hidden": 51.284041158129746
+   },
+   {
+    "run": "claude-sonnet-4-6-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.020584411798073136,
+    "adj_hidden": 0.12382820771105663,
+    "index_shown": 68.77185580628806,
+    "index_hidden": 55.193360437172934
+   },
+   {
+    "run": "claude-sonnet-4-6-run-variant-03",
+    "n": 99,
+    "adj_shown": 0.016944535993884912,
+    "adj_hidden": 0.13435144003428895,
+    "index_shown": 69.36018551392024,
+    "index_hidden": 54.03406400229163
+   },
+   {
+    "run": "claude-sonnet-5-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.020251692559541474,
+    "adj_hidden": 0.1432271976100465,
+    "index_shown": 68.82517365889672,
+    "index_hidden": 53.07852466190989
+   },
+   {
+    "run": "gemini-3.1-flash-lite-run-variant-01",
+    "n": 97,
+    "adj_shown": 0.03555223222876132,
+    "adj_hidden": 0.21116383343705777,
+    "index_shown": 66.46084088576241,
+    "index_hidden": 46.32513431620801
+   },
+   {
+    "run": "gemini-3.1-pro-preview-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.019090472862571782,
+    "adj_hidden": 0.21227370266055154,
+    "index_shown": 69.01197650013393,
+    "index_hidden": 46.22184552805806
+   },
+   {
+    "run": "gemini-3.1-pro-preview-run-variant-02",
+    "n": 99,
+    "adj_shown": 0.01789580872115764,
+    "adj_hidden": 0.22518534912519805,
+    "index_shown": 69.20534203771521,
+    "index_hidden": 45.03449842806386
+   },
+   {
+    "run": "gemini-3.1-pro-preview-run-variant-03",
+    "n": 99,
+    "adj_shown": 0.026625866801965718,
+    "adj_hidden": 0.03512366225651117,
+    "index_shown": 67.81908112215889,
+    "index_hidden": 66.52479284055669
+   },
+   {
+    "run": "gemini-3.5-flash-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.01585160012124855,
+    "adj_hidden": 0.19426964225651117,
+    "index_shown": 69.5390598796587,
+    "index_hidden": 47.92266045228841
+   },
+   {
+    "run": "gemma-4-31b-it-run-variant-01",
+    "n": 79,
+    "adj_shown": 0.01033436167363238,
+    "adj_hidden": 0.16639812180021465,
+    "index_shown": 70.45856319440679,
+    "index_hidden": 50.67116370919865
+   },
+   {
+    "run": "glm-5.1-run-variant-01",
+    "n": 50,
+    "adj_shown": 0.015024365293694967,
+    "adj_hidden": 0.1392103317284803,
+    "index_shown": 69.67515004588674,
+    "index_hidden": 53.508536384758365
+   },
+   {
+    "run": "gpt-5-mini-2025-08-07-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.03791255367065259,
+    "adj_hidden": 0.20363052084236977,
+    "index_shown": 66.11079215282454,
+    "index_hidden": 47.03153692784517
+   },
+   {
+    "run": "gpt-5-nano-2025-08-07-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.11745818033731924,
+    "adj_hidden": 0.21696299558984453,
+    "index_shown": 55.90992543467719,
+    "index_hidden": 45.78761370589762
+   },
+   {
+    "run": "gpt-5.4-2026-03-05-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.03411012690297582,
+    "adj_hidden": 0.17591862185247076,
+    "index_shown": 66.67652267796333,
+    "index_hidden": 49.71541896040854
+   },
+   {
+    "run": "gpt-5.4-mini-2026-03-17-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.06570767235752127,
+    "adj_hidden": 0.18424983397368289,
+    "index_shown": 62.2318971170414,
+    "index_hidden": 48.89372629960816
+   },
+   {
+    "run": "gpt-5.4-nano-2026-03-17-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.052996238014086934,
+    "adj_hidden": 0.23523132892317783,
+    "index_shown": 63.95398424314551,
+    "index_hidden": 44.128127281839646
+   },
+   {
+    "run": "gpt-5.5-2026-04-23-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.01607876579186471,
+    "adj_hidden": 0.1353589955898445,
+    "index_shown": 69.50179464753408,
+    "index_hidden": 53.92459628282159
+   },
+   {
+    "run": "gpt-5.5-2026-04-23-run-variant-04",
+    "n": 99,
+    "adj_shown": 0.0021115612464101615,
+    "adj_hidden": 0.00440123801408693,
+    "index_shown": 71.88472862897044,
+    "index_hidden": 71.48044088799053
+   },
+   {
+    "run": "grok-4.20-0309-non-reasoning-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.12916558144843038,
+    "adj_hidden": 0.245600945084794,
+    "index_shown": 54.60166648117095,
+    "index_hidden": 43.20772655853198
+   },
+   {
+    "run": "grok-4.20-0309-reasoning-run-variant-01",
+    "n": 99,
+    "adj_shown": 0.02087610670095562,
+    "adj_hidden": 0.1469878036706526,
+    "index_shown": 68.72518683010098,
+    "index_hidden": 52.67948744456523
+   },
+   {
+    "run": "grok-4.3-run-variant-01",
+    "n": 97,
+    "adj_shown": 0.030898634674171203,
+    "adj_hidden": 0.13643858312777946,
+    "index_shown": 67.16192425637206,
+    "index_hidden": 53.80759041703575
+   },
+   {
+    "run": "grok-4.3-run-variant-02",
+    "n": 81,
+    "adj_shown": 0.019422817806435885,
+    "adj_hidden": 0.015482459781744527,
+    "index_shown": 68.95839807827417,
+    "index_hidden": 69.59971267208189
+   },
+   {
+    "run": "kimi-k2.6-run-variant-02",
+    "n": 79,
+    "adj_shown": 0.022829719257619577,
+    "adj_hidden": 0.18059207520698667,
+    "index_shown": 68.41440099699344,
+    "index_hidden": 49.252846150031225
+   },
+   {
+    "run": "minimax-m2.7-run-variant-02",
+    "n": 90,
+    "adj_shown": 0.04488772383964857,
+    "adj_hidden": 0.2189752486858771,
+    "index_shown": 65.09684670120737,
+    "index_hidden": 45.60234050382954
+   },
+   {
+    "run": "minimax-m3-run-variant-01",
+    "n": 98,
+    "adj_shown": 0.026791868431248655,
+    "adj_hidden": 0.1544003480230854,
+    "index_shown": 67.7932995152403,
+    "index_hidden": 51.902636745520155
+   }
+  ]
+ },
+ "difficulty_bins": {
+  "labels": [
+   "0.45-0.50",
+   "0.35-0.45",
+   "0.25-0.35",
+   "0.15-0.25",
+   "0.00-0.15"
+  ],
+  "distance_from_half": [
+   "0.45-0.50",
+   "0.35-0.45",
+   "0.25-0.35",
+   "0.15-0.25",
+   "0.00-0.15"
+  ],
+  "pool_share": [
+   49.26900584795322,
+   21.68797059962777,
+   11.811401146916834,
+   7.081786318245803,
+   10.149836087256375
+  ],
+  "human_share": [
+   42.10526315789473,
+   19.298245614035086,
+   17.543859649122805,
+   8.771929824561402,
+   12.280701754385964
+  ],
+  "mean_adj_all": [
+   0.08744298134469547,
+   0.10155750583800585,
+   0.09792645977224418,
+   0.06937748301175375,
+   0.05246248383776908
+  ],
+  "mean_adj_strong": [
+   0.008802781659387509,
+   0.002458799928245856,
+   0.004257658594725031,
+   -0.008689798805560223,
+   -0.004123656290988937
+  ]
  },
  "entries": [
   {

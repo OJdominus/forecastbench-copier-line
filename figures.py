@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 """
-Two figures for the ForecastBench review. Both read the blob from copier_line.py.
+Figures for the ForecastBench review. All read the blob emitted by copier_line.py.
 
     python copier_line.py --date 2026-08-11
     python figures.py --blob copier_line.2026-08-11.json
 
+header_card         social / hero card
 figure_1_bootstrap  every entry against the market price it was shown. Durable.
 figure_2_drift      the frozen human baseline against a moving anchor. Expires with the
-                    fall 2026 superforecaster round.
+                    autumn 2026 superforecaster round.
+figure_3_freeze     what the market price in the prompt is worth
+figure_4_gradient   where the edge over the market is largest
 """
 
 import argparse
@@ -214,11 +217,174 @@ def figure_2_drift(blob, drift_csv="baseline_drift.csv", path="fig2_drift.png"):
     print(f"wrote {path}")
 
 
+
+def figure_3_freeze(blob, path="fig3_freeze_effect.png"):
+    """What the market price in the prompt is worth, and where it still leaves you."""
+    fp = blob.get("freeze_pairs") or {}
+    if not fp:
+        print("no freeze pair data"); return
+    r = pd.DataFrame(fp["runs"])
+    line_shown = blob["lines"]["shown_price"]
+
+    fig, ax = plt.subplots(figsize=(9.5, 6.2), dpi=200)
+    fig.patch.set_facecolor(CREAM); _style(ax)
+
+    for _, e in r.iterrows():
+        ax.plot([0, 1], [e.index_hidden, e.index_shown], color=BAND, alpha=0.35, lw=1.3, zorder=2)
+    ax.scatter([0]*len(r), r.index_hidden, s=30, color=MUTED, zorder=3, edgecolor=CREAM, lw=0.8)
+    ax.scatter([1]*len(r), r.index_shown, s=30, color=BAND, zorder=3, edgecolor=CREAM, lw=0.8)
+
+    for x, v, col in [(0, fp["median_index_hidden"], MUTED), (1, fp["median_index_shown"], BAND)]:
+        ax.plot([x-.12, x+.12], [v, v], color=col, lw=3.4, zorder=5)
+        ax.annotate(f"median {v:.1f}", xy=(x-.13, v), xytext=(-8, 0), textcoords="offset points",
+                    ha="right", va="center", fontsize=10, color=col, fontweight="600")
+
+    ax.axhline(line_shown, color=CLEAR, lw=2.0, ls=(0, (6, 3)), zorder=4)
+    ax.annotate(f"submitting the price unchanged scores {line_shown:.1f}",
+                xy=(-0.46, line_shown), xytext=(0, 11), textcoords="offset points",
+                ha="left", fontsize=9.5, color=CLEAR, fontweight="600")
+    ax.axhline(50, color=NAVY, lw=1.0, alpha=0.5, zorder=1)
+    ax.annotate("always predicting 50%", xy=(-0.46, 50), xytext=(0, 6),
+                textcoords="offset points", ha="left", fontsize=9, color=NAVY, alpha=0.7)
+
+    ax.set_xlim(-0.5, 1.45); ax.set_xticks([0, 1])
+    ax.set_xticklabels(["price withheld", "price shown"], fontsize=11, color=NAVY)
+    ax.set_ylabel("Brier Index, market questions", fontsize=10, color=NAVY)
+    ax.set_title("The market price is worth 16 index points, and still leaves you\n"
+                 "short of simply submitting it",
+                 fontsize=14, fontweight="600", color=NAVY, loc="left", pad=14)
+
+    fig.text(0.008, 0.018,
+             f"{fp['n_runs']} ForecastBench baseline runs, {fp['n_pairs']:,} matched question pairs, "
+             f"same model and same questions in both conditions. {fp['n_improved']} of "
+             f"{fp['n_runs']} improved.\n"
+             f"Within a matched pair the question is identical, so the "
+             f"difficulty term cancels and the advantage carries through to the leaderboard in full.",
+             fontsize=7.2, color=MUTED, linespacing=1.6)
+    fig.tight_layout(rect=(0, 0.085, 1, 1))
+    fig.savefig(path, facecolor=CREAM)
+    print(f"wrote {path}")
+
+
+def figure_4_gradient(blob, path="fig4_difficulty_gradient.png"):
+    """Where the average forecaster's edge over the market is largest."""
+    db = blob.get("difficulty_bins") or {}
+    if not db:
+        print("no bin data"); return
+    lab = db["labels"][::-1]
+    allv = db["mean_adj_all"][::-1]
+    strv = db["mean_adj_strong"][::-1]
+    pool = db["pool_share"][::-1]
+    x = np.arange(len(lab))
+
+    fig, (axt, axb) = plt.subplots(2, 1, figsize=(9.5, 6.8), dpi=200,
+                                   gridspec_kw={"height_ratios": [3, 1], "hspace": 0.12},
+                                   sharex=True)
+    fig.patch.set_facecolor(CREAM)
+    for a in (axt, axb): _style(a)
+
+    axt.axhline(0, color=NAVY, lw=1.5, zorder=4)
+    axt.plot(x, allv, color=BAND, lw=2.4, marker="o", ms=6, zorder=3,
+             label="all 527 entries")
+    axt.plot(x, strv, color=CLEAR, lw=2.4, marker="o", ms=6, zorder=3,
+             label="the 90 at or above the market")
+    axt.annotate("the market price", xy=(0, 0), xytext=(5, 7),
+                 textcoords="offset points", ha="left", fontsize=9,
+                 color=NAVY, fontweight="600")
+    axt.annotate(f"spread {allv[-1]-allv[0]:+.3f}", xy=(0.06, allv[0]), xytext=(12, -16),
+                 textcoords="offset points", fontsize=9, color=BAND, fontweight="600")
+    axt.annotate(f"spread {strv[-1]-strv[0]:+.3f}", xy=(0.06, strv[0]), xytext=(12, -16),
+                 textcoords="offset points", fontsize=9, color=CLEAR, fontweight="600")
+    axt.set_ylabel("mean Brier score minus\nthe market's Brier score", fontsize=10, color=NAVY)
+    axt.legend(frameon=False, fontsize=9.5, loc="upper left", labelcolor=NAVY)
+    axt.set_title("The average forecaster's edge over the market is largest\n"
+                  "where the market is least certain",
+                  fontsize=14, fontweight="600", color=NAVY, loc="left", pad=14)
+
+    axb.bar(x, pool, color=BELOW, width=0.6, zorder=3)
+    for xi, p in zip(x, pool):
+        axb.annotate(f"{p:.0f}%", xy=(xi, p), xytext=(0, 4), textcoords="offset points",
+                     ha="center", fontsize=8.5, color=MUTED)
+    axb.set_ylabel("share of\nquestions", fontsize=9, color=NAVY)
+    axb.set_ylim(0, max(pool)*1.35)
+    axb.set_xticks(x)
+    axb.set_xticklabels([f"{l}" for l in lab], fontsize=9.5, color=NAVY)
+    axb.set_xlabel("market price distance from 0.5      "
+                   "(left = near coin flip, right = near certain)",
+                   fontsize=9.5, color=NAVY)
+
+    fig.text(0.008, 0.018,
+             "423,396 resolved market forecasts, binned on the market price, which is observable "
+             "in advance. The outcome is never used to form the bins.\n"
+             "Half the market questions carry a price within 0.05 of 0 or 1.",
+             fontsize=7.2, color=MUTED, linespacing=1.6)
+    fig.tight_layout(rect=(0, 0.075, 1, 1))
+    fig.savefig(path, facecolor=CREAM)
+    print(f"wrote {path}")
+
+
+
+def header_card(blob, path="header.png"):
+    """Hero / social card. 1200x630. Must read at thumbnail size, so: one number,
+    one sentence, and the shape of the result."""
+    d = pd.DataFrame(blob["entries"])
+    d = d[~d.is_reference].sort_values("mean_adj").reset_index(drop=True)
+    d["rank"] = np.arange(1, len(d) + 1)
+    n_beat = int((d.verdict == "beats market").sum())
+
+    fig = plt.figure(figsize=(12, 6.3), dpi=100)
+    fig.patch.set_facecolor(CREAM)
+
+    # type block
+    fig.text(0.065, 0.775, f"Two of {len(d)}", fontsize=64, fontweight="700",
+             color=NAVY, va="top", ha="left")
+    fig.text(0.065, 0.545,
+             "forecasters on ForecastBench beat the market price they were shown.",
+             fontsize=19, color=NAVY, va="top", ha="left")
+    fig.text(0.065, 0.455,
+             "One of them is a panel of superforecasters who last forecast in July 2024.",
+             fontsize=15, color=MUTED, va="top", ha="left")
+    fig.text(0.065, 0.115, "THE COPIER LINE", fontsize=12.5, fontweight="700",
+             color=CLEAR, va="bottom", ha="left")
+    fig.text(0.065, 0.062, "What ForecastBench's market scores measure",
+             fontsize=12.5, color=MUTED, va="bottom", ha="left")
+
+    # the result, drawn small and wide under the type
+    ax = fig.add_axes([0.065, 0.185, 0.87, 0.19])
+    ax.set_facecolor(CREAM)
+    for sp in ax.spines.values():
+        sp.set_visible(False)
+    ax.set_xticks([]); ax.set_yticks([])
+
+    for verdict, colour, alpha, lw in [("below market", BELOW, 0.9, 0.9),
+                                       ("indistinguishable", BAND, 0.5, 0.9),
+                                       ("beats market", CLEAR, 1.0, 2.6)]:
+        seg = d[d.verdict == verdict]
+        ax.vlines(seg["rank"], seg.ci_lo, seg.ci_hi, color=colour, lw=lw,
+                  alpha=alpha, zorder=2)
+    ax.axhline(0, color=NAVY, lw=1.7, zorder=4)
+    ax.set_xlim(-6, len(d) + 6)
+    ax.set_ylim(-0.05, 0.14)
+    ax.invert_yaxis()   # better is up
+    ax.annotate("the market price", xy=(len(d), 0), xytext=(0, -7),
+                textcoords="offset points", ha="right", va="bottom",
+                fontsize=9.5, color=NAVY, fontweight="600")
+    ax.annotate(f"only {n_beat} clear it", xy=(2, d.ci_lo.min()), xytext=(16, 0),
+                textcoords="offset points", ha="left", va="center",
+                fontsize=9.5, color=CLEAR, fontweight="700")
+
+    fig.savefig(path, facecolor=CREAM)
+    print(f"wrote {path}")
+
+
 if __name__ == "__main__":
     p = argparse.ArgumentParser()
     p.add_argument("--blob", default="copier_line.2026-08-11.json")
     a = p.parse_args()
     with open(a.blob, encoding="utf-8") as fh:
         blob = json.load(fh)
+    header_card(blob)
     figure_1_bootstrap(blob)
     figure_2_drift(blob)
+    figure_3_freeze(blob)
+    figure_4_gradient(blob)

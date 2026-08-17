@@ -196,9 +196,14 @@ Across 2,916 matched pairs over 30 runs:
 | Median correlation with the market price | 0.375 | 0.903 |
 | Median share within 0.5pp of it | about 3% | about 11% |
 
+![Figure 3](../figures/fig3_freeze_effect.png)
+
+*Figure 3. Thirty ForecastBench baseline runs, 2,916 matched question pairs, same model and same
+questions in both conditions.*
+
 Median improvement: **15.66 Brier Index points**, and 29 of 30 runs improved. Without the price,
 ForecastBench's own baseline models score 51.5, close to the 50 that always predicting 50% would
-score. Given the price, they reach 68.1, still below the 70.97 they would score by submitting that
+score. Given the price, they reach 68.1, still below the 70.93 they would score by submitting that
 price unchanged.
 
 Among all forecast sets in the processed data, of 533 with at least 50 resolved market
@@ -297,6 +302,11 @@ forecasts by how far the market price sat from 0.5:
 | 0.35–0.45 | 21.7% | 19.3% | +0.1016 |
 | 0.45–0.50 (near certain) | 49.3% | 42.1% | +0.0874 |
 
+![Figure 4](../figures/fig4_difficulty_gradient.png)
+
+*Figure 4. Adjusted score by how far the market price sat from 0.5. Bins are formed on the price,
+which is observable in advance, never on the outcome.*
+
 **The average forecaster's edge over the market is largest exactly where the market is least
 certain.** The spread between the extreme bins is 0.035, twice the superforecasters' entire margin.
 That is a fact about what the market column measures, and it means a copier line is a pool average
@@ -390,7 +400,7 @@ python copier_line.py --date 2026-08-11 --processed <extracted processed forecas
 python figures.py --blob copier_line.2026-08-11.json
 ```
 
-Analysis code and derived data: https://github.com/OJdominus/forecastbench-copier-line Inputs, all public:
+Analysis code at https://github.com/OJdominus/forecastbench-copier-line. Inputs, all public:
 
 ```
 git clone https://github.com/forecastingresearch/forecastbench-datasets.git
