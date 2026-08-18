@@ -229,7 +229,7 @@ Across 2,916 matched pairs over 30 runs:
 *Figure 3. Thirty ForecastBench baseline runs, 2,916 matched question pairs, same model and same
 questions in both conditions.*
 
-Median improvement: **15.66 Brier Index points**, and 29 of 30 runs improved. Without the price,
+Median improvement per run: **15.66 Brier Index points**, and 29 of 30 runs improved. The two medians in the table differ by 16.55, which is a slightly larger number because the median of the paired differences is not the difference of the medians. The paired figure is the right one for a design where every run appears in both columns. Without the price,
 ForecastBench's own baseline models score 51.5, close to the 50 that always predicting 50% would
 score. Given the price, they reach 68.1, still below the 70.93 they would score by submitting that
 price unchanged.
