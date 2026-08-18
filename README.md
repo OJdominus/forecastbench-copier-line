@@ -3,9 +3,15 @@
 Analysis code and derived data for a review of how ForecastBench scores market questions.
 
 **Headline result.** Of 527 forecasters on ForecastBench with at least 50 resolved market
-questions, two beat the market price they were shown at 95% confidence: `Cassi-2026-05-10` and the
-`Superforecaster median forecast`. Eighty-eight are statistically indistinguishable from the market
-price and 437 score below it.
+questions, **442 score worse than the market price they were shown** at a 5% false discovery
+rate across all 527 tests. **None demonstrably beat it**: the same correction returns zero
+discoveries in that direction.
+
+Two clear an uncorrected test, and both were named publicly before this analysis existed:
+`Cassi-2026-05-10` (exact bootstrap p = 0.004) and the
+`Superforecaster median forecast` (p = 0.016). Chance alone would
+place 2.2 of the 90 entries not
+significantly below the line below it. Two are there.
 
 ![Every entry against the market price](figures/fig1_vs_market.png)
 
@@ -40,7 +46,7 @@ analyse_freeze_values.py    paired freeze-value experiment and market-tracking s
 
 data/                       derived outputs, all reproducible from the scripts
 figures/                    fig1_vs_market.png, fig2_drift.png
-article/                    the write-up
+article/                    the write-up, long form and X version
 ```
 
 ## Reproducing

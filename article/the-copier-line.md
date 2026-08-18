@@ -1,67 +1,92 @@
 # The Copier Line: What ForecastBench's Market Scores Measure
 
 *Figures as of 11 August 2026. The leaderboard updates nightly. The method for recomputing
-every number here on any date is given in full, and the code is linked.*
+every number here on any date is given in full, and the code is linked:
+https://github.com/OJdominus/forecastbench-copier-line*
 
-Of 527 forecasters on ForecastBench with enough resolved market questions to test, two beat the
-market price they were shown. They are **Cassi-2026-05-10** and the **superforecaster median**.
+As of August 11, 2026, ForecastBench had tested 527 forecasters. Of those with enough resolved
+market questions to test, **442 scored worse than the market price provided to them**, and none can
+be shown to have beaten it once you account for having run 527 tests at once.
 
-Those are the two entries the parity debate is about.
+Two come closest, and they are the two the argument was already about. Namely, **Cassi-2026-05-10**
+and the **superforecaster median**.
+
+Those two are what this piece focuses on.
 
 ![Figure 1](../figures/fig1_vs_market.png)
 
-*Figure 1. Every entry's Brier score minus the market's Brier score on the same questions, with
-95% bootstrap intervals. This is the benchmark's own difficulty-adjusted market score. Two
-intervals sit entirely below zero.*
+*Figure 1. Every entry's Brier score minus the market's Brier score on the same questions, with 95%
+bootstrap intervals. This is the benchmark's own difficulty-adjusted market score. Two intervals lie
+entirely below the line.*
 
-## The question this answers
+## Why we are looking into this
 
-FRI's July post is specifically about market questions. Its second heading reports that an AI
-system ranked above superforecasters on market questions for the first time, and the post argues
-these questions matter because they require judgment about novel events rather than data lookup.
+In July this year, the Forecasting Research Institute (FRI) released a report that claims AI models
+are performing at the same level with superforecasters on ForecastBench. In the second heading of
+its report, they went further to identify an AI system that ranked above superforecasters on market
+questions for the first time.
 
-Three weeks later Good Judgment published a response and wrote, twice, that whether top-ranked
-systems are forecasting independently or aggregating market prices with extra steps remains
-entirely unexplored. They noted that FRI's own earlier work had documented one model correlating
-0.994 with the prices it was shown, and that the new post does not mention it.
+FRI argues that market questions are the better test of human-like forecasting skill, as they often
+require judgment about novel, one-off events. On that reading it is a significant result that an AI
+system beat superforecasters on those questions.
 
-Both parties have converged on the market column as the thing that counts. Neither has published
-what it measures.
+Three weeks later, Good Judgment countered with a response. Their argument was that the human scores
+came from a single session held in July 2024 and that comparing a continuously improving machine
+against a two-year-old snapshot of a human is not a fair race.
 
-One piece of outside evidence points the same way. The *Financial Times* ran a backtest putting an
-AI system, the market, and superforecasters side by side on Fed decisions with knowledge-cutoff
-controls. Reported secondhand through Good Judgment's summary, which is an interested source: the
-AI drew level with the market and no better, its own rationale for the April 2026 FOMC meeting said
-it relied heavily on market-based trackers and named the CME FedWatch Tool and Polymarket as
-outside-view anchors, and the FT concluded the system does not yet possess the judgment to see
-where the market errs and improve on it.
+But more importantly, they pointed out that in FRI's work, one model prediction had a 0.994
+correlation with the market prices it was shown. Meaning that the AI models might not be forecasting
+independently but instead copying market prices and making adjustments.
 
-That is one qualitative finding on a handful of Fed decisions. What follows is the same question
-asked of 423,396 resolved market forecasts, using the benchmark's own scoring rule.
+Another piece of evidence we can put into view is a test run by the Financial Times (FT) on AI
+against both the market and human superforecasters on Federal Reserve interest rate decisions,
+reported here secondhand through Good Judgment's summary. The AI drew level with the market and not
+better. The FT then concluded that AI lacks the judgment to spot market errors and outperform them.
 
-## The short version
+In conclusion, everyone agrees that market questions might as well be the real benchmark for
+artificial intelligence, but no one has actually published what a market question score actually
+measures. What follows is the same question asked of 423,396 resolved market forecasts, using the
+benchmark's own scoring rule.
 
-1. Of **527** entries, **2** beat the market price at 95% confidence, **88** are indistinguishable
-   from it, and **437** score below it.
-2. The two that clear are Cassi-2026-05-10 (−0.0220, CI −0.0403 to −0.0055) and the superforecaster
-   median (−0.0173, CI −0.0354 to −0.0016). The general public median sits significantly below the
-   market at +0.0200.
+## Tldr
+
+1. Of 527 entries, **442 score significantly below the market price** at a 5% false discovery rate
+   across all 527 tests. **Zero** entries survive the same correction in the other direction.
+2. Two clear an uncorrected test, and they are the two that clear it: Cassi-2026-05-10 (−0.0220, CI
+   −0.0403 to −0.0055, exact bootstrap p = 0.004) and the superforecaster median (−0.0173, CI −0.0354
+   to −0.0016, p = 0.017). Both were named in advance by other people, which is why it is fair to read
+   them uncorrected.
 3. The scoring rule implies a zero point. A forecaster submitting the price it was shown scores
-   **70.93** on the Brier Index. Superforecasters sit 4.67 above it, Cassi 5.67 above it.
-4. The published index is not comparable across dates. The superforecasters' adjusted score has
-   been **−0.0173** since July 2024, and their published index still fell 4.7 points in four months
+   **70.93** on the Brier Index. Superforecasters sit 4.67 above it, Cassi 5.67.
+4. The published index is not comparable across dates. The superforecasters' adjusted score has been
+   **−0.0173** since July 2024, and their published index still fell 4.7 points in four months
    because the rescaling anchor rose 36.9%.
 
-## Two different nulls
+## Two different nulls, and 527 tests
 
 FRI reports a bootstrap one-sided p-value of 0.41 for Cassi against the null that it is equally
 accurate as superforecasters, with 0.16 and 0.15 for xAI's submissions and 0.14 for Google
-DeepMind's. Their own caveat states that many of these confidence intervals overlap substantially
-and that the results are more consistent with parity than with outperformance.
+DeepMind's. FRI itself notes that many of the confidence intervals overlap substantially, making the
+results more consistent with parity than with clear outperformance by AI.
 
-That test asks whether an AI matches the superforecasters. The test here asks whether either
-matches the price both were shown. Both results hold at once, and they are complementary. Cassi and the superforecasters cannot be separated from each other. Both can be
-separated from the market. Everyone else on the board cannot.
+That test asks whether an AI matches the superforecasters. The test here asks whether either matches
+the price both were shown. Both findings can be true, and they are complementary.
+
+The second test carries a cost the first does not. Running it once per entry means running it 527
+times, and a two-sided 95% interval falls entirely below zero 2.5% of the time when the true edge is
+exactly zero. Of the 527, 437 are significantly below the market on the uncorrected test, so their
+true effect is not near zero. That leaves 90 whose edge could plausibly be nothing. **If none of
+those 90 had any edge at all, chance alone would put 2.2 of them below the line. Two are there.**
+
+Benjamini-Hochberg at a 5% false discovery rate returns zero discoveries in that direction and 442
+in the other. So the honest reading is that no entry on this board demonstrably beats the price it
+was shown, and the great majority demonstrably lose to it.
+
+Cassi and the superforecasters stay interesting for a different reason. They were not selected by
+this search. FRI's July post named Cassi. Good Judgment's reply named the superforecasters. Testing
+those two is a hypothesis someone else registered three weeks in advance, and on that basis their
+exact bootstrap p-values of 0.004 and 0.017 are worth reporting. They are also the only two that
+come close: the next strongest sits at 0.035, and nothing else clears 0.05.
 
 ## What Counts as a Market Question
 
@@ -84,31 +109,28 @@ Everything below concerns the tournament board.
 
 ## How the Market Score Is Computed
 
-Everything after this section depends on it. All three functions are in `src/leaderboard/main.py`,
-MIT licensed.
+Everything after this section depends on it. All of it is in `src/leaderboard/main.py` in the
+ForecastBench repository, MIT licensed.
 
-**Difficulty.** `two_way_fixed_effects()`, line 2348. Dataset questions get least squares on
-`brier_score ~ 1 | question_pk + model_pk`. Market questions on the tournament board take
-difficulty directly from the Brier score of a reference model called the Imputed Forecaster, with a
-code comment stating that the estimated question fixed effects are equivalent to the market Brier.
+| Step | Function, line | What it does |
+|---|---|---|
+| Difficulty | `two_way_fixed_effects()`, 2348 | Dataset questions: least squares on `brier_score ~ 1 \| question_pk + model_pk`. Market questions on the tournament board: difficulty taken straight from the Brier score of a reference model, the **Imputed Forecaster**. |
+| Adjusted score | same | `brier_score − question_fixed_effect`. The y-axis of Figure 1. |
+| Rescaling | `rescale_difficulty_adjusted_brier()`, 2954 | Shifts every score by 0.25 minus the Always 0.5 model's score. That model scores `0.25 − mean(difficulty)`, so the shift equals mean difficulty. Call it **C**. |
+| Index | `apply_brier_index_transform()`, 2985 | `Brier Index = (1 − √rescaled) × 100`. Square root, 0 to 100, where 100 is perfect and 50 is always predicting 50%. |
+| Overall | 2610 | Mean of the dataset and market columns. |
 
-Checking that reference model: its forecast equals `market_value_on_due_date` on 100% of resolved
-market rows, correlation 1.0000. So market question difficulty is the squared error of the market
-price on the forecast due date. The adjusted score is `brier_score − question_fixed_effect`, which
-is the y-axis of Figure 1.
+Three things follow.
 
-**Rescaling.** `rescale_difficulty_adjusted_brier()`, line 2954, shifts every score by 0.25 minus
-the Always 0.5 model's score. Since that model scores `0.25 − mean(difficulty)`, the shift equals
-mean difficulty. Call it **C**.
+The Imputed Forecaster's forecast equals `market_value_on_due_date` on 100% of resolved market rows,
+correlation 1.0000. **Market question difficulty is the squared error of the market price on the
+forecast due date.**
 
-**The index.** `apply_brier_index_transform()`, line 2985:
-`Brier Index = (1 − sqrt(rescaled_score)) × 100`. A square-root transform, 0 to 100, where 100 is
-perfect and 50 is always predicting 50%. Check: the superforecasters' adjusted market score is
-−0.0173 and C is 0.076935, so their rescaled score is 0.059635 and
-`(1 − √0.059635) × 100 = 75.58` against a published 75.6.
+The overall column is a straight mean, so 57 resolved market questions carry the same weight as 521
+dataset questions.
 
-**The overall score**, line 2610, is the mean of the dataset and market columns. Fifty-seven
-resolved market questions carry the same weight as 521 dataset questions.
+The transform checks out. The superforecasters' adjusted market score is −0.0173 and C is 0.076935,
+so their rescaled score is 0.059635 and `(1 − √0.059635) × 100 = 75.58` against a published 75.6.
 
 ## Data and Methodology
 
@@ -166,6 +188,12 @@ anchor C = 0.076935. The shown-price line carries forward the price penalty meas
 questions where both prices are known, δ = 0.084268 − 0.076674 = 0.007594, giving
 `(1 − √(C + δ)) × 100 = 70.93`. Computing both on the 3,175-question subset alone gives 72.31 and
 70.97: a 1.33-point gap on the full pool against 1.34 on the subset.
+
+Scoring against a reference forecast is old. The Brier Skill Score does it, Metaculus's Peer Score
+does it, and FRI's own addendum evaluates both as alternatives before selecting the difficulty-
+adjusted Brier. The point here is narrower: setting the market weight to 1 makes the published market
+column a skill score against the market price already, and the zero point that implies has never been
+drawn.
 
 The due-date line is unreachable by copying, since no participant saw that price. The shown-price
 line at 70.93 is the behavioural zero, the score for adding nothing to what was in the prompt.
@@ -348,8 +376,13 @@ The autumn 2026 round is the moment to do it. A fresh superforecaster elicitatio
 baseline and retires the drift numbers in the previous section. The copier line survives that
 reset, because it is computed from the question pool rather than from any forecaster.
 
-## Eight Things This Doesn't Cover
+## Nine Things This Doesn't Cover
 
+- The board carries 527 simultaneous tests, so some entries clear a 95% bar by chance. Zero survive
+  a 5% false discovery rate in the beats-the-market direction and 442 survive it in the other.
+  Cassi and the superforecasters are reported uncorrected because both were named publicly before
+  this analysis existed. Bonferroni cannot be assessed here: with 2,000 resamples the smallest
+  achievable p is 0.0005, above the 0.000095 threshold.
 - The bootstrap covers 527 entries with at least 50 resolved market questions, from the processed
   forecast sets. Matching those entries by name to the published leaderboard succeeds for 103 of
   273 rows, which limits only the joint analyses: the leaderboard-restricted bootstrap split and
@@ -400,7 +433,7 @@ python copier_line.py --date 2026-08-11 --processed <extracted processed forecas
 python figures.py --blob copier_line.2026-08-11.json
 ```
 
-Analysis code at https://github.com/OJdominus/forecastbench-copier-line. Inputs, all public:
+Analysis code and derived data: https://github.com/OJdominus/forecastbench-copier-line Inputs, all public:
 
 ```
 git clone https://github.com/forecastingresearch/forecastbench-datasets.git
@@ -433,5 +466,5 @@ Leaderboard history requires a full clone. Data read 10 to 14 August 2026. Scori
 
 ---
 
-Two forecasters out of 527 beat the price they were shown, and they are the two the parity debate
-is about.
+Four hundred and forty-two forecasters out of 527 scored worse than the price they were shown.
+None can be shown to have beaten it.

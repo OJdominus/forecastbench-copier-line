@@ -122,12 +122,56 @@ def bootstrap(df: pd.DataFrame) -> pd.DataFrame:
         verdict = ("beats market" if hi < 0
                    else "below market" if lo > 0
                    else "indistinguishable")
+        # exact one-sided bootstrap p-values, +1 correction so p is never 0
+        p_beat = (np.sum(draws >= 0) + 1) / (N_RESAMPLES + 1)   # H1: entry beats the market
+        p_lose = (np.sum(draws <= 0) + 1) / (N_RESAMPLES + 1)   # H1: entry loses to the market
         out.append(dict(model=model, n=int(len(v)), mean_adj=float(v.mean()),
                         ci_lo=float(lo), ci_hi=float(hi), verdict=verdict,
+                        p_beat=float(p_beat), p_lose=float(p_lose),
                         is_reference=model in REFERENCE_MODELS))
     r = pd.DataFrame(out).sort_values("mean_adj").reset_index(drop=True)
     r["rank"] = np.arange(1, len(r) + 1)
     return r
+
+
+def multiplicity(r: pd.DataFrame) -> dict:
+    """527 simultaneous tests. Some entries clear a 95% bar by chance alone, so report
+    what survives correction and what the null predicts."""
+    d = r[~r.is_reference].copy()
+    m = len(d)
+    raw_beat = int((d.verdict == "beats market").sum())
+    raw_lose = int((d.verdict == "below market").sum())
+    near_zero = int(m - raw_lose)   # entries whose true edge could plausibly be zero
+
+    def bh(p, alpha=0.05):
+        p = np.sort(np.asarray(p))
+        k = np.where(p <= (np.arange(1, len(p) + 1) / len(p)) * alpha)[0]
+        return int(k.max() + 1) if len(k) else 0
+
+    bonf = 0.05 / m
+    return {
+        "n_tests": m,
+        "uncorrected": {"beats": raw_beat, "below": raw_lose,
+                        "indistinguishable": int(m - raw_beat - raw_lose)},
+        "expected_false_beats_if_no_edge": {
+            "all_entries": round(m * 0.025, 1),
+            "entries_not_significantly_below": round(near_zero * 0.025, 1),
+        },
+        "bh_fdr_5pct": {"beats": bh(d.p_beat), "below": bh(d.p_lose)},
+        "bonferroni_threshold": bonf,
+        "bonferroni_survivors": {
+            "beats": int((d.p_beat < bonf).sum()),
+            "below": int((d.p_lose < bonf).sum()),
+        },
+        "named_in_advance": [
+            {"model": mdl,
+             "p_beat": float(d[d.model == mdl].p_beat.iloc[0]),
+             "mean_adj": float(d[d.model == mdl].mean_adj.iloc[0]),
+             "n": int(d[d.model == mdl].n.iloc[0])}
+            for mdl in ["Cassi-2026-05-10", "Superforecaster median forecast"]
+            if (d.model == mdl).any()
+        ],
+    }
 
 
 def freeze_pairs(df: pd.DataFrame, C: float) -> dict:
@@ -267,6 +311,7 @@ def main() -> None:
             "indistinguishable": int(counts.get("indistinguishable", 0)),
             "below_market": int(counts.get("below market", 0)),
         },
+        "multiplicity": multiplicity(r),
         "freeze_pairs": freeze_pairs(df, C_published),
         "difficulty_bins": difficulty_bins(df, human_prices, strong),
         "entries": r.to_dict(orient="records"),

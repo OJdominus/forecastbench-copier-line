@@ -92,7 +92,7 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
                Rectangle((0, 0), 1, 1, color=BAND, alpha=0.55),
                Rectangle((0, 0), 1, 1, color=BELOW)]
     ax.legend(handles,
-              [f"beats the market  ({n_beat})",
+              [f"clears an uncorrected test  ({n_beat})",
                f"indistinguishable  ({n_ind})",
                f"below the market  ({n_below})"],
               frameon=False, fontsize=9, loc="upper left",
@@ -144,8 +144,14 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
                      fontweight="600" if beats else "normal", linespacing=1.4,
                      arrowprops=dict(arrowstyle="-", color=col, lw=0.9, alpha=0.6))
 
-    fig.suptitle(f"Of {len(d)} forecasters on ForecastBench, {n_beat} beat the market price",
+    mult = blob.get("multiplicity", {})
+    bh = mult.get("bh_fdr_5pct", {})
+    fig.suptitle(f"Of {len(d)} forecasters on ForecastBench, "
+                 f"{bh.get('below', n_below)} score worse than the market price they were shown",
                  fontsize=15.5, fontweight="600", color=NAVY, x=0.008, ha="left", y=0.985)
+    fig.text(0.008, 0.928, "None demonstrably beat it. Two clear an uncorrected test, and both were "
+                           "named publicly before this analysis existed.",
+             fontsize=10.5, color=MUTED, ha="left")
 
     lines = blob["lines"]
     fig.text(0.008, 0.018,
@@ -155,7 +161,10 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
              f"Question difficulty on a market question is the Brier score of the due-date market "
              f"price (forecastbench src/leaderboard/main.py:2348), so this axis is the benchmark's "
              f"own adjusted score. Copier lines: {lines['due_date_price']:.2f} due-date price, "
-             f"{lines['shown_price']:.2f} shown price.",
+             f"{lines['shown_price']:.2f} shown price.\n"
+             f"527 simultaneous tests: Benjamini-Hochberg at 5% FDR returns 0 entries beating the "
+             f"market and {bh.get('below','442')} losing to it. Chance alone would place 2.2 of the "
+             f"90 entries not significantly below the line below it; 2 are there.",
              fontsize=7.2, color=MUTED, linespacing=1.6)
 
     fig.tight_layout(rect=(0, 0.10, 1, 0.945))
@@ -336,13 +345,15 @@ def header_card(blob, path="header.png"):
     fig.patch.set_facecolor(CREAM)
 
     # type block
-    fig.text(0.065, 0.775, f"Two of {len(d)}", fontsize=64, fontweight="700",
+    bh = (blob.get("multiplicity", {}) or {}).get("bh_fdr_5pct", {})
+    n_lose = bh.get("below", int((d.verdict == "below market").sum()))
+    fig.text(0.065, 0.775, f"{n_lose} of {len(d)}", fontsize=64, fontweight="700",
              color=NAVY, va="top", ha="left")
     fig.text(0.065, 0.545,
-             "forecasters on ForecastBench beat the market price they were shown.",
-             fontsize=19, color=NAVY, va="top", ha="left")
+             "forecasters on ForecastBench score worse than the market price they were shown.",
+             fontsize=18, color=NAVY, va="top", ha="left")
     fig.text(0.065, 0.455,
-             "One of them is a panel of superforecasters who last forecast in July 2024.",
+             "None demonstrably beat it.",
              fontsize=15, color=MUTED, va="top", ha="left")
     fig.text(0.065, 0.115, "THE COPIER LINE", fontsize=12.5, fontweight="700",
              color=CLEAR, va="bottom", ha="left")
@@ -364,12 +375,12 @@ def header_card(blob, path="header.png"):
                   alpha=alpha, zorder=2)
     ax.axhline(0, color=NAVY, lw=1.7, zorder=4)
     ax.set_xlim(-6, len(d) + 6)
-    ax.set_ylim(-0.05, 0.14)
-    ax.invert_yaxis()   # better is up
-    ax.annotate("the market price", xy=(len(d), 0), xytext=(0, -7),
+    # orientation matches Figure 1: below the line adds information over the market
+    ax.set_ylim(-0.055, 0.14)
+    ax.annotate("the market price", xy=(len(d), 0), xytext=(0, 6),
                 textcoords="offset points", ha="right", va="bottom",
                 fontsize=9.5, color=NAVY, fontweight="600")
-    ax.annotate(f"only {n_beat} clear it", xy=(2, d.ci_lo.min()), xytext=(16, 0),
+    ax.annotate(f"{n_beat} clear an uncorrected test", xy=(2, d.ci_lo.min()), xytext=(16, 0),
                 textcoords="offset points", ha="left", va="center",
                 fontsize=9.5, color=CLEAR, fontweight="700")
 

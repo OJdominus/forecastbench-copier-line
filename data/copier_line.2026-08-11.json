@@ -30,6 +30,41 @@
   "indistinguishable": 88,
   "below_market": 441
  },
+ "multiplicity": {
+  "n_tests": 527,
+  "uncorrected": {
+   "beats": 2,
+   "below": 437,
+   "indistinguishable": 88
+  },
+  "expected_false_beats_if_no_edge": {
+   "all_entries": 13.2,
+   "entries_not_significantly_below": 2.2
+  },
+  "bh_fdr_5pct": {
+   "beats": 0,
+   "below": 442
+  },
+  "bonferroni_threshold": 9.487666034155598e-05,
+  "bonferroni_survivors": {
+   "beats": 0,
+   "below": 0
+  },
+  "named_in_advance": [
+   {
+    "model": "Cassi-2026-05-10",
+    "p_beat": 0.00399800099950025,
+    "mean_adj": -0.02196306589187596,
+    "n": 102
+   },
+   {
+    "model": "Superforecaster median forecast",
+    "p_beat": 0.01649175412293853,
+    "mean_adj": -0.017277136908844287,
+    "n": 57
+   }
+  ]
+ },
  "freeze_pairs": {
   "n_pairs": 2916,
   "n_runs": 30,
@@ -331,6 +366,8 @@
    "ci_lo": -0.04028472250140322,
    "ci_hi": -0.005496699943225478,
    "verdict": "beats market",
+   "p_beat": 0.00399800099950025,
+   "p_lose": 0.9965017491254373,
    "is_reference": false,
    "rank": 1
   },
@@ -341,6 +378,8 @@
    "ci_lo": -0.03541002253821061,
    "ci_hi": -0.001622036676421064,
    "verdict": "beats market",
+   "p_beat": 0.01649175412293853,
+   "p_lose": 0.984007996001999,
    "is_reference": false,
    "rank": 2
   },
@@ -351,6 +390,8 @@
    "ci_lo": -0.04153492204552551,
    "ci_hi": 0.018072257009917624,
    "verdict": "indistinguishable",
+   "p_beat": 0.20389805097451275,
+   "p_lose": 0.7966016991504248,
    "is_reference": false,
    "rank": 3
   },
@@ -361,6 +402,8 @@
    "ci_lo": -0.03245830072734877,
    "ci_hi": 0.014626302187273444,
    "verdict": "indistinguishable",
+   "p_beat": 0.17841079460269865,
+   "p_lose": 0.8220889555222389,
    "is_reference": false,
    "rank": 4
   },
@@ -371,6 +414,8 @@
    "ci_lo": -0.02225934815126474,
    "ci_hi": 0.00660475732750128,
    "verdict": "indistinguishable",
+   "p_beat": 0.16891554222888555,
+   "p_lose": 0.8315842078960519,
    "is_reference": false,
    "rank": 5
   },
@@ -381,6 +426,8 @@
    "ci_lo": -0.02188758287682955,
    "ci_hi": 0.005777321166834501,
    "verdict": "indistinguishable",
+   "p_beat": 0.1549225387306347,
+   "p_lose": 0.8455772113943029,
    "is_reference": false,
    "rank": 6
   },
@@ -391,6 +438,8 @@
    "ci_lo": -0.017236780441145648,
    "ci_hi": 0.00030546459112487813,
    "verdict": "indistinguishable",
+   "p_beat": 0.034482758620689655,
+   "p_lose": 0.9660169915042479,
    "is_reference": false,
    "rank": 7
   },
@@ -401,6 +450,8 @@
    "ci_lo": -0.019034673918383704,
    "ci_hi": 0.005129087514684764,
    "verdict": "indistinguishable",
+   "p_beat": 0.17191404297851073,
+   "p_lose": 0.8285857071464268,
    "is_reference": false,
    "rank": 8
   },
@@ -411,6 +462,8 @@
    "ci_lo": -0.024267629195940527,
    "ci_hi": 0.014936117548363746,
    "verdict": "indistinguishable",
+   "p_beat": 0.2993503248375812,
+   "p_lose": 0.7011494252873564,
    "is_reference": false,
    "rank": 9
   },
@@ -421,6 +474,8 @@
    "ci_lo": -0.014693648923888226,
    "ci_hi": 0.0006767381529400587,
    "verdict": "indistinguishable",
+   "p_beat": 0.059470264867566215,
+   "p_lose": 0.9410294852573713,
    "is_reference": false,
    "rank": 10
   },
@@ -431,6 +486,8 @@
    "ci_lo": -0.02325726762371322,
    "ci_hi": 0.015979950346635848,
    "verdict": "indistinguishable",
+   "p_beat": 0.2978510744627686,
+   "p_lose": 0.7026486756621689,
    "is_reference": false,
    "rank": 11
   },
@@ -441,6 +498,8 @@
    "ci_lo": -0.011096936363023216,
    "ci_hi": 0.00195856121108413,
    "verdict": "indistinguishable",
+   "p_beat": 0.11144427786106946,
+   "p_lose": 0.889055472263868,
    "is_reference": false,
    "rank": 12
   },
@@ -451,6 +510,8 @@
    "ci_lo": -0.024475348313168485,
    "ci_hi": 0.019439919148525754,
    "verdict": "indistinguishable",
+   "p_beat": 0.36881559220389803,
+   "p_lose": 0.6316841579210395,
    "is_reference": false,
    "rank": 13
   },
@@ -461,6 +522,8 @@
    "ci_lo": -0.00939608373044324,
    "ci_hi": 0.0025074226114213003,
    "verdict": "indistinguishable",
+   "p_beat": 0.13143428285857073,
+   "p_lose": 0.8690654672663668,
    "is_reference": false,
    "rank": 14
   },
@@ -471,6 +534,8 @@
    "ci_lo": -0.02830234937553523,
    "ci_hi": 0.023231461056447435,
    "verdict": "indistinguishable",
+   "p_beat": 0.38330834582708645,
+   "p_lose": 0.617191404297851,
    "is_reference": false,
    "rank": 15
   },
@@ -481,6 +546,8 @@
    "ci_lo": -0.010151664779747216,
    "ci_hi": 0.002584139619929911,
    "verdict": "indistinguishable",
+   "p_beat": 0.1809095452273863,
+   "p_lose": 0.8195902048975512,
    "is_reference": false,
    "rank": 16
   },
@@ -491,6 +558,8 @@
    "ci_lo": -0.009909572622435948,
    "ci_hi": 0.001917307239300522,
    "verdict": "indistinguishable",
+   "p_beat": 0.12143928035982009,
+   "p_lose": 0.8790604697651174,
    "is_reference": false,
    "rank": 17
   },
@@ -501,6 +570,8 @@
    "ci_lo": -0.02422688336935334,
    "ci_hi": 0.019385022319137427,
    "verdict": "indistinguishable",
+   "p_beat": 0.39980009995002497,
+   "p_lose": 0.6006996501749126,
    "is_reference": false,
    "rank": 18
   },
@@ -511,6 +582,8 @@
    "ci_lo": -0.008671642842048018,
    "ci_hi": 0.002676528071387366,
    "verdict": "indistinguishable",
+   "p_beat": 0.16741629185407297,
+   "p_lose": 0.8330834582708646,
    "is_reference": false,
    "rank": 19
   },
@@ -521,6 +594,8 @@
    "ci_lo": -0.02406415137008768,
    "ci_hi": 0.020715227548333402,
    "verdict": "indistinguishable",
+   "p_beat": 0.3733133433283358,
+   "p_lose": 0.6271864067966016,
    "is_reference": false,
    "rank": 20
   },
@@ -531,6 +606,8 @@
    "ci_lo": -0.014509926481196042,
    "ci_hi": 0.009157579894654537,
    "verdict": "indistinguishable",
+   "p_beat": 0.31584207896051975,
+   "p_lose": 0.6846576711644178,
    "is_reference": false,
    "rank": 21
   },
@@ -541,6 +618,8 @@
    "ci_lo": -0.012189383975288778,
    "ci_hi": 0.005541204458391489,
    "verdict": "indistinguishable",
+   "p_beat": 0.34132933533233384,
+   "p_lose": 0.6591704147926037,
    "is_reference": false,
    "rank": 22
   },
@@ -551,6 +630,8 @@
    "ci_lo": -0.020628643050152953,
    "ci_hi": 0.014269652902811413,
    "verdict": "indistinguishable",
+   "p_beat": 0.39080459770114945,
+   "p_lose": 0.6096951524237881,
    "is_reference": false,
    "rank": 23
   },
@@ -561,6 +642,8 @@
    "ci_lo": -0.013260957170245252,
    "ci_hi": 0.007093851746283465,
    "verdict": "indistinguishable",
+   "p_beat": 0.33983008495752126,
+   "p_lose": 0.6606696651674163,
    "is_reference": false,
    "rank": 24
   },
@@ -571,6 +654,8 @@
    "ci_lo": -0.01958205421378549,
    "ci_hi": 0.014997334481796467,
    "verdict": "indistinguishable",
+   "p_beat": 0.39430284857571213,
+   "p_lose": 0.6061969015492253,
    "is_reference": false,
    "rank": 25
   },
@@ -581,6 +666,8 @@
    "ci_lo": -0.012881882229873815,
    "ci_hi": 0.004500218030350814,
    "verdict": "indistinguishable",
+   "p_beat": 0.33933033483258374,
+   "p_lose": 0.6611694152923538,
    "is_reference": false,
    "rank": 26
   },
@@ -591,6 +678,8 @@
    "ci_lo": -0.016507107810414232,
    "ci_hi": 0.013574174274739935,
    "verdict": "indistinguishable",
+   "p_beat": 0.3728135932033983,
+   "p_lose": 0.6276861569215393,
    "is_reference": false,
    "rank": 27
   },
@@ -601,6 +690,8 @@
    "ci_lo": -0.019429099735855306,
    "ci_hi": 0.014683597262972066,
    "verdict": "indistinguishable",
+   "p_beat": 0.4127936031984008,
+   "p_lose": 0.5877061469265368,
    "is_reference": false,
    "rank": 28
   },
@@ -611,6 +702,8 @@
    "ci_lo": -0.015944991610133904,
    "ci_hi": 0.014847523899953925,
    "verdict": "indistinguishable",
+   "p_beat": 0.40429785107446276,
+   "p_lose": 0.5962018990504747,
    "is_reference": false,
    "rank": 29
   },
@@ -621,6 +714,8 @@
    "ci_lo": -0.008600348201767378,
    "ci_hi": 0.006441000691254939,
    "verdict": "indistinguishable",
+   "p_beat": 0.41629185407296354,
+   "p_lose": 0.584207896051974,
    "is_reference": false,
    "rank": 30
   },
@@ -631,6 +726,8 @@
    "ci_lo": -0.005320674174696469,
    "ci_hi": 0.0034650372991375626,
    "verdict": "indistinguishable",
+   "p_beat": 0.3743128435782109,
+   "p_lose": 0.6261869065467266,
    "is_reference": false,
    "rank": 31
   },
@@ -641,6 +738,8 @@
    "ci_lo": -0.03298999316429165,
    "ci_hi": 0.0337838383024887,
    "verdict": "indistinguishable",
+   "p_beat": 0.4672663668165917,
+   "p_lose": 0.5332333833083458,
    "is_reference": false,
    "rank": 32
   },
@@ -651,6 +750,8 @@
    "ci_lo": -0.008162071528471366,
    "ci_hi": 0.006419303326090064,
    "verdict": "indistinguishable",
+   "p_beat": 0.44877561219390305,
+   "p_lose": 0.5517241379310345,
    "is_reference": false,
    "rank": 33
   },
@@ -661,6 +762,8 @@
    "ci_lo": -0.005713155346974783,
    "ci_hi": 0.004943904670990049,
    "verdict": "indistinguishable",
+   "p_beat": 0.46976511744127936,
+   "p_lose": 0.5307346326836582,
    "is_reference": false,
    "rank": 34
   },
@@ -671,6 +774,8 @@
    "ci_lo": -0.004956587718589329,
    "ci_hi": 0.004833386430655156,
    "verdict": "indistinguishable",
+   "p_beat": 0.4777611194402799,
+   "p_lose": 0.5227386306846576,
    "is_reference": false,
    "rank": 35
   },
@@ -681,6 +786,8 @@
    "ci_lo": -0.015513641373700492,
    "ci_hi": 0.01474017306735287,
    "verdict": "indistinguishable",
+   "p_beat": 0.5232383808095952,
+   "p_lose": 0.47726136931534235,
    "is_reference": false,
    "rank": 36
   },
@@ -691,6 +798,8 @@
    "ci_lo": -0.016438453617921598,
    "ci_hi": 0.014700790396090832,
    "verdict": "indistinguishable",
+   "p_beat": 0.5442278860569715,
+   "p_lose": 0.456271864067966,
    "is_reference": false,
    "rank": 37
   },
@@ -701,6 +810,8 @@
    "ci_lo": -0.01040391567865196,
    "ci_hi": 0.015137903649417632,
    "verdict": "indistinguishable",
+   "p_beat": 0.5487256371814093,
+   "p_lose": 0.45177411294352826,
    "is_reference": false,
    "rank": 38
   },
@@ -711,6 +822,8 @@
    "ci_lo": -0.008222749884282217,
    "ci_hi": 0.010516945310814171,
    "verdict": "indistinguishable",
+   "p_beat": 0.5837081459270365,
+   "p_lose": 0.41679160419790107,
    "is_reference": false,
    "rank": 39
   },
@@ -721,6 +834,8 @@
    "ci_lo": -0.011567835692570666,
    "ci_hi": 0.01745639691540106,
    "verdict": "indistinguishable",
+   "p_beat": 0.5667166416791605,
+   "p_lose": 0.4337831084457771,
    "is_reference": false,
    "rank": 40
   },
@@ -731,6 +846,8 @@
    "ci_lo": -0.02565040314817699,
    "ci_hi": 0.03517526519327596,
    "verdict": "indistinguishable",
+   "p_beat": 0.5182408795602199,
+   "p_lose": 0.48225887056471767,
    "is_reference": false,
    "rank": 41
   },
@@ -741,6 +858,8 @@
    "ci_lo": -0.02173882496830405,
    "ci_hi": 0.019089217914109807,
    "verdict": "indistinguishable",
+   "p_beat": 0.5947026486756621,
+   "p_lose": 0.4057971014492754,
    "is_reference": false,
    "rank": 42
   },
@@ -751,6 +870,8 @@
    "ci_lo": -0.018441454679478785,
    "ci_hi": 0.026423099668196226,
    "verdict": "indistinguishable",
+   "p_beat": 0.5647176411794103,
+   "p_lose": 0.4357821089455272,
    "is_reference": false,
    "rank": 43
   },
@@ -761,6 +882,8 @@
    "ci_lo": -0.011057164674593445,
    "ci_hi": 0.018361615020410588,
    "verdict": "indistinguishable",
+   "p_beat": 0.5782108945527237,
+   "p_lose": 0.4222888555722139,
    "is_reference": false,
    "rank": 44
   },
@@ -771,6 +894,8 @@
    "ci_lo": -0.00933154310784402,
    "ci_hi": 0.012719928224578413,
    "verdict": "indistinguishable",
+   "p_beat": 0.6501749125437282,
+   "p_lose": 0.3503248375812094,
    "is_reference": false,
    "rank": 45
   },
@@ -781,6 +906,8 @@
    "ci_lo": -0.0028229013785648896,
    "ci_hi": 0.007645439607644753,
    "verdict": "indistinguishable",
+   "p_beat": 0.816591704147926,
+   "p_lose": 0.1839080459770115,
    "is_reference": false,
    "rank": 46
   },
@@ -791,6 +918,8 @@
    "ci_lo": -0.00969628550607789,
    "ci_hi": 0.016649007130319363,
    "verdict": "indistinguishable",
+   "p_beat": 0.6196901549225388,
+   "p_lose": 0.3808095952023988,
    "is_reference": false,
    "rank": 47
   },
@@ -801,6 +930,8 @@
    "ci_lo": -0.03352616769136289,
    "ci_hi": 0.04587081859578259,
    "verdict": "indistinguishable",
+   "p_beat": 0.52023988005997,
+   "p_lose": 0.4802598700649675,
    "is_reference": false,
    "rank": 48
   },
@@ -811,6 +942,8 @@
    "ci_lo": -0.007723363370063322,
    "ci_hi": 0.013205619124613939,
    "verdict": "indistinguishable",
+   "p_beat": 0.7101449275362319,
+   "p_lose": 0.29035482258870565,
    "is_reference": false,
    "rank": 49
   },
@@ -821,6 +954,8 @@
    "ci_lo": -0.013511117489225875,
    "ci_hi": 0.016606852790345933,
    "verdict": "indistinguishable",
+   "p_beat": 0.6401799100449775,
+   "p_lose": 0.36031984007996004,
    "is_reference": false,
    "rank": 50
   },
@@ -831,6 +966,8 @@
    "ci_lo": -0.013425215416793153,
    "ci_hi": 0.021920851571928544,
    "verdict": "indistinguishable",
+   "p_beat": 0.6356821589205397,
+   "p_lose": 0.36481759120439783,
    "is_reference": false,
    "rank": 51
   },
@@ -841,6 +978,8 @@
    "ci_lo": 0.00014844626528415483,
    "ci_hi": 0.006235814531557017,
    "verdict": "below market",
+   "p_beat": 0.9775112443778111,
+   "p_lose": 0.022988505747126436,
    "is_reference": false,
    "rank": 52
   },
@@ -851,6 +990,8 @@
    "ci_lo": -0.0043746747328845806,
    "ci_hi": 0.01543469044289548,
    "verdict": "indistinguishable",
+   "p_beat": 0.704647676161919,
+   "p_lose": 0.2958520739630185,
    "is_reference": false,
    "rank": 53
   },
@@ -861,6 +1002,8 @@
    "ci_lo": -0.02403627351743811,
    "ci_hi": 0.03038488898781515,
    "verdict": "indistinguishable",
+   "p_beat": 0.5922038980509745,
+   "p_lose": 0.408295852073963,
    "is_reference": false,
    "rank": 54
   },
@@ -871,6 +1014,8 @@
    "ci_lo": -0.014104268218507078,
    "ci_hi": 0.022722100785840332,
    "verdict": "indistinguishable",
+   "p_beat": 0.6481759120439781,
+   "p_lose": 0.3523238380809595,
    "is_reference": false,
    "rank": 55
   },
@@ -881,6 +1026,8 @@
    "ci_lo": -0.006085721397986204,
    "ci_hi": 0.014062713632974752,
    "verdict": "indistinguishable",
+   "p_beat": 0.7586206896551724,
+   "p_lose": 0.24187906046976512,
    "is_reference": false,
    "rank": 56
   },
@@ -891,6 +1038,8 @@
    "ci_lo": -0.002435827248205838,
    "ci_hi": 0.010175266479213362,
    "verdict": "indistinguishable",
+   "p_beat": 0.8675662168915542,
+   "p_lose": 0.1329335332333833,
    "is_reference": false,
    "rank": 57
   },
@@ -901,6 +1050,8 @@
    "ci_lo": -0.028614092118797903,
    "ci_hi": 0.04030649261222478,
    "verdict": "indistinguishable",
+   "p_beat": 0.5742128935532234,
+   "p_lose": 0.42628685657171417,
    "is_reference": false,
    "rank": 58
   },
@@ -911,6 +1062,8 @@
    "ci_lo": -0.014528256037679892,
    "ci_hi": 0.01878142999059087,
    "verdict": "indistinguishable",
+   "p_beat": 0.6946526736631684,
+   "p_lose": 0.3058470764617691,
    "is_reference": false,
    "rank": 59
   },
@@ -921,6 +1074,8 @@
    "ci_lo": 0.002296274549917723,
    "ci_hi": 0.005595351793588035,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 60
   },
@@ -931,6 +1086,8 @@
    "ci_lo": -0.009032849808551577,
    "ci_hi": 0.018560777384464662,
    "verdict": "indistinguishable",
+   "p_beat": 0.6911544227886057,
+   "p_lose": 0.30934532733633185,
    "is_reference": false,
    "rank": 61
   },
@@ -941,6 +1098,8 @@
    "ci_lo": -0.011729782852804968,
    "ci_hi": 0.019203938545364552,
    "verdict": "indistinguishable",
+   "p_beat": 0.7226386806596702,
+   "p_lose": 0.27786106946526734,
    "is_reference": false,
    "rank": 62
   },
@@ -951,6 +1110,8 @@
    "ci_lo": -0.0004491935912648051,
    "ci_hi": 0.009298149723446902,
    "verdict": "indistinguishable",
+   "p_beat": 0.9620189905047476,
+   "p_lose": 0.0384807596201899,
    "is_reference": false,
    "rank": 63
   },
@@ -961,6 +1122,8 @@
    "ci_lo": -0.004214463869558212,
    "ci_hi": 0.01670740456870662,
    "verdict": "indistinguishable",
+   "p_beat": 0.8085957021489255,
+   "p_lose": 0.191904047976012,
    "is_reference": false,
    "rank": 64
   },
@@ -971,6 +1134,8 @@
    "ci_lo": 0.0012114055629680882,
    "ci_hi": 0.008910743191446364,
    "verdict": "below market",
+   "p_beat": 0.9950024987506247,
+   "p_lose": 0.005497251374312844,
    "is_reference": false,
    "rank": 65
   },
@@ -981,6 +1146,8 @@
    "ci_lo": -0.016082506621876786,
    "ci_hi": 0.02919562627729304,
    "verdict": "indistinguishable",
+   "p_beat": 0.6896551724137931,
+   "p_lose": 0.31084457771114443,
    "is_reference": false,
    "rank": 66
   },
@@ -991,6 +1158,8 @@
    "ci_lo": -0.01070963860957129,
    "ci_hi": 0.021083210967334946,
    "verdict": "indistinguishable",
+   "p_beat": 0.777111444277861,
+   "p_lose": 0.22338830584707647,
    "is_reference": false,
    "rank": 67
   },
@@ -1001,6 +1170,8 @@
    "ci_lo": -0.04125038777758866,
    "ci_hi": 0.06332716564956438,
    "verdict": "indistinguishable",
+   "p_beat": 0.5652173913043478,
+   "p_lose": 0.4352823588205897,
    "is_reference": false,
    "rank": 68
   },
@@ -1011,6 +1182,8 @@
    "ci_lo": 0.0005819682166423973,
    "ci_hi": 0.012967859756330694,
    "verdict": "below market",
+   "p_beat": 0.9870064967516242,
+   "p_lose": 0.013493253373313344,
    "is_reference": false,
    "rank": 69
   },
@@ -1021,6 +1194,8 @@
    "ci_lo": -0.0069313486123892595,
    "ci_hi": 0.022533002911946192,
    "verdict": "indistinguishable",
+   "p_beat": 0.8285857071464268,
+   "p_lose": 0.17191404297851073,
    "is_reference": false,
    "rank": 70
   },
@@ -1031,6 +1206,8 @@
    "ci_lo": -0.027769037493016496,
    "ci_hi": 0.047968846437664275,
    "verdict": "indistinguishable",
+   "p_beat": 0.6281859070464768,
+   "p_lose": 0.37231384307846077,
    "is_reference": false,
    "rank": 71
   },
@@ -1041,6 +1218,8 @@
    "ci_lo": 0.002136133478449771,
    "ci_hi": 0.012709382431064366,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 72
   },
@@ -1051,6 +1230,8 @@
    "ci_lo": 0.00499217708099265,
    "ci_hi": 0.009688506881108139,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 73
   },
@@ -1061,6 +1242,8 @@
    "ci_lo": 0.003599362516777563,
    "ci_hi": 0.011444623381738656,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 74
   },
@@ -1071,6 +1254,8 @@
    "ci_lo": -0.014394665999815301,
    "ci_hi": 0.030369519964828756,
    "verdict": "indistinguishable",
+   "p_beat": 0.7426286856571714,
+   "p_lose": 0.25787106446776614,
    "is_reference": false,
    "rank": 75
   },
@@ -1081,6 +1266,8 @@
    "ci_lo": 0.0048605581221031775,
    "ci_hi": 0.010092951439283715,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 76
   },
@@ -1091,6 +1278,8 @@
    "ci_lo": 0.0036942733237687623,
    "ci_hi": 0.012781606302190595,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 77
   },
@@ -1101,6 +1290,8 @@
    "ci_lo": -0.009594767452185194,
    "ci_hi": 0.028292767835537146,
    "verdict": "indistinguishable",
+   "p_beat": 0.8260869565217391,
+   "p_lose": 0.1744127936031984,
    "is_reference": false,
    "rank": 78
   },
@@ -1111,6 +1302,8 @@
    "ci_lo": -0.008123124395951127,
    "ci_hi": 0.028676569433839175,
    "verdict": "indistinguishable",
+   "p_beat": 0.8450774612693653,
+   "p_lose": 0.15542228885557222,
    "is_reference": false,
    "rank": 79
   },
@@ -1121,6 +1314,8 @@
    "ci_lo": -0.01629099595761635,
    "ci_hi": 0.035960185276963624,
    "verdict": "indistinguishable",
+   "p_beat": 0.7646176911544228,
+   "p_lose": 0.23588205897051473,
    "is_reference": false,
    "rank": 80
   },
@@ -1131,6 +1326,8 @@
    "ci_lo": 0.004045413032222533,
    "ci_hi": 0.016526773478898263,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 81
   },
@@ -1141,6 +1338,8 @@
    "ci_lo": 0.0008595197873618242,
    "ci_hi": 0.020200904722764815,
    "verdict": "below market",
+   "p_beat": 0.9855072463768116,
+   "p_lose": 0.014992503748125937,
    "is_reference": false,
    "rank": 82
   },
@@ -1151,6 +1350,8 @@
    "ci_lo": 0.006128508121678513,
    "ci_hi": 0.01619381911119354,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 83
   },
@@ -1161,6 +1362,8 @@
    "ci_lo": -0.011232354947427664,
    "ci_hi": 0.029663980127107057,
    "verdict": "indistinguishable",
+   "p_beat": 0.862568715642179,
+   "p_lose": 0.13793103448275862,
    "is_reference": false,
    "rank": 84
   },
@@ -1171,6 +1374,8 @@
    "ci_lo": 0.005794013280341986,
    "ci_hi": 0.01655070847822045,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 85
   },
@@ -1181,6 +1386,8 @@
    "ci_lo": 0.006482608664142293,
    "ci_hi": 0.01700028557657501,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 86
   },
@@ -1191,6 +1398,8 @@
    "ci_lo": 0.0010084234604974501,
    "ci_hi": 0.02310658303842464,
    "verdict": "below market",
+   "p_beat": 0.9885057471264368,
+   "p_lose": 0.01199400299850075,
    "is_reference": false,
    "rank": 87
   },
@@ -1201,6 +1410,8 @@
    "ci_lo": 0.005711624791874449,
    "ci_hi": 0.017465067379623708,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 88
   },
@@ -1211,6 +1422,8 @@
    "ci_lo": -0.00363890607522412,
    "ci_hi": 0.03269220155830383,
    "verdict": "indistinguishable",
+   "p_beat": 0.9105447276361819,
+   "p_lose": 0.08995502248875563,
    "is_reference": false,
    "rank": 89
   },
@@ -1221,6 +1434,8 @@
    "ci_lo": -0.00529624110735919,
    "ci_hi": 0.03147476338545723,
    "verdict": "indistinguishable",
+   "p_beat": 0.9035482258870565,
+   "p_lose": 0.09695152423788106,
    "is_reference": false,
    "rank": 90
   },
@@ -1231,6 +1446,8 @@
    "ci_lo": -0.004059510257323392,
    "ci_hi": 0.033010302285980286,
    "verdict": "indistinguishable",
+   "p_beat": 0.904047976011994,
+   "p_lose": 0.09645177411294353,
    "is_reference": false,
    "rank": 91
   },
@@ -1241,6 +1458,8 @@
    "ci_lo": -0.014140690216834055,
    "ci_hi": 0.03913594732808849,
    "verdict": "indistinguishable",
+   "p_beat": 0.8295852073963018,
+   "p_lose": 0.17091454272863568,
    "is_reference": false,
    "rank": 92
   },
@@ -1251,6 +1470,8 @@
    "ci_lo": 0.00989949581626577,
    "ci_hi": 0.015451581060294562,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 93
   },
@@ -1261,6 +1482,8 @@
    "ci_lo": 0.008390364290699379,
    "ci_hi": 0.0168423621791984,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 94
   },
@@ -1271,6 +1494,8 @@
    "ci_lo": 0.006436460423872463,
    "ci_hi": 0.019643545627473655,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 95
   },
@@ -1281,6 +1506,8 @@
    "ci_lo": 0.005847754802731802,
    "ci_hi": 0.01980369861551286,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 96
   },
@@ -1291,6 +1518,8 @@
    "ci_lo": -0.0022820674548562512,
    "ci_hi": 0.030179213271046685,
    "verdict": "indistinguishable",
+   "p_beat": 0.9460269865067467,
+   "p_lose": 0.0544727636181909,
    "is_reference": false,
    "rank": 97
   },
@@ -1301,6 +1530,8 @@
    "ci_lo": 0.008392634056833468,
    "ci_hi": 0.017700365768205974,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 98
   },
@@ -1311,6 +1542,8 @@
    "ci_lo": 0.010484908953728922,
    "ci_hi": 0.01571376785155649,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 99
   },
@@ -1321,6 +1554,8 @@
    "ci_lo": 0.010051621616758771,
    "ci_hi": 0.01645190090421778,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 100
   },
@@ -1331,6 +1566,8 @@
    "ci_lo": 0.00855685778613833,
    "ci_hi": 0.018144309108454344,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 101
   },
@@ -1341,6 +1578,8 @@
    "ci_lo": 0.009178570096215031,
    "ci_hi": 0.018451480879974703,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 102
   },
@@ -1351,6 +1590,8 @@
    "ci_lo": 0.007067663572303801,
    "ci_hi": 0.019833277061533153,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 103
   },
@@ -1361,6 +1602,8 @@
    "ci_lo": 0.008050597875916783,
    "ci_hi": 0.01989609537402758,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 104
   },
@@ -1371,6 +1614,8 @@
    "ci_lo": 0.005857765517724079,
    "ci_hi": 0.02169756075705945,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 105
   },
@@ -1381,6 +1626,8 @@
    "ci_lo": 0.008884136146930888,
    "ci_hi": 0.020144846613097313,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 106
   },
@@ -1391,6 +1638,8 @@
    "ci_lo": 0.009276018101099619,
    "ci_hi": 0.018865573648430247,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 107
   },
@@ -1401,6 +1650,8 @@
    "ci_lo": 0.0018588321287007785,
    "ci_hi": 0.026655335095516694,
    "verdict": "below market",
+   "p_beat": 0.9860069965017492,
+   "p_lose": 0.014492753623188406,
    "is_reference": false,
    "rank": 108
   },
@@ -1411,6 +1662,8 @@
    "ci_lo": -0.0034410278978659324,
    "ci_hi": 0.03701286879337972,
    "verdict": "indistinguishable",
+   "p_beat": 0.9390304847576212,
+   "p_lose": 0.06146926536731634,
    "is_reference": false,
    "rank": 109
   },
@@ -1421,6 +1674,8 @@
    "ci_lo": 0.008127660084228083,
    "ci_hi": 0.02104327964688253,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 110
   },
@@ -1431,6 +1686,8 @@
    "ci_lo": -0.007053708987430084,
    "ci_hi": 0.0340301399895993,
    "verdict": "indistinguishable",
+   "p_beat": 0.9120439780109945,
+   "p_lose": 0.08845577211394302,
    "is_reference": false,
    "rank": 111
   },
@@ -1441,6 +1698,8 @@
    "ci_lo": 0.007196746681118575,
    "ci_hi": 0.023859594491906694,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 112
   },
@@ -1451,6 +1710,8 @@
    "ci_lo": 0.003829140942545889,
    "ci_hi": 0.02766916149136916,
    "verdict": "below market",
+   "p_beat": 0.9965017491254373,
+   "p_lose": 0.00399800099950025,
    "is_reference": false,
    "rank": 113
   },
@@ -1461,6 +1722,8 @@
    "ci_lo": 0.00308902817377424,
    "ci_hi": 0.02865967723104871,
    "verdict": "below market",
+   "p_beat": 0.9950024987506247,
+   "p_lose": 0.005497251374312844,
    "is_reference": false,
    "rank": 114
   },
@@ -1471,6 +1734,8 @@
    "ci_lo": 0.008702964744083492,
    "ci_hi": 0.022115434547913506,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 115
   },
@@ -1481,6 +1746,8 @@
    "ci_lo": -0.0051347389176194394,
    "ci_hi": 0.03272771206122358,
    "verdict": "indistinguishable",
+   "p_beat": 0.9355322338830585,
+   "p_lose": 0.06496751624187906,
    "is_reference": false,
    "rank": 116
   },
@@ -1491,6 +1758,8 @@
    "ci_lo": 0.0024136558217380303,
    "ci_hi": 0.029814304794788977,
    "verdict": "below market",
+   "p_beat": 0.993503248375812,
+   "p_lose": 0.0069965017491254375,
    "is_reference": false,
    "rank": 117
   },
@@ -1501,6 +1770,8 @@
    "ci_lo": 0.0019586517210917714,
    "ci_hi": 0.03121872407486578,
    "verdict": "below market",
+   "p_beat": 0.9930034982508745,
+   "p_lose": 0.0074962518740629685,
    "is_reference": false,
    "rank": 118
   },
@@ -1511,6 +1782,8 @@
    "ci_lo": -0.001288070287718779,
    "ci_hi": 0.03362933514506883,
    "verdict": "indistinguishable",
+   "p_beat": 0.9655172413793104,
+   "p_lose": 0.03498250874562719,
    "is_reference": false,
    "rank": 119
   },
@@ -1521,6 +1794,8 @@
    "ci_lo": 0.0022032866787512657,
    "ci_hi": 0.03201000210764217,
    "verdict": "below market",
+   "p_beat": 0.9890054972513743,
+   "p_lose": 0.011494252873563218,
    "is_reference": false,
    "rank": 120
   },
@@ -1531,6 +1806,8 @@
    "ci_lo": 0.01150253449357542,
    "ci_hi": 0.020896610050271207,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 121
   },
@@ -1541,6 +1818,8 @@
    "ci_lo": 0.003379868325342909,
    "ci_hi": 0.02936359669814431,
    "verdict": "below market",
+   "p_beat": 0.9920039980009995,
+   "p_lose": 0.00849575212393803,
    "is_reference": false,
    "rank": 122
   },
@@ -1551,6 +1830,8 @@
    "ci_lo": -0.0026233758922664424,
    "ci_hi": 0.03381121119196119,
    "verdict": "indistinguishable",
+   "p_beat": 0.9560219890054973,
+   "p_lose": 0.04447776111944028,
    "is_reference": false,
    "rank": 123
   },
@@ -1561,6 +1842,8 @@
    "ci_lo": 0.011913213963025108,
    "ci_hi": 0.020436392552255305,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 124
   },
@@ -1571,6 +1854,8 @@
    "ci_lo": 0.013550636718416728,
    "ci_hi": 0.01912127212355073,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 125
   },
@@ -1581,6 +1866,8 @@
    "ci_lo": 0.013450292191853255,
    "ci_hi": 0.019757236512631823,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 126
   },
@@ -1591,6 +1878,8 @@
    "ci_lo": 0.009702333854657205,
    "ci_hi": 0.024459461298338068,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 127
   },
@@ -1601,6 +1890,8 @@
    "ci_lo": -0.0012166913194326331,
    "ci_hi": 0.03448174894271484,
    "verdict": "indistinguishable",
+   "p_beat": 0.9690154922538731,
+   "p_lose": 0.031484257871064465,
    "is_reference": false,
    "rank": 128
   },
@@ -1611,6 +1902,8 @@
    "ci_lo": 0.0030994985089506594,
    "ci_hi": 0.03261259956968807,
    "verdict": "below market",
+   "p_beat": 0.991504247876062,
+   "p_lose": 0.008995502248875561,
    "is_reference": false,
    "rank": 129
   },
@@ -1621,6 +1914,8 @@
    "ci_lo": -0.0033173528600531086,
    "ci_hi": 0.040808177868058695,
    "verdict": "indistinguishable",
+   "p_beat": 0.9440279860069966,
+   "p_lose": 0.05647176411794103,
    "is_reference": false,
    "rank": 130
   },
@@ -1631,6 +1926,8 @@
    "ci_lo": 0.005728585909951895,
    "ci_hi": 0.02864150875785815,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 131
   },
@@ -1641,6 +1938,8 @@
    "ci_lo": 0.0044992810453142445,
    "ci_hi": 0.02997790279110503,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 132
   },
@@ -1651,6 +1950,8 @@
    "ci_lo": 0.01419487771129147,
    "ci_hi": 0.02071552715597003,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 133
   },
@@ -1661,6 +1962,8 @@
    "ci_lo": 0.012044758978388213,
    "ci_hi": 0.02269625127424196,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 134
   },
@@ -1671,6 +1974,8 @@
    "ci_lo": 0.014100907555774297,
    "ci_hi": 0.02086916462414669,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 135
   },
@@ -1681,6 +1986,8 @@
    "ci_lo": 0.012816907006451706,
    "ci_hi": 0.022355561446215012,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 136
   },
@@ -1691,6 +1998,8 @@
    "ci_lo": 0.004755423685967,
    "ci_hi": 0.033301152580461284,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 137
   },
@@ -1701,6 +2010,8 @@
    "ci_lo": 0.010482023940454391,
    "ci_hi": 0.026044951578813254,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 138
   },
@@ -1711,6 +2022,8 @@
    "ci_lo": 0.007177896104087619,
    "ci_hi": 0.02780674657004955,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 139
   },
@@ -1721,6 +2034,8 @@
    "ci_lo": 0.004329971591844964,
    "ci_hi": 0.03448722437175442,
    "verdict": "below market",
+   "p_beat": 0.9960019990004998,
+   "p_lose": 0.004497751124437781,
    "is_reference": false,
    "rank": 140
   },
@@ -1731,6 +2046,8 @@
    "ci_lo": 0.014127551930575239,
    "ci_hi": 0.02220238435642303,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 141
   },
@@ -1741,6 +2058,8 @@
    "ci_lo": -0.0008964525630602594,
    "ci_hi": 0.038462182598959276,
    "verdict": "indistinguishable",
+   "p_beat": 0.9685157421289355,
+   "p_lose": 0.031984007996002,
    "is_reference": false,
    "rank": 142
   },
@@ -1751,6 +2070,8 @@
    "ci_lo": 0.0059289968862878215,
    "ci_hi": 0.03225314060397637,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 143
   },
@@ -1761,6 +2082,8 @@
    "ci_lo": -0.011592336334148773,
    "ci_hi": 0.04808280531646677,
    "verdict": "indistinguishable",
+   "p_beat": 0.8775612193903048,
+   "p_lose": 0.12293853073463268,
    "is_reference": false,
    "rank": 144
   },
@@ -1771,6 +2094,8 @@
    "ci_lo": 0.012381777549529956,
    "ci_hi": 0.02497635443626994,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 145
   },
@@ -1781,6 +2106,8 @@
    "ci_lo": 0.0035718593475703568,
    "ci_hi": 0.038680293749230134,
    "verdict": "below market",
+   "p_beat": 0.9955022488755623,
+   "p_lose": 0.004997501249375313,
    "is_reference": false,
    "rank": 146
   },
@@ -1791,6 +2118,8 @@
    "ci_lo": 0.01263639764197731,
    "ci_hi": 0.025713035426805884,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 147
   },
@@ -1801,6 +2130,8 @@
    "ci_lo": 0.0047034782268276015,
    "ci_hi": 0.0365423847138582,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 148
   },
@@ -1811,6 +2142,8 @@
    "ci_lo": 0.004178205425618445,
    "ci_hi": 0.036855814671295145,
    "verdict": "below market",
+   "p_beat": 0.9960019990004998,
+   "p_lose": 0.004497751124437781,
    "is_reference": false,
    "rank": 149
   },
@@ -1821,6 +2154,8 @@
    "ci_lo": 0.01649010231502243,
    "ci_hi": 0.021996303037454448,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 150
   },
@@ -1831,6 +2166,8 @@
    "ci_lo": 0.012955945176279652,
    "ci_hi": 0.026411909328506965,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 151
   },
@@ -1841,6 +2178,8 @@
    "ci_lo": 0.004836790389557157,
    "ci_hi": 0.034764803554559624,
    "verdict": "below market",
+   "p_beat": 0.9920039980009995,
+   "p_lose": 0.00849575212393803,
    "is_reference": false,
    "rank": 152
   },
@@ -1851,6 +2190,8 @@
    "ci_lo": 0.004052986835637692,
    "ci_hi": 0.03624099505771501,
    "verdict": "below market",
+   "p_beat": 0.992503748125937,
+   "p_lose": 0.0079960019990005,
    "is_reference": false,
    "rank": 153
   },
@@ -1861,6 +2202,8 @@
    "ci_lo": 0.0010673827920289567,
    "ci_hi": 0.03999937456441111,
    "verdict": "below market",
+   "p_beat": 0.9790104947526237,
+   "p_lose": 0.02148925537231384,
    "is_reference": false,
    "rank": 154
   },
@@ -1871,6 +2214,8 @@
    "ci_lo": 0.0151369047117858,
    "ci_hi": 0.02558800150835733,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 155
   },
@@ -1881,6 +2226,8 @@
    "ci_lo": 0.0050245672679739796,
    "ci_hi": 0.037850573162039367,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 156
   },
@@ -1891,6 +2238,8 @@
    "ci_lo": 0.014859768418774283,
    "ci_hi": 0.026215488526376743,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 157
   },
@@ -1901,6 +2250,8 @@
    "ci_lo": 0.01618034006459063,
    "ci_hi": 0.025082756888066236,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 158
   },
@@ -1911,6 +2262,8 @@
    "ci_lo": 0.0064200383402258625,
    "ci_hi": 0.0354249837944033,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 159
   },
@@ -1921,6 +2274,8 @@
    "ci_lo": 0.01529490068746618,
    "ci_hi": 0.02646437893001313,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 160
   },
@@ -1931,6 +2286,8 @@
    "ci_lo": 0.009301847656889437,
    "ci_hi": 0.03264319329078236,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 161
   },
@@ -1941,6 +2298,8 @@
    "ci_lo": 0.006618152292409099,
    "ci_hi": 0.037208410390883837,
    "verdict": "below market",
+   "p_beat": 0.9985007496251874,
+   "p_lose": 0.001999000499750125,
    "is_reference": false,
    "rank": 162
   },
@@ -1951,6 +2310,8 @@
    "ci_lo": 0.016438959764768928,
    "ci_hi": 0.026033194130899173,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 163
   },
@@ -1961,6 +2322,8 @@
    "ci_lo": 0.017115725767451996,
    "ci_hi": 0.02506275198064756,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 164
   },
@@ -1971,6 +2334,8 @@
    "ci_lo": 0.017347264355633656,
    "ci_hi": 0.02547794344228225,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 165
   },
@@ -1981,6 +2346,8 @@
    "ci_lo": 0.011188648299116546,
    "ci_hi": 0.03251772912414954,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 166
   },
@@ -1991,6 +2358,8 @@
    "ci_lo": 0.012263812652134285,
    "ci_hi": 0.0317713283857066,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 167
   },
@@ -2001,6 +2370,8 @@
    "ci_lo": 0.01773452357827762,
    "ci_hi": 0.026235332704026296,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 168
   },
@@ -2011,6 +2382,8 @@
    "ci_lo": 0.01812873551844252,
    "ci_hi": 0.026421234565720004,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 169
   },
@@ -2021,6 +2394,8 @@
    "ci_lo": 0.003341211323328947,
    "ci_hi": 0.04362767559757854,
    "verdict": "below market",
+   "p_beat": 0.9880059970014993,
+   "p_lose": 0.01249375312343828,
    "is_reference": false,
    "rank": 170
   },
@@ -2031,6 +2406,8 @@
    "ci_lo": 0.00642374701468074,
    "ci_hi": 0.04036990297242029,
    "verdict": "below market",
+   "p_beat": 0.9975012493753124,
+   "p_lose": 0.0029985007496251873,
    "is_reference": false,
    "rank": 171
   },
@@ -2041,6 +2418,8 @@
    "ci_lo": 0.00538544240379738,
    "ci_hi": 0.04009895854882703,
    "verdict": "below market",
+   "p_beat": 0.9965017491254373,
+   "p_lose": 0.00399800099950025,
    "is_reference": false,
    "rank": 172
   },
@@ -2051,6 +2430,8 @@
    "ci_lo": 0.01905305542958172,
    "ci_hi": 0.02647490286054755,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 173
   },
@@ -2061,6 +2442,8 @@
    "ci_lo": 0.01426969560154113,
    "ci_hi": 0.03254656441387823,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 174
   },
@@ -2071,6 +2454,8 @@
    "ci_lo": 0.008445832030938323,
    "ci_hi": 0.039028819415029656,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 175
   },
@@ -2081,6 +2466,8 @@
    "ci_lo": 0.0010477195259030005,
    "ci_hi": 0.04985416133402246,
    "verdict": "below market",
+   "p_beat": 0.9805097451274363,
+   "p_lose": 0.01999000499750125,
    "is_reference": false,
    "rank": 176
   },
@@ -2091,6 +2478,8 @@
    "ci_lo": 0.00019173142198162423,
    "ci_hi": 0.04551223551853131,
    "verdict": "below market",
+   "p_beat": 0.9770114942528736,
+   "p_lose": 0.02348825587206397,
    "is_reference": false,
    "rank": 177
   },
@@ -2101,6 +2490,8 @@
    "ci_lo": 0.0025718299850664016,
    "ci_hi": 0.04681175468277449,
    "verdict": "below market",
+   "p_beat": 0.9890054972513743,
+   "p_lose": 0.011494252873563218,
    "is_reference": false,
    "rank": 178
   },
@@ -2111,6 +2502,8 @@
    "ci_lo": 0.012044760986144253,
    "ci_hi": 0.03713942268248749,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 179
   },
@@ -2121,6 +2514,8 @@
    "ci_lo": 0.018541115548311775,
    "ci_hi": 0.02979868221673402,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 180
   },
@@ -2131,6 +2526,8 @@
    "ci_lo": 0.019871531492121883,
    "ci_hi": 0.029811153464645572,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 181
   },
@@ -2141,6 +2538,8 @@
    "ci_lo": 0.015563943037556703,
    "ci_hi": 0.03498189877469941,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 182
   },
@@ -2151,6 +2550,8 @@
    "ci_lo": 0.018508163527549793,
    "ci_hi": 0.03307575246461393,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 183
   },
@@ -2161,6 +2562,8 @@
    "ci_lo": 0.014686768694995725,
    "ci_hi": 0.03655889250189309,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 184
   },
@@ -2171,6 +2574,8 @@
    "ci_lo": 0.007084693121337465,
    "ci_hi": 0.04598586499841975,
    "verdict": "below market",
+   "p_beat": 0.9960019990004998,
+   "p_lose": 0.004497751124437781,
    "is_reference": false,
    "rank": 185
   },
@@ -2181,6 +2586,8 @@
    "ci_lo": 0.00943984999335859,
    "ci_hi": 0.04406243710906111,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 186
   },
@@ -2191,6 +2598,8 @@
    "ci_lo": 0.02128811644987744,
    "ci_hi": 0.03093757793190969,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 187
   },
@@ -2201,6 +2610,8 @@
    "ci_lo": 0.0160712984454809,
    "ci_hi": 0.036165026709732734,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 188
   },
@@ -2211,6 +2622,8 @@
    "ci_lo": 0.011948169990513976,
    "ci_hi": 0.04132509215870118,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 189
   },
@@ -2221,6 +2634,8 @@
    "ci_lo": 0.00947010992819909,
    "ci_hi": 0.045732618056725995,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 190
   },
@@ -2231,6 +2646,8 @@
    "ci_lo": -0.0035155008775589777,
    "ci_hi": 0.06941093126781693,
    "verdict": "indistinguishable",
+   "p_beat": 0.9500249875062469,
+   "p_lose": 0.050474762618690654,
    "is_reference": false,
    "rank": 191
   },
@@ -2241,6 +2658,8 @@
    "ci_lo": 0.010387091104190801,
    "ci_hi": 0.04729834766818835,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 192
   },
@@ -2251,6 +2670,8 @@
    "ci_lo": 0.01082237239622609,
    "ci_hi": 0.04413129775837842,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 193
   },
@@ -2261,6 +2682,8 @@
    "ci_lo": -0.011139550713869307,
    "ci_hi": 0.06810683410778523,
    "verdict": "indistinguishable",
+   "p_beat": 0.920039980009995,
+   "p_lose": 0.08045977011494253,
    "is_reference": false,
    "rank": 194
   },
@@ -2271,6 +2694,8 @@
    "ci_lo": 0.006510030957938695,
    "ci_hi": 0.05151520881386097,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 195
   },
@@ -2281,6 +2706,8 @@
    "ci_lo": -0.019103736801994915,
    "ci_hi": 0.07955868960746246,
    "verdict": "indistinguishable",
+   "p_beat": 0.8620689655172413,
+   "p_lose": 0.13843078460769614,
    "is_reference": false,
    "rank": 196
   },
@@ -2291,6 +2718,8 @@
    "ci_lo": 0.004846293647971112,
    "ci_hi": 0.05168442239036205,
    "verdict": "below market",
+   "p_beat": 0.9905047476261869,
+   "p_lose": 0.009995002498750625,
    "is_reference": false,
    "rank": 197
   },
@@ -2301,6 +2730,8 @@
    "ci_lo": 0.02330341465880675,
    "ci_hi": 0.032327810135676316,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 198
   },
@@ -2311,6 +2742,8 @@
    "ci_lo": 0.014791600868718243,
    "ci_hi": 0.0410800685079806,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 199
   },
@@ -2321,6 +2754,8 @@
    "ci_lo": 0.021917000285028423,
    "ci_hi": 0.033995214768693695,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 200
   },
@@ -2331,6 +2766,8 @@
    "ci_lo": 0.025734605838887946,
    "ci_hi": 0.03272692787909194,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 201
   },
@@ -2341,6 +2778,8 @@
    "ci_lo": 0.01948071298502742,
    "ci_hi": 0.039808896134722625,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 202
   },
@@ -2351,6 +2790,8 @@
    "ci_lo": 0.011274038382027568,
    "ci_hi": 0.0518809528898571,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 203
   },
@@ -2361,6 +2802,8 @@
    "ci_lo": 0.014019723244376107,
    "ci_hi": 0.048129264725862216,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 204
   },
@@ -2371,6 +2814,8 @@
    "ci_lo": 0.018839285289655408,
    "ci_hi": 0.042990188797052964,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 205
   },
@@ -2381,6 +2826,8 @@
    "ci_lo": 0.011684325436065887,
    "ci_hi": 0.05500793999115777,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 206
   },
@@ -2391,6 +2838,8 @@
    "ci_lo": 0.021180779120342868,
    "ci_hi": 0.04063113364820549,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 207
   },
@@ -2401,6 +2850,8 @@
    "ci_lo": 0.027063641003390083,
    "ci_hi": 0.0347955198445578,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 208
   },
@@ -2411,6 +2862,8 @@
    "ci_lo": 0.009718613948099827,
    "ci_hi": 0.05636504674450418,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 209
   },
@@ -2421,6 +2874,8 @@
    "ci_lo": 0.011525913371031348,
    "ci_hi": 0.05521598295780994,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 210
   },
@@ -2431,6 +2886,8 @@
    "ci_lo": 0.028514158041277157,
    "ci_hi": 0.03662357256963866,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 211
   },
@@ -2441,6 +2898,8 @@
    "ci_lo": 0.004588204337664631,
    "ci_hi": 0.05925351227750052,
    "verdict": "below market",
+   "p_beat": 0.9855072463768116,
+   "p_lose": 0.014992503748125937,
    "is_reference": false,
    "rank": 212
   },
@@ -2451,6 +2910,8 @@
    "ci_lo": 0.015500286728708559,
    "ci_hi": 0.050264964765811514,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 213
   },
@@ -2461,6 +2922,8 @@
    "ci_lo": 0.015975660924511532,
    "ci_hi": 0.05566686294213741,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 214
   },
@@ -2471,6 +2934,8 @@
    "ci_lo": 0.0018466234600454014,
    "ci_hi": 0.07038474241264525,
    "verdict": "below market",
+   "p_beat": 0.9810094952523738,
+   "p_lose": 0.019490254872563718,
    "is_reference": false,
    "rank": 215
   },
@@ -2481,6 +2946,8 @@
    "ci_lo": 0.007782686494288406,
    "ci_hi": 0.06760590411776443,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 216
   },
@@ -2491,6 +2958,8 @@
    "ci_lo": 0.008456774927574793,
    "ci_hi": 0.06881976139987439,
    "verdict": "below market",
+   "p_beat": 0.9940029985007496,
+   "p_lose": 0.006496751624187906,
    "is_reference": false,
    "rank": 217
   },
@@ -2501,6 +2970,8 @@
    "ci_lo": 0.008550644142781729,
    "ci_hi": 0.0665572035773178,
    "verdict": "below market",
+   "p_beat": 0.9965017491254373,
+   "p_lose": 0.00399800099950025,
    "is_reference": false,
    "rank": 218
   },
@@ -2511,6 +2982,8 @@
    "ci_lo": 0.0276786599054163,
    "ci_hi": 0.045067028473380906,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 219
   },
@@ -2521,6 +2994,8 @@
    "ci_lo": 0.027575829392501992,
    "ci_hi": 0.04476997569233103,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 220
   },
@@ -2531,6 +3006,8 @@
    "ci_lo": 0.021571560055095515,
    "ci_hi": 0.05231390105544928,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 221
   },
@@ -2541,6 +3018,8 @@
    "ci_lo": 0.028717132324631946,
    "ci_hi": 0.043497238223978454,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 222
   },
@@ -2551,6 +3030,8 @@
    "ci_lo": 0.02418678907437548,
    "ci_hi": 0.049131750549518856,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 223
   },
@@ -2561,6 +3042,8 @@
    "ci_lo": 0.009617155505235415,
    "ci_hi": 0.06589146188765173,
    "verdict": "below market",
+   "p_beat": 0.9970014992503748,
+   "p_lose": 0.0034982508745627187,
    "is_reference": false,
    "rank": 224
   },
@@ -2571,6 +3054,8 @@
    "ci_lo": 0.007027245892479528,
    "ci_hi": 0.07074479483873745,
    "verdict": "below market",
+   "p_beat": 0.9940029985007496,
+   "p_lose": 0.006496751624187906,
    "is_reference": false,
    "rank": 225
   },
@@ -2581,6 +3066,8 @@
    "ci_lo": 0.013929628485525578,
    "ci_hi": 0.06872990721774054,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 226
   },
@@ -2591,6 +3078,8 @@
    "ci_lo": 0.015904053217439318,
    "ci_hi": 0.06484453941487904,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 227
   },
@@ -2601,6 +3090,8 @@
    "ci_lo": 0.023206628911788853,
    "ci_hi": 0.05538577410613025,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 228
   },
@@ -2611,6 +3102,8 @@
    "ci_lo": 0.02297163672827247,
    "ci_hi": 0.05720761683366429,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 229
   },
@@ -2621,6 +3114,8 @@
    "ci_lo": 0.025013161375421766,
    "ci_hi": 0.05609547961958273,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 230
   },
@@ -2631,6 +3126,8 @@
    "ci_lo": 0.03194653171321366,
    "ci_hi": 0.04839658198856446,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 231
   },
@@ -2641,6 +3138,8 @@
    "ci_lo": 0.03512267783152438,
    "ci_hi": 0.0459099728783459,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 232
   },
@@ -2651,6 +3150,8 @@
    "ci_lo": 0.029282837855165417,
    "ci_hi": 0.05175757825547839,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 233
   },
@@ -2661,6 +3162,8 @@
    "ci_lo": 0.016948291117949158,
    "ci_hi": 0.07171542894088753,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 234
   },
@@ -2671,6 +3174,8 @@
    "ci_lo": 0.027593488356833253,
    "ci_hi": 0.056357882919962375,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 235
   },
@@ -2681,6 +3186,8 @@
    "ci_lo": -0.0034930594922648757,
    "ci_hi": 0.09194967058984042,
    "verdict": "indistinguishable",
+   "p_beat": 0.9635182408795602,
+   "p_lose": 0.03698150924537731,
    "is_reference": false,
    "rank": 236
   },
@@ -2691,6 +3198,8 @@
    "ci_lo": 0.016911779778629038,
    "ci_hi": 0.06635709636482226,
    "verdict": "below market",
+   "p_beat": 0.9985007496251874,
+   "p_lose": 0.001999000499750125,
    "is_reference": false,
    "rank": 237
   },
@@ -2701,6 +3210,8 @@
    "ci_lo": 0.01413909070340611,
    "ci_hi": 0.07080827544274065,
    "verdict": "below market",
+   "p_beat": 0.9980009995002499,
+   "p_lose": 0.0024987506246876563,
    "is_reference": false,
    "rank": 238
   },
@@ -2711,6 +3222,8 @@
    "ci_lo": 0.01438367686359058,
    "ci_hi": 0.08106569809772368,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 239
   },
@@ -2721,6 +3234,8 @@
    "ci_lo": 0.03833221590656966,
    "ci_hi": 0.047920834198344434,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 240
   },
@@ -2731,6 +3246,8 @@
    "ci_lo": 0.0364501577843711,
    "ci_hi": 0.0519521939712986,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 241
   },
@@ -2741,6 +3258,8 @@
    "ci_lo": 0.026619938154892962,
    "ci_hi": 0.06328923259665185,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 242
   },
@@ -2751,6 +3270,8 @@
    "ci_lo": 0.03702732622892078,
    "ci_hi": 0.05400437679425354,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 243
   },
@@ -2761,6 +3282,8 @@
    "ci_lo": 0.029274141575566244,
    "ci_hi": 0.06163974992211103,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 244
   },
@@ -2771,6 +3294,8 @@
    "ci_lo": 0.017147395081208473,
    "ci_hi": 0.08083101268297448,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 245
   },
@@ -2781,6 +3306,8 @@
    "ci_lo": 0.039332440114010866,
    "ci_hi": 0.05338155409349259,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 246
   },
@@ -2791,6 +3318,8 @@
    "ci_lo": 0.01713655273575345,
    "ci_hi": 0.08003307136201081,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 247
   },
@@ -2801,6 +3330,8 @@
    "ci_lo": 0.03943861069937243,
    "ci_hi": 0.05476486501391967,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 248
   },
@@ -2811,6 +3342,8 @@
    "ci_lo": 0.032945477688733064,
    "ci_hi": 0.06214655214391055,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 249
   },
@@ -2821,6 +3354,8 @@
    "ci_lo": 0.03405473612818066,
    "ci_hi": 0.06180928905877259,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 250
   },
@@ -2831,6 +3366,8 @@
    "ci_lo": 0.021409301356902825,
    "ci_hi": 0.07697321217338635,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 251
   },
@@ -2841,6 +3378,8 @@
    "ci_lo": 0.03551565577153935,
    "ci_hi": 0.06251495313882771,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 252
   },
@@ -2851,6 +3390,8 @@
    "ci_lo": 0.04108521531779139,
    "ci_hi": 0.055499620586545895,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 253
   },
@@ -2861,6 +3402,8 @@
    "ci_lo": 0.036524450064458064,
    "ci_hi": 0.060754739811311784,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 254
   },
@@ -2871,6 +3414,8 @@
    "ci_lo": 0.006806253475674397,
    "ci_hi": 0.09507302960898956,
    "verdict": "below market",
+   "p_beat": 0.9885057471264368,
+   "p_lose": 0.01199400299850075,
    "is_reference": false,
    "rank": 255
   },
@@ -2881,6 +3426,8 @@
    "ci_lo": 0.031692952723228154,
    "ci_hi": 0.06620661003878212,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 256
   },
@@ -2891,6 +3438,8 @@
    "ci_lo": 0.0380928837381454,
    "ci_hi": 0.05971959563134007,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 257
   },
@@ -2901,6 +3450,8 @@
    "ci_lo": 0.019705475685202378,
    "ci_hi": 0.07944152004005452,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 258
   },
@@ -2911,6 +3462,8 @@
    "ci_lo": 0.016801417469442078,
    "ci_hi": 0.08977369376274395,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 259
   },
@@ -2921,6 +3474,8 @@
    "ci_lo": 0.04675557432151914,
    "ci_hi": 0.056537348993630936,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 260
   },
@@ -2931,6 +3486,8 @@
    "ci_lo": 0.038635732479531434,
    "ci_hi": 0.06519537395434255,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 261
   },
@@ -2941,6 +3498,8 @@
    "ci_lo": 0.03894628869962114,
    "ci_hi": 0.06518554589984718,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 262
   },
@@ -2951,6 +3510,8 @@
    "ci_lo": 0.041962814645032175,
    "ci_hi": 0.06347499197439933,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 263
   },
@@ -2961,6 +3522,8 @@
    "ci_lo": 0.036126257951219556,
    "ci_hi": 0.06794915677960832,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 264
   },
@@ -2971,6 +3534,8 @@
    "ci_lo": 0.04713598202766501,
    "ci_hi": 0.058922693347881014,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 265
   },
@@ -2981,6 +3546,8 @@
    "ci_lo": 0.021415280848296133,
    "ci_hi": 0.08992851751758664,
    "verdict": "below market",
+   "p_beat": 0.9995002498750625,
+   "p_lose": 0.0009995002498750624,
    "is_reference": false,
    "rank": 266
   },
@@ -2991,6 +3558,8 @@
    "ci_lo": 0.04795546349559807,
    "ci_hi": 0.05911150249488947,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 267
   },
@@ -3001,6 +3570,8 @@
    "ci_lo": 0.04370934011271814,
    "ci_hi": 0.06359927571249667,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 268
   },
@@ -3011,6 +3582,8 @@
    "ci_lo": 0.023321462017497307,
    "ci_hi": 0.08709034108573882,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 269
   },
@@ -3021,6 +3594,8 @@
    "ci_lo": 0.04804311172620649,
    "ci_hi": 0.060604312766734204,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 270
   },
@@ -3031,6 +3606,8 @@
    "ci_lo": 0.04351458048747083,
    "ci_hi": 0.06518536156265871,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 271
   },
@@ -3041,6 +3618,8 @@
    "ci_lo": 0.04707708193570804,
    "ci_hi": 0.06272875009260387,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 272
   },
@@ -3051,6 +3630,8 @@
    "ci_lo": 0.0416637882412169,
    "ci_hi": 0.06836327689421824,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 273
   },
@@ -3061,6 +3642,8 @@
    "ci_lo": 0.047942690847554245,
    "ci_hi": 0.06380427805227654,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 274
   },
@@ -3071,6 +3654,8 @@
    "ci_lo": 0.04948188462174321,
    "ci_hi": 0.0628219799916646,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 275
   },
@@ -3081,6 +3666,8 @@
    "ci_lo": 0.04991997083556089,
    "ci_hi": 0.06326350788460398,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 276
   },
@@ -3091,6 +3678,8 @@
    "ci_lo": 0.04861809565041707,
    "ci_hi": 0.06788549600728755,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 277
   },
@@ -3101,6 +3690,8 @@
    "ci_lo": 0.04555500313930366,
    "ci_hi": 0.0708588619581731,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 278
   },
@@ -3111,6 +3702,8 @@
    "ci_lo": 0.05192122703594448,
    "ci_hi": 0.06547563154566582,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 279
   },
@@ -3121,6 +3714,8 @@
    "ci_lo": 0.04282552447104786,
    "ci_hi": 0.07289503524785401,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 280
   },
@@ -3131,6 +3726,8 @@
    "ci_lo": 0.023474606157322133,
    "ci_hi": 0.09434239031919926,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 281
   },
@@ -3141,6 +3738,8 @@
    "ci_lo": 0.05098760227595125,
    "ci_hi": 0.06767919972793983,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 282
   },
@@ -3151,6 +3750,8 @@
    "ci_lo": 0.0548112362583789,
    "ci_hi": 0.06624605252020432,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 283
   },
@@ -3161,6 +3762,8 @@
    "ci_lo": 0.0441586651878843,
    "ci_hi": 0.07775545919887866,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 284
   },
@@ -3171,6 +3774,8 @@
    "ci_lo": 0.017566451779140076,
    "ci_hi": 0.10806088368911607,
    "verdict": "below market",
+   "p_beat": 0.9985007496251874,
+   "p_lose": 0.001999000499750125,
    "is_reference": false,
    "rank": 285
   },
@@ -3181,6 +3786,8 @@
    "ci_lo": 0.04949516287674371,
    "ci_hi": 0.07346655315345467,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 286
   },
@@ -3191,6 +3798,8 @@
    "ci_lo": 0.038903099139898076,
    "ci_hi": 0.08359837246196317,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 287
   },
@@ -3201,6 +3810,8 @@
    "ci_lo": 0.04647928885988123,
    "ci_hi": 0.07790108467130205,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 288
   },
@@ -3211,6 +3822,8 @@
    "ci_lo": 0.03605155547186246,
    "ci_hi": 0.09473261577149153,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 289
   },
@@ -3221,6 +3834,8 @@
    "ci_lo": 0.04206136741023407,
    "ci_hi": 0.08530771077468498,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 290
   },
@@ -3231,6 +3846,8 @@
    "ci_lo": 0.05082877248573657,
    "ci_hi": 0.07889771076043554,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 291
   },
@@ -3241,6 +3858,8 @@
    "ci_lo": 0.05827441114154473,
    "ci_hi": 0.07053985926943315,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 292
   },
@@ -3251,6 +3870,8 @@
    "ci_lo": 0.05586061015719293,
    "ci_hi": 0.07362215394242504,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 293
   },
@@ -3261,6 +3882,8 @@
    "ci_lo": 0.057625006627736286,
    "ci_hi": 0.07264409416992085,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 294
   },
@@ -3271,6 +3894,8 @@
    "ci_lo": 0.049226041772171866,
    "ci_hi": 0.08199914585279171,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 295
   },
@@ -3281,6 +3906,8 @@
    "ci_lo": 0.028987471240918997,
    "ci_hi": 0.10906769382107367,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 296
   },
@@ -3291,6 +3918,8 @@
    "ci_lo": 0.040680462637799425,
    "ci_hi": 0.09363235567121364,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 297
   },
@@ -3301,6 +3930,8 @@
    "ci_lo": 0.047587710336414756,
    "ci_hi": 0.08431270995355553,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 298
   },
@@ -3311,6 +3942,8 @@
    "ci_lo": 0.05365739971724362,
    "ci_hi": 0.07911490644088323,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 299
   },
@@ -3321,6 +3954,8 @@
    "ci_lo": 0.06104358537195396,
    "ci_hi": 0.07151982869710234,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 300
   },
@@ -3331,6 +3966,8 @@
    "ci_lo": 0.054741760486157504,
    "ci_hi": 0.07871255373682232,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 301
   },
@@ -3341,6 +3978,8 @@
    "ci_lo": 0.05265120092740263,
    "ci_hi": 0.08386459981676155,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 302
   },
@@ -3351,6 +3990,8 @@
    "ci_lo": 0.06330167268328687,
    "ci_hi": 0.07246300201965877,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 303
   },
@@ -3361,6 +4002,8 @@
    "ci_lo": 0.05413539118944704,
    "ci_hi": 0.08193668754494986,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 304
   },
@@ -3371,6 +4014,8 @@
    "ci_lo": 0.053611681927339117,
    "ci_hi": 0.08327243205799716,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 305
   },
@@ -3381,6 +4026,8 @@
    "ci_lo": 0.05322008219749459,
    "ci_hi": 0.08429818312294363,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 306
   },
@@ -3391,6 +4038,8 @@
    "ci_lo": 0.05360511740317232,
    "ci_hi": 0.08500280914158032,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 307
   },
@@ -3401,6 +4050,8 @@
    "ci_lo": 0.06257559754730042,
    "ci_hi": 0.07597301675973701,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 308
   },
@@ -3411,6 +4062,8 @@
    "ci_lo": 0.06554182269051785,
    "ci_hi": 0.07331475090520016,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 309
   },
@@ -3421,6 +4074,8 @@
    "ci_lo": 0.0632475699647906,
    "ci_hi": 0.0765575135158041,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 310
   },
@@ -3431,6 +4086,8 @@
    "ci_lo": 0.06522343844898279,
    "ci_hi": 0.07576733394625766,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 311
   },
@@ -3441,6 +4098,8 @@
    "ci_lo": 0.05753244102922655,
    "ci_hi": 0.08353353919238023,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 312
   },
@@ -3451,6 +4110,8 @@
    "ci_lo": 0.05999543600650052,
    "ci_hi": 0.08065462577398391,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 313
   },
@@ -3461,6 +4122,8 @@
    "ci_lo": 0.06529331624714076,
    "ci_hi": 0.0779243945430785,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 314
   },
@@ -3471,6 +4134,8 @@
    "ci_lo": 0.05820717293870611,
    "ci_hi": 0.08590286151550536,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 315
   },
@@ -3481,6 +4146,8 @@
    "ci_lo": 0.06787696886832659,
    "ci_hi": 0.0770010946528391,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 316
   },
@@ -3491,6 +4158,8 @@
    "ci_lo": 0.0664045492065943,
    "ci_hi": 0.08007968829746698,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 317
   },
@@ -3501,6 +4170,8 @@
    "ci_lo": 0.05787286673316236,
    "ci_hi": 0.0878164952159038,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 318
   },
@@ -3511,6 +4182,8 @@
    "ci_lo": 0.06033756194675935,
    "ci_hi": 0.08744023823542375,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 319
   },
@@ -3521,6 +4194,8 @@
    "ci_lo": 0.06005201469626524,
    "ci_hi": 0.08799394972261067,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 320
   },
@@ -3531,6 +4206,8 @@
    "ci_lo": 0.06601404606549417,
    "ci_hi": 0.0829720844393371,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 321
   },
@@ -3541,6 +4218,8 @@
    "ci_lo": 0.04101487911055202,
    "ci_hi": 0.11295106835067821,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 322
   },
@@ -3551,6 +4230,8 @@
    "ci_lo": 0.0691118034216168,
    "ci_hi": 0.08135983057729029,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 323
   },
@@ -3561,6 +4242,8 @@
    "ci_lo": 0.06586163315236529,
    "ci_hi": 0.08495423560242996,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 324
   },
@@ -3571,6 +4254,8 @@
    "ci_lo": 0.062318561794578314,
    "ci_hi": 0.09012576284259312,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 325
   },
@@ -3581,6 +4266,8 @@
    "ci_lo": 0.06556818512696232,
    "ci_hi": 0.08576264113490437,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 326
   },
@@ -3591,6 +4278,8 @@
    "ci_lo": 0.0670683381547128,
    "ci_hi": 0.08726959975090892,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 327
   },
@@ -3601,6 +4290,8 @@
    "ci_lo": 0.07067963020176525,
    "ci_hi": 0.08375851194413209,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 328
   },
@@ -3611,6 +4302,8 @@
    "ci_lo": 0.06424075474827919,
    "ci_hi": 0.09090689255016321,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 329
   },
@@ -3621,6 +4314,8 @@
    "ci_lo": 0.06870768713428019,
    "ci_hi": 0.08784493495876476,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 330
   },
@@ -3631,6 +4326,8 @@
    "ci_lo": 0.06438807111224876,
    "ci_hi": 0.09378389274749227,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 331
   },
@@ -3641,6 +4338,8 @@
    "ci_lo": 0.04452562578560131,
    "ci_hi": 0.11827236063591673,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 332
   },
@@ -3651,6 +4350,8 @@
    "ci_lo": 0.06476784733082996,
    "ci_hi": 0.09536613300158935,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 333
   },
@@ -3661,6 +4362,8 @@
    "ci_lo": 0.06657794710572372,
    "ci_hi": 0.09466197282766647,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 334
   },
@@ -3671,6 +4374,8 @@
    "ci_lo": 0.0690734021052039,
    "ci_hi": 0.092445772716755,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 335
   },
@@ -3681,6 +4386,8 @@
    "ci_lo": 0.06947121669523462,
    "ci_hi": 0.09271208103073952,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 336
   },
@@ -3691,6 +4398,8 @@
    "ci_lo": 0.067320044584676,
    "ci_hi": 0.0969969860052393,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 337
   },
@@ -3701,6 +4410,8 @@
    "ci_lo": 0.06678715836497018,
    "ci_hi": 0.09686527912394434,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 338
   },
@@ -3711,6 +4422,8 @@
    "ci_lo": 0.07526238703398826,
    "ci_hi": 0.09003781401286585,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 339
   },
@@ -3721,6 +4434,8 @@
    "ci_lo": 0.06839206650574875,
    "ci_hi": 0.09620952661875545,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 340
   },
@@ -3731,6 +4446,8 @@
    "ci_lo": 0.06976167931620625,
    "ci_hi": 0.0961718917962871,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 341
   },
@@ -3741,6 +4458,8 @@
    "ci_lo": 0.0698790995440022,
    "ci_hi": 0.09717780764898416,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 342
   },
@@ -3751,6 +4470,8 @@
    "ci_lo": 0.06820992295816644,
    "ci_hi": 0.1002208194794434,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 343
   },
@@ -3761,6 +4482,8 @@
    "ci_lo": 0.06388503945831688,
    "ci_hi": 0.10344656628128143,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 344
   },
@@ -3771,6 +4494,8 @@
    "ci_lo": 0.07757468904175994,
    "ci_hi": 0.0908250559663618,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 345
   },
@@ -3781,6 +4506,8 @@
    "ci_lo": 0.06480008457738691,
    "ci_hi": 0.10345520504818141,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 346
   },
@@ -3791,6 +4518,8 @@
    "ci_lo": 0.06935667238974286,
    "ci_hi": 0.09848785580757233,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 347
   },
@@ -3801,6 +4530,8 @@
    "ci_lo": 0.07241814929797204,
    "ci_hi": 0.0963210873376868,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 348
   },
@@ -3811,6 +4542,8 @@
    "ci_lo": 0.0733892632630886,
    "ci_hi": 0.09786713548120714,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 349
   },
@@ -3821,6 +4554,8 @@
    "ci_lo": 0.06733242617404127,
    "ci_hi": 0.10178048458497095,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 350
   },
@@ -3831,6 +4566,8 @@
    "ci_lo": 0.06803748282546432,
    "ci_hi": 0.10497240804947494,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 351
   },
@@ -3841,6 +4578,8 @@
    "ci_lo": 0.03281597006251787,
    "ci_hi": 0.14411207104153495,
    "verdict": "below market",
+   "p_beat": 0.999000499750125,
+   "p_lose": 0.0014992503748125937,
    "is_reference": false,
    "rank": 352
   },
@@ -3851,6 +4590,8 @@
    "ci_lo": 0.07553083570642702,
    "ci_hi": 0.0970994666967767,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 353
   },
@@ -3861,6 +4602,8 @@
    "ci_lo": 0.07838410448316004,
    "ci_hi": 0.09563188158624049,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 354
   },
@@ -3871,6 +4614,8 @@
    "ci_lo": 0.06523868649532559,
    "ci_hi": 0.11058080674556112,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 355
   },
@@ -3881,6 +4626,8 @@
    "ci_lo": 0.07971311912037701,
    "ci_hi": 0.10040067891990383,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 356
   },
@@ -3891,6 +4638,8 @@
    "ci_lo": 0.08091383185601426,
    "ci_hi": 0.10156826312369344,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 357
   },
@@ -3901,6 +4650,8 @@
    "ci_lo": 0.07311141393171626,
    "ci_hi": 0.11015587520286134,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 358
   },
@@ -3911,6 +4662,8 @@
    "ci_lo": 0.07835454069567449,
    "ci_hi": 0.10512545973776131,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 359
   },
@@ -3921,6 +4674,8 @@
    "ci_lo": 0.07522926100743257,
    "ci_hi": 0.11068754867335681,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 360
   },
@@ -3931,6 +4686,8 @@
    "ci_lo": 0.07817238248601387,
    "ci_hi": 0.110655813777275,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 361
   },
@@ -3941,6 +4698,8 @@
    "ci_lo": 0.080958004565004,
    "ci_hi": 0.10987352853386459,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 362
   },
@@ -3951,6 +4710,8 @@
    "ci_lo": 0.08069963959141487,
    "ci_hi": 0.11039359356609137,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 363
   },
@@ -3961,6 +4722,8 @@
    "ci_lo": 0.08043367030173369,
    "ci_hi": 0.11243018378402875,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 364
   },
@@ -3971,6 +4734,8 @@
    "ci_lo": 0.08267984834536479,
    "ci_hi": 0.11089935902769943,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 365
   },
@@ -3981,6 +4746,8 @@
    "ci_lo": 0.07968954724195308,
    "ci_hi": 0.11373892080136852,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 366
   },
@@ -3991,6 +4758,8 @@
    "ci_lo": 0.08718650433780059,
    "ci_hi": 0.10908541289206743,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 367
   },
@@ -4001,6 +4770,8 @@
    "ci_lo": 0.08295153441651694,
    "ci_hi": 0.11351133309132558,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 368
   },
@@ -4011,6 +4782,8 @@
    "ci_lo": 0.09387477856318924,
    "ci_hi": 0.10681773744715067,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 369
   },
@@ -4021,6 +4794,8 @@
    "ci_lo": 0.0842697114407795,
    "ci_hi": 0.11698900907084116,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 370
   },
@@ -4031,6 +4806,8 @@
    "ci_lo": 0.08919067844232427,
    "ci_hi": 0.11477280987136423,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 371
   },
@@ -4041,6 +4818,8 @@
    "ci_lo": 0.093117600921719,
    "ci_hi": 0.11073631806698228,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 372
   },
@@ -4051,6 +4830,8 @@
    "ci_lo": 0.08159275835893047,
    "ci_hi": 0.12407909213144928,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 373
   },
@@ -4061,6 +4842,8 @@
    "ci_lo": 0.08478264363153873,
    "ci_hi": 0.1197944294324906,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 374
   },
@@ -4071,6 +4854,8 @@
    "ci_lo": 0.08620277084599895,
    "ci_hi": 0.1182332155814066,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 375
   },
@@ -4081,6 +4866,8 @@
    "ci_lo": 0.08526892422107067,
    "ci_hi": 0.1222094280083884,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 376
   },
@@ -4091,6 +4878,8 @@
    "ci_lo": 0.09433955409156008,
    "ci_hi": 0.11189350647378017,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 377
   },
@@ -4101,6 +4890,8 @@
    "ci_lo": 0.08536234559447196,
    "ci_hi": 0.12238423834650515,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 378
   },
@@ -4111,6 +4902,8 @@
    "ci_lo": 0.0825018053570134,
    "ci_hi": 0.12694770697826754,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 379
   },
@@ -4121,6 +4914,8 @@
    "ci_lo": 0.08856512952134223,
    "ci_hi": 0.12218998953997988,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 380
   },
@@ -4131,6 +4926,8 @@
    "ci_lo": 0.08866113462280815,
    "ci_hi": 0.12124159790119791,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 381
   },
@@ -4141,6 +4938,8 @@
    "ci_lo": 0.07754833637627918,
    "ci_hi": 0.13429855322070056,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 382
   },
@@ -4151,6 +4950,8 @@
    "ci_lo": 0.10143421891547695,
    "ci_hi": 0.11268403683480407,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 383
   },
@@ -4161,6 +4962,8 @@
    "ci_lo": 0.09032368272725655,
    "ci_hi": 0.12582202261058292,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 384
   },
@@ -4171,6 +4974,8 @@
    "ci_lo": 0.08937239192563591,
    "ci_hi": 0.1266278266964101,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 385
   },
@@ -4181,6 +4986,8 @@
    "ci_lo": 0.08329088980121453,
    "ci_hi": 0.14071373463725712,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 386
   },
@@ -4191,6 +4998,8 @@
    "ci_lo": 0.05755291112347264,
    "ci_hi": 0.16908823478981305,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 387
   },
@@ -4201,6 +5010,8 @@
    "ci_lo": 0.09211503753198853,
    "ci_hi": 0.13451507873804025,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 388
   },
@@ -4211,6 +5022,8 @@
    "ci_lo": 0.09828263664729338,
    "ci_hi": 0.12803952899768975,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 389
   },
@@ -4221,6 +5034,8 @@
    "ci_lo": 0.1002973192655272,
    "ci_hi": 0.12386067847501743,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 390
   },
@@ -4231,6 +5046,8 @@
    "ci_lo": 0.09308359807320557,
    "ci_hi": 0.1343243525663453,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 391
   },
@@ -4241,6 +5058,8 @@
    "ci_lo": 0.09046601406964912,
    "ci_hi": 0.13950763245878575,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 392
   },
@@ -4251,6 +5070,8 @@
    "ci_lo": 0.09775803266844367,
    "ci_hi": 0.13668743977054032,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 393
   },
@@ -4261,6 +5082,8 @@
    "ci_lo": 0.07119782921679202,
    "ci_hi": 0.16491274380275917,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 394
   },
@@ -4271,6 +5094,8 @@
    "ci_lo": 0.10121233071368226,
    "ci_hi": 0.13433461408152686,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 395
   },
@@ -4281,6 +5106,8 @@
    "ci_lo": 0.10313448546341719,
    "ci_hi": 0.13369066525755122,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 396
   },
@@ -4291,6 +5118,8 @@
    "ci_lo": 0.1014799373521594,
    "ci_hi": 0.13508563790887335,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 397
   },
@@ -4301,6 +5130,8 @@
    "ci_lo": 0.1037886008957323,
    "ci_hi": 0.13524478783655183,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 398
   },
@@ -4311,6 +5142,8 @@
    "ci_lo": 0.10526554461708751,
    "ci_hi": 0.13332452178357454,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 399
   },
@@ -4321,6 +5154,8 @@
    "ci_lo": 0.10407871934189288,
    "ci_hi": 0.13447695497872694,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 400
   },
@@ -4331,6 +5166,8 @@
    "ci_lo": 0.1009166474420193,
    "ci_hi": 0.1384586312107779,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 401
   },
@@ -4341,6 +5178,8 @@
    "ci_lo": 0.08842916121527776,
    "ci_hi": 0.15410286308111676,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 402
   },
@@ -4351,6 +5190,8 @@
    "ci_lo": 0.10153162140849023,
    "ci_hi": 0.1385224126240592,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 403
   },
@@ -4361,6 +5202,8 @@
    "ci_lo": 0.11251199151021124,
    "ci_hi": 0.12776825399148692,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 404
   },
@@ -4371,6 +5214,8 @@
    "ci_lo": 0.10844820470006913,
    "ci_hi": 0.13422749525988978,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 405
   },
@@ -4381,6 +5226,8 @@
    "ci_lo": 0.10601744741004593,
    "ci_hi": 0.13644085042356174,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 406
   },
@@ -4391,6 +5238,8 @@
    "ci_lo": 0.10733607570621033,
    "ci_hi": 0.136928246291846,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 407
   },
@@ -4401,6 +5250,8 @@
    "ci_lo": 0.106903116524249,
    "ci_hi": 0.13872241098137006,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 408
   },
@@ -4411,6 +5262,8 @@
    "ci_lo": 0.10411304756021639,
    "ci_hi": 0.14086872316627433,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 409
   },
@@ -4421,6 +5274,8 @@
    "ci_lo": 0.1040618830378645,
    "ci_hi": 0.14045345884351917,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 410
   },
@@ -4431,6 +5286,8 @@
    "ci_lo": 0.09061232268357043,
    "ci_hi": 0.1556998363028979,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 411
   },
@@ -4441,6 +5298,8 @@
    "ci_lo": 0.10675998830915312,
    "ci_hi": 0.14009375619077954,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 412
   },
@@ -4451,6 +5310,8 @@
    "ci_lo": 0.09978556359168013,
    "ci_hi": 0.1477888483676367,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 413
   },
@@ -4461,6 +5322,8 @@
    "ci_lo": 0.07540709918168881,
    "ci_hi": 0.1705878074313294,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 414
   },
@@ -4471,6 +5334,8 @@
    "ci_lo": 0.10977954795614059,
    "ci_hi": 0.1396969279645196,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 415
   },
@@ -4481,6 +5346,8 @@
    "ci_lo": 0.10189690660075253,
    "ci_hi": 0.14655802915804844,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 416
   },
@@ -4491,6 +5358,8 @@
    "ci_lo": 0.10729019641834221,
    "ci_hi": 0.1427512532665107,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 417
   },
@@ -4501,6 +5370,8 @@
    "ci_lo": 0.10912057261350595,
    "ci_hi": 0.13972362147065634,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 418
   },
@@ -4511,6 +5382,8 @@
    "ci_lo": 0.11745604889619052,
    "ci_hi": 0.13289142131150025,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 419
   },
@@ -4521,6 +5394,8 @@
    "ci_lo": 0.11088159156608807,
    "ci_hi": 0.13897187142777773,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 420
   },
@@ -4531,6 +5406,8 @@
    "ci_lo": 0.09802370121296394,
    "ci_hi": 0.15653754970823683,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 421
   },
@@ -4541,6 +5418,8 @@
    "ci_lo": 0.11197229889051234,
    "ci_hi": 0.1431024373722579,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 422
   },
@@ -4551,6 +5430,8 @@
    "ci_lo": 0.09816195881429134,
    "ci_hi": 0.15972785453598126,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 423
   },
@@ -4561,6 +5442,8 @@
    "ci_lo": 0.11006241074712506,
    "ci_hi": 0.1480493379912262,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 424
   },
@@ -4571,6 +5454,8 @@
    "ci_lo": 0.06863097398760283,
    "ci_hi": 0.1934491715085925,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 425
   },
@@ -4581,6 +5466,8 @@
    "ci_lo": 0.1035182673476312,
    "ci_hi": 0.1569952866199677,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 426
   },
@@ -4591,6 +5478,8 @@
    "ci_lo": 0.1172602288542545,
    "ci_hi": 0.14558953049940557,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 427
   },
@@ -4601,6 +5490,8 @@
    "ci_lo": 0.11073259554005148,
    "ci_hi": 0.1515569096590327,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 428
   },
@@ -4611,6 +5502,8 @@
    "ci_lo": 0.1135272277006687,
    "ci_hi": 0.1514412868672423,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 429
   },
@@ -4621,6 +5514,8 @@
    "ci_lo": 0.11248484258498308,
    "ci_hi": 0.15508471102492552,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 430
   },
@@ -4631,6 +5526,8 @@
    "ci_lo": 0.10100618782346447,
    "ci_hi": 0.16792831724067486,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 431
   },
@@ -4641,6 +5538,8 @@
    "ci_lo": 0.08351984881712293,
    "ci_hi": 0.1851413716274381,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 432
   },
@@ -4651,6 +5550,8 @@
    "ci_lo": 0.11607263818765708,
    "ci_hi": 0.1527227477844767,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 433
   },
@@ -4661,6 +5562,8 @@
    "ci_lo": 0.08156110794855498,
    "ci_hi": 0.19631778362386731,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 434
   },
@@ -4671,6 +5574,8 @@
    "ci_lo": 0.11152021900695579,
    "ci_hi": 0.15971537362201887,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 435
   },
@@ -4681,6 +5586,8 @@
    "ci_lo": 0.11933452275570358,
    "ci_hi": 0.15213606054843395,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 436
   },
@@ -4691,6 +5598,8 @@
    "ci_lo": 0.08752685744483148,
    "ci_hi": 0.18509673599448032,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 437
   },
@@ -4701,6 +5610,8 @@
    "ci_lo": 0.06433432958034256,
    "ci_hi": 0.21508999341150492,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 438
   },
@@ -4711,6 +5622,8 @@
    "ci_lo": 0.11909428522948204,
    "ci_hi": 0.15560021674338254,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 439
   },
@@ -4721,6 +5634,8 @@
    "ci_lo": 0.11771479615056371,
    "ci_hi": 0.1585290947442299,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 440
   },
@@ -4731,6 +5646,8 @@
    "ci_lo": 0.11862770763991132,
    "ci_hi": 0.1577777202731612,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 441
   },
@@ -4741,6 +5658,8 @@
    "ci_lo": 0.08865741453018637,
    "ci_hi": 0.19518374645243614,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 442
   },
@@ -4751,6 +5670,8 @@
    "ci_lo": 0.11492381377490805,
    "ci_hi": 0.16541731477566632,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 443
   },
@@ -4761,6 +5682,8 @@
    "ci_lo": 0.11754943057858198,
    "ci_hi": 0.1626529853729592,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 444
   },
@@ -4771,6 +5694,8 @@
    "ci_lo": 0.10406411612384639,
    "ci_hi": 0.17708792669953707,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 445
   },
@@ -4781,6 +5706,8 @@
    "ci_lo": 0.12606954408588128,
    "ci_hi": 0.15466631738099146,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 446
   },
@@ -4791,6 +5718,8 @@
    "ci_lo": 0.07298631398236909,
    "ci_hi": 0.2121281417932751,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 447
   },
@@ -4801,6 +5730,8 @@
    "ci_lo": 0.10360839002604626,
    "ci_hi": 0.18000391964263537,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 448
   },
@@ -4811,6 +5742,8 @@
    "ci_lo": 0.11298727785562163,
    "ci_hi": 0.1710157743140727,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 449
   },
@@ -4821,6 +5754,8 @@
    "ci_lo": 0.11982470297669533,
    "ci_hi": 0.16556126805395674,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 450
   },
@@ -4831,6 +5766,8 @@
    "ci_lo": 0.12622466485546616,
    "ci_hi": 0.16035185752739012,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 451
   },
@@ -4841,6 +5778,8 @@
    "ci_lo": 0.12725605397013912,
    "ci_hi": 0.15943487389901884,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 452
   },
@@ -4851,6 +5790,8 @@
    "ci_lo": 0.08914461729806762,
    "ci_hi": 0.20386917218470393,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 453
   },
@@ -4861,6 +5802,8 @@
    "ci_lo": 0.12711596081678467,
    "ci_hi": 0.16122100350457588,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 454
   },
@@ -4871,6 +5814,8 @@
    "ci_lo": 0.12283801484785888,
    "ci_hi": 0.16790232290851012,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 455
   },
@@ -4881,6 +5826,8 @@
    "ci_lo": 0.11596733014603801,
    "ci_hi": 0.17215728302414235,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 456
   },
@@ -4891,6 +5838,8 @@
    "ci_lo": 0.12798625373529365,
    "ci_hi": 0.16305473763999107,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 457
   },
@@ -4901,6 +5850,8 @@
    "ci_lo": 0.12619898780979366,
    "ci_hi": 0.16545967725390187,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 458
   },
@@ -4911,6 +5862,8 @@
    "ci_lo": 0.09276129634283016,
    "ci_hi": 0.20481486162731694,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 459
   },
@@ -4921,6 +5874,8 @@
    "ci_lo": 0.13115047260674076,
    "ci_hi": 0.16496218106580163,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 460
   },
@@ -4931,6 +5886,8 @@
    "ci_lo": 0.12488970601354424,
    "ci_hi": 0.17270508299822734,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 461
   },
@@ -4941,6 +5898,8 @@
    "ci_lo": 0.09804973548117543,
    "ci_hi": 0.20674411052551872,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 462
   },
@@ -4951,6 +5910,8 @@
    "ci_lo": 0.14145531638319753,
    "ci_hi": 0.15890890643039132,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": true,
    "rank": 463
   },
@@ -4961,6 +5922,8 @@
    "ci_lo": 0.1281292476290185,
    "ci_hi": 0.17553594039133846,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 464
   },
@@ -4971,6 +5934,8 @@
    "ci_lo": 0.10380045714100551,
    "ci_hi": 0.2020208265529331,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 465
   },
@@ -4981,6 +5946,8 @@
    "ci_lo": 0.10224759680746226,
    "ci_hi": 0.2072089640632025,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 466
   },
@@ -4991,6 +5958,8 @@
    "ci_lo": 0.13518595288448748,
    "ci_hi": 0.16958445369537514,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 467
   },
@@ -5001,6 +5970,8 @@
    "ci_lo": 0.12839366879463213,
    "ci_hi": 0.17858353104144903,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 468
   },
@@ -5011,6 +5982,8 @@
    "ci_lo": 0.1313116367033957,
    "ci_hi": 0.17356597855189956,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 469
   },
@@ -5021,6 +5994,8 @@
    "ci_lo": 0.09607333118936255,
    "ci_hi": 0.21405804776315784,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 470
   },
@@ -5031,6 +6006,8 @@
    "ci_lo": 0.09482365859106939,
    "ci_hi": 0.22698276756993171,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 471
   },
@@ -5041,6 +6018,8 @@
    "ci_lo": 0.15187308850169876,
    "ci_hi": 0.16788170572934047,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 472
   },
@@ -5051,6 +6030,8 @@
    "ci_lo": 0.10901083424966233,
    "ci_hi": 0.21312752171404561,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 473
   },
@@ -5061,6 +6042,8 @@
    "ci_lo": 0.14072188255469645,
    "ci_hi": 0.1832615229907431,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 474
   },
@@ -5071,6 +6054,8 @@
    "ci_lo": 0.1445737508097562,
    "ci_hi": 0.17849880004334034,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 475
   },
@@ -5081,6 +6066,8 @@
    "ci_lo": 0.14064964542168548,
    "ci_hi": 0.18432274241110755,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 476
   },
@@ -5091,6 +6078,8 @@
    "ci_lo": 0.13024757476084814,
    "ci_hi": 0.19601517221141487,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 477
   },
@@ -5101,6 +6090,8 @@
    "ci_lo": 0.1066489184744513,
    "ci_hi": 0.21876231464112147,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 478
   },
@@ -5111,6 +6102,8 @@
    "ci_lo": 0.15080478900608374,
    "ci_hi": 0.18194159354938733,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 479
   },
@@ -5121,6 +6114,8 @@
    "ci_lo": 0.11184600742154416,
    "ci_hi": 0.22354452831710148,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 480
   },
@@ -5131,6 +6126,8 @@
    "ci_lo": 0.1616642470785059,
    "ci_hi": 0.1770950416491782,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 481
   },
@@ -5141,6 +6138,8 @@
    "ci_lo": 0.1533099470659582,
    "ci_hi": 0.19056919543470094,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 482
   },
@@ -5151,6 +6150,8 @@
    "ci_lo": 0.15466099312655818,
    "ci_hi": 0.1887336103726769,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 483
   },
@@ -5161,6 +6162,8 @@
    "ci_lo": 0.1580313626509106,
    "ci_hi": 0.18887658407092955,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 484
   },
@@ -5171,6 +6174,8 @@
    "ci_lo": 0.1548637511505959,
    "ci_hi": 0.19290449089508968,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 485
   },
@@ -5181,6 +6186,8 @@
    "ci_lo": 0.15358625434334253,
    "ci_hi": 0.19681676827886127,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 486
   },
@@ -5191,6 +6198,8 @@
    "ci_lo": 0.11540629567442304,
    "ci_hi": 0.24031306598341648,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 487
   },
@@ -5201,6 +6210,8 @@
    "ci_lo": 0.16595006567519396,
    "ci_hi": 0.19262156841378242,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 488
   },
@@ -5211,6 +6222,8 @@
    "ci_lo": 0.15463576229984696,
    "ci_hi": 0.20690166637922727,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 489
   },
@@ -5221,6 +6234,8 @@
    "ci_lo": 0.1652777059872116,
    "ci_hi": 0.19809898691323097,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 490
   },
@@ -5231,6 +6246,8 @@
    "ci_lo": 0.15932230734947123,
    "ci_hi": 0.20360559140966922,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 491
   },
@@ -5241,6 +6258,8 @@
    "ci_lo": 0.12489662578269244,
    "ci_hi": 0.24914412874922603,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 492
   },
@@ -5251,6 +6270,8 @@
    "ci_lo": 0.16134735477534878,
    "ci_hi": 0.212454326550386,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 493
   },
@@ -5261,6 +6282,8 @@
    "ci_lo": 0.16111860793896957,
    "ci_hi": 0.21417494066410162,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 494
   },
@@ -5271,6 +6294,8 @@
    "ci_lo": 0.16290215187656476,
    "ci_hi": 0.21375623180971548,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 495
   },
@@ -5281,6 +6306,8 @@
    "ci_lo": 0.1853042289926794,
    "ci_hi": 0.1917506540759458,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": true,
    "rank": 496
   },
@@ -5291,6 +6318,8 @@
    "ci_lo": 0.15819881556860496,
    "ci_hi": 0.21823499248499373,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 497
   },
@@ -5301,6 +6330,8 @@
    "ci_lo": 0.1417272065331689,
    "ci_hi": 0.24356862279680286,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 498
   },
@@ -5311,6 +6342,8 @@
    "ci_lo": 0.16860762175007832,
    "ci_hi": 0.21702454921559047,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 499
   },
@@ -5321,6 +6354,8 @@
    "ci_lo": 0.12616344157118747,
    "ci_hi": 0.2665411534409977,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 500
   },
@@ -5331,6 +6366,8 @@
    "ci_lo": 0.17976892493611912,
    "ci_hi": 0.21598676930182548,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 501
   },
@@ -5341,6 +6378,8 @@
    "ci_lo": 0.16997975537171459,
    "ci_hi": 0.22903402095431483,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 502
   },
@@ -5351,6 +6390,8 @@
    "ci_lo": 0.17241629122086674,
    "ci_hi": 0.22940973424601319,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 503
   },
@@ -5361,6 +6402,8 @@
    "ci_lo": 0.1939209649973675,
    "ci_hi": 0.20956173610156956,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 504
   },
@@ -5371,6 +6414,8 @@
    "ci_lo": 0.18848583421983622,
    "ci_hi": 0.2181594503322138,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 505
   },
@@ -5381,6 +6426,8 @@
    "ci_lo": 0.1436481158510682,
    "ci_hi": 0.2640821530155753,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 506
   },
@@ -5391,6 +6438,8 @@
    "ci_lo": 0.18878546094381823,
    "ci_hi": 0.21936514057404616,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 507
   },
@@ -5401,6 +6450,8 @@
    "ci_lo": 0.1884852102804579,
    "ci_hi": 0.22033298841831883,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 508
   },
@@ -5411,6 +6462,8 @@
    "ci_lo": 0.13344062103784546,
    "ci_hi": 0.27627986161729057,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 509
   },
@@ -5421,6 +6474,8 @@
    "ci_lo": 0.16937778844387724,
    "ci_hi": 0.24509935505885835,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 510
   },
@@ -5431,6 +6486,8 @@
    "ci_lo": 0.19054643106495098,
    "ci_hi": 0.22597603345829378,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 511
   },
@@ -5441,6 +6498,8 @@
    "ci_lo": 0.1618525762623303,
    "ci_hi": 0.2567007826640879,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 512
   },
@@ -5451,6 +6510,8 @@
    "ci_lo": 0.1369831362662113,
    "ci_hi": 0.28325048152426624,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 513
   },
@@ -5461,6 +6522,8 @@
    "ci_lo": 0.18141687958063205,
    "ci_hi": 0.2397896297786024,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 514
   },
@@ -5471,6 +6534,8 @@
    "ci_lo": 0.16446825879944774,
    "ci_hi": 0.25893770948514394,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 515
   },
@@ -5481,6 +6546,8 @@
    "ci_lo": 0.1354943829797856,
    "ci_hi": 0.2828618378825236,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 516
   },
@@ -5491,6 +6558,8 @@
    "ci_lo": 0.19374048248355333,
    "ci_hi": 0.22980724568261016,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 517
   },
@@ -5501,6 +6570,8 @@
    "ci_lo": 0.17783498672089634,
    "ci_hi": 0.2519689966717697,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 518
   },
@@ -5511,6 +6582,8 @@
    "ci_lo": 0.15818911139611205,
    "ci_hi": 0.2811196423699602,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 519
   },
@@ -5521,6 +6594,8 @@
    "ci_lo": 0.20347147104696814,
    "ci_hi": 0.23990335390390194,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 520
   },
@@ -5531,6 +6606,8 @@
    "ci_lo": 0.1584318055728249,
    "ci_hi": 0.29742958080878507,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 521
   },
@@ -5541,6 +6618,8 @@
    "ci_lo": 0.2020069082511743,
    "ci_hi": 0.2509533427120759,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 522
   },
@@ -5551,6 +6630,8 @@
    "ci_lo": 0.16832682069323798,
    "ci_hi": 0.29934278273273934,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 523
   },
@@ -5561,6 +6642,8 @@
    "ci_lo": 0.16660971752186574,
    "ci_hi": 0.3242000163625284,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 524
   },
@@ -5571,6 +6654,8 @@
    "ci_lo": 0.19529298511676024,
    "ci_hi": 0.3119677683994236,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 525
   },
@@ -5581,6 +6666,8 @@
    "ci_lo": 0.2351295713257959,
    "ci_hi": 0.2780063127191962,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 526
   },
@@ -5591,6 +6678,8 @@
    "ci_lo": 0.196025865144293,
    "ci_hi": 0.31649255178816044,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 527
   },
@@ -5601,6 +6690,8 @@
    "ci_lo": 0.24334687334115937,
    "ci_hi": 0.2869439449526862,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 528
   },
@@ -5611,6 +6702,8 @@
    "ci_lo": 0.2426851064947083,
    "ci_hi": 0.2917243219904476,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": false,
    "rank": 529
   },
@@ -5621,6 +6714,8 @@
    "ci_lo": 0.266393100284071,
    "ci_hi": 0.2809256737639982,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": true,
    "rank": 530
   },
@@ -5631,6 +6726,8 @@
    "ci_lo": 0.7164739521170579,
    "ci_hi": 0.7374704535511164,
    "verdict": "below market",
+   "p_beat": 1.0,
+   "p_lose": 0.0004997501249375312,
    "is_reference": true,
    "rank": 531
   }
