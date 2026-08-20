@@ -134,6 +134,24 @@ so their rescaled score is 0.059635 and `(1 − √0.059635) × 100 = 75.58` aga
 
 ## Data and Methodology
 
+Eight different populations appear in this piece. They are all correct in their own context and
+easy to confuse, so here they are together.
+
+| Count | What it is | Where it is used |
+|---|---|---|
+| 572 | entries in the processed forecast sets with any resolved market forecast | scope of the data pull |
+| 531 | of those, entries with at least 50 resolved market questions | correlation and copy-rate statistics |
+| **527** | the same, with reference and dummy models removed | **the bootstrap population, and every headline count** |
+| 442 | significantly below the market at 5% FDR across all 527 | the headline |
+| 437 | below the market on the uncorrected per-entry interval | the multiplicity argument |
+| 90 | not significantly below, so their true edge could be zero (88 + 2) | the 2.2 expected-by-chance calculation |
+| 273 | rows on the published tournament leaderboard | counts against the two copier lines |
+| 106 | leaderboard rows matched by name to the forecast sets (103 distinct entries) | joint analyses only |
+
+The four reference models excluded from 531 to reach 527 are Always 0, Always 0.5, Always 1, and
+Random Uniform.
+
+
 **Forecast data**: the processed forecast sets published at forecastbench.org. 2,065 files across
 33 rounds, 423,396 resolved market-question forecasts across 572 entries. Imputed forecasts are
 excluded throughout. Models need 95% coverage to appear on the leaderboard and missing forecasts
@@ -218,11 +236,12 @@ through to the leaderboard in full.
 
 Across 2,916 matched pairs over 30 runs:
 
-| | Price withheld | Price shown |
-|---|---|---|
-| Median Brier Index | 51.5 | 68.1 |
-| Median correlation with the market price | 0.375 | 0.903 |
-| Median share within 0.5pp of it | about 3% | about 11% |
+| | Price withheld | Price shown | Change |
+|---|---|---|---|
+| Median Brier Index | 51.5 | 68.1 | |
+| Median correlation with the market price | 0.375 | 0.903 | |
+| Median share within 0.5pp of it | about 3% | about 11% | |
+| **Median paired difference, per run** | | | **+15.66** |
 
 ![Figure 3](../figures/fig3_freeze_effect.png)
 
@@ -234,7 +253,7 @@ ForecastBench's own baseline models score 51.5, close to the 50 that always pred
 score. Given the price, they reach 68.1, still below the 70.93 they would score by submitting that
 price unchanged.
 
-Among all forecast sets in the processed data, of 533 with at least 50 resolved market
+Among all forecast sets in the processed data, of 531 with at least 50 resolved market
 questions including reference models, 77 correlate
 with the market price above 0.95 and 9 above 0.99. Among top-30 entries the share of forecasts
 within half a percentage point of the market price reaches 67% for red-lizard, 58% for blue-turtle,
@@ -384,8 +403,8 @@ reset, because it is computed from the question pool rather than from any foreca
   this analysis existed. Bonferroni cannot be assessed here: with 2,000 resamples the smallest
   achievable p is 0.0005, above the 0.000095 threshold.
 - The bootstrap covers 527 entries with at least 50 resolved market questions, from the processed
-  forecast sets. Matching those entries by name to the published leaderboard succeeds for 103 of
-  273 rows, which limits only the joint analyses: the leaderboard-restricted bootstrap split and
+  forecast sets. Matching those entries by name to the published leaderboard succeeds for 106 of
+  273 rows, which is 103 distinct entries, which limits only the joint analyses: the leaderboard-restricted bootstrap split and
   the per-entry copy rates quoted for named top-30 entries. The counts against the copier lines
   compare published index values directly and need no matching.
 - The copier lines assume a copier faces a representative sample of market questions, and both move
