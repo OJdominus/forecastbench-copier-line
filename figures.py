@@ -52,7 +52,7 @@ def _ribbon(ax, d, lw=0.9, alpha=0.55):
     for verdict, colour in [("below market", BELOW),
                             ("indistinguishable", BAND),
                             ("beats market", CLEAR)]:
-        seg = d[d.verdict == verdict]
+        seg = d[d.cat == verdict]
         if seg.empty:
             continue
         ax.vlines(seg["rank"], seg.ci_lo, seg.ci_hi, color=colour,
@@ -60,14 +60,41 @@ def _ribbon(ax, d, lw=0.9, alpha=0.55):
     ax.plot(d["rank"], d.mean_adj, color=NAVY, lw=1.1, zorder=3)
 
 
+def _bh_flags(p, alpha=0.05):
+    """Benjamini-Hochberg rejection flags for a vector of p-values."""
+    p = np.asarray(p, dtype=float)
+    m = len(p)
+    order = np.argsort(p)
+    passed = p[order] <= (np.arange(1, m + 1) / m) * alpha
+    k = int(np.max(np.where(passed)[0]) + 1) if passed.any() else 0
+    out = np.zeros(m, dtype=bool)
+    out[order[:k]] = True
+    return out
+
+
+def _classify(d):
+    """Colour categories consistent with the corrected test.
+
+    Bars show 95% intervals, which is the uncorrected per-entry test. Categories use
+    Benjamini-Hochberg at 5% FDR across all entries, which is what the headline quotes.
+    The two differ for a handful of entries whose interval sits just off zero.
+    """
+    d = d.copy()
+    d["bh_below"] = _bh_flags(d.p_lose.values)
+    d["cat"] = np.where(d.verdict == "beats market", "beats market",
+                np.where(d.bh_below, "below market", "indistinguishable"))
+    return d
+
+
 def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
     d = pd.DataFrame(blob["entries"])
     d = d[~d.is_reference].sort_values("mean_adj").reset_index(drop=True)
     d["rank"] = np.arange(1, len(d) + 1)
+    d = _classify(d)
 
-    n_beat = int((d.verdict == "beats market").sum())
-    n_ind = int((d.verdict == "indistinguishable").sum())
-    n_below = int((d.verdict == "below market").sum())
+    n_beat = int((d.cat == "beats market").sum())
+    n_ind = int((d.cat == "indistinguishable").sum())
+    n_below = int((d.cat == "below market").sum())
 
     fig, (ax, axz) = plt.subplots(
         1, 2, figsize=(13.5, 6.4), dpi=200,
@@ -93,8 +120,8 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
                Rectangle((0, 0), 1, 1, color=BELOW)]
     ax.legend(handles,
               [f"clears an uncorrected test  ({n_beat})",
-               f"indistinguishable  ({n_ind})",
-               f"below the market  ({n_below})"],
+               f"not distinguishable after correction  ({n_ind})",
+               f"below the market at 5% FDR  ({n_below})"],
               frameon=False, fontsize=9, loc="upper left",
               bbox_to_anchor=(0.02, 0.99), labelcolor=NAVY)
 
@@ -144,10 +171,8 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
                      fontweight="600" if beats else "normal", linespacing=1.4,
                      arrowprops=dict(arrowstyle="-", color=col, lw=0.9, alpha=0.6))
 
-    mult = blob.get("multiplicity", {})
-    bh = mult.get("bh_fdr_5pct", {})
-    fig.suptitle(f"Of {len(d)} forecasters on ForecastBench, "
-                 f"{bh.get('below', n_below)} score worse than the market price they were shown",
+    fig.suptitle(f"Of {len(d)} forecasters on ForecastBench, {n_below} score worse "
+                 f"than the market price they were shown",
                  fontsize=15.5, fontweight="600", color=NAVY, x=0.008, ha="left", y=0.985)
     fig.text(0.008, 0.928, "None demonstrably beat it. Two clear an uncorrected test, and both were "
                            "named publicly before this analysis existed.",
@@ -162,9 +187,11 @@ def figure_1_bootstrap(blob, path="fig1_vs_market.png"):
              f"price (forecastbench src/leaderboard/main.py:2348), so this axis is the benchmark's "
              f"own adjusted score. Copier lines: {lines['due_date_price']:.2f} due-date price, "
              f"{lines['shown_price']:.2f} shown price.\n"
-             f"527 simultaneous tests: Benjamini-Hochberg at 5% FDR returns 0 entries beating the "
-             f"market and {bh.get('below','442')} losing to it. Chance alone would place 2.2 of the "
-             f"90 entries not significantly below the line below it; 2 are there.",
+             f"Bars are 95% intervals, the uncorrected per-entry test. Colours use "
+             f"Benjamini-Hochberg at 5% FDR across all {len(d)} tests, which returns 0 entries "
+             f"beating the market and {n_below} losing to it.\n"
+             f"Chance alone would place 2.2 of the 90 entries not significantly below the line "
+             f"below it; 2 are there, and both were named publicly before this analysis existed.",
              fontsize=7.2, color=MUTED, linespacing=1.6)
 
     fig.tight_layout(rect=(0, 0.10, 1, 0.945))
@@ -345,8 +372,8 @@ def header_card(blob, path="header.png"):
     fig.patch.set_facecolor(CREAM)
 
     # type block
-    bh = (blob.get("multiplicity", {}) or {}).get("bh_fdr_5pct", {})
-    n_lose = bh.get("below", int((d.verdict == "below market").sum()))
+    d = _classify(d)
+    n_lose = int((d.cat == "below market").sum())
     fig.text(0.065, 0.775, f"{n_lose} of {len(d)}", fontsize=64, fontweight="700",
              color=NAVY, va="top", ha="left")
     fig.text(0.065, 0.545,
@@ -370,7 +397,7 @@ def header_card(blob, path="header.png"):
     for verdict, colour, alpha, lw in [("below market", BELOW, 0.9, 0.9),
                                        ("indistinguishable", BAND, 0.5, 0.9),
                                        ("beats market", CLEAR, 1.0, 2.6)]:
-        seg = d[d.verdict == verdict]
+        seg = d[d.cat == verdict]
         ax.vlines(seg["rank"], seg.ci_lo, seg.ci_hi, color=colour, lw=lw,
                   alpha=alpha, zorder=2)
     ax.axhline(0, color=NAVY, lw=1.7, zorder=4)
@@ -380,7 +407,7 @@ def header_card(blob, path="header.png"):
     ax.annotate("the market price", xy=(len(d), 0), xytext=(0, 6),
                 textcoords="offset points", ha="right", va="bottom",
                 fontsize=9.5, color=NAVY, fontweight="600")
-    ax.annotate(f"{n_beat} clear an uncorrected test", xy=(2, d.ci_lo.min()), xytext=(16, 0),
+    ax.annotate(f"{int((d.cat == chr(98)+chr(101)+chr(97)+chr(116)+chr(115)+chr(32)+chr(109)+chr(97)+chr(114)+chr(107)+chr(101)+chr(116)).sum())} clear an uncorrected test", xy=(2, d.ci_lo.min()), xytext=(16, 0),
                 textcoords="offset points", ha="left", va="center",
                 fontsize=9.5, color=CLEAR, fontweight="700")
 

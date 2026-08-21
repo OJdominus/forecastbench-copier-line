@@ -81,6 +81,13 @@ does it, and FRI's own methodology paper weighs both before choosing the method 
 here is narrower: on this benchmark the market price is already the reference, whether or not anyone
 reads the column that way, and nobody has drawn where zero sits.
 
+A note on process. I sent this to FRI before publishing. They couldn't review it in full and didn't
+want to hold up my timeline, but they did answer one thing I had flagged as unresolved: why the
+tournament and baseline leaderboards estimate market-question difficulty differently. Tournament
+models get tools and scaffolding, so scoring them against the market price is the right reference.
+Baseline models are handicapped there, so those questions use two-way fixed effects instead. They
+also said they plan to retire the baseline board. Nothing else here has been checked by them.
+
 ## Findings
 
 I pulled every forecast in the system: 423,396 of them, across 572 entries, going back to the start.

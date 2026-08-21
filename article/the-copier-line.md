@@ -102,9 +102,16 @@ Three leaderboards exist. The **preliminary** board scores dataset questions onl
 **tournament** board adds market questions and produces the overall score, and it is the board the
 parity commentary cites. The **baseline** board holds forecast files without freeze values.
 
-The two boards use different difficulty adjustments, which the methodology addendum does not state.
-Across five consecutive days of published fixed-effects files, **0 of 2,987** market question fixed
-effects changed on the tournament board and **2,987 of 2,987** changed on the baseline board.
+The two boards use different difficulty adjustments. Across five consecutive days of published
+fixed-effects files, **0 of 2,987** market question fixed effects changed on the tournament board
+and **2,987 of 2,987** changed on the baseline board. The switch is at `main.py:3373-3377`:
+baseline gets `TWO_WAY_FIXED_EFFECTS`, tournament gets `MARKET_BRIER`.
+
+FRI confirmed the reasoning when I asked. Tournament models have access to tools and scaffolding,
+so scoring them against the market price on the forecast due date is the appropriate reference.
+Baseline models are handicapped in that respect, so their market questions get two-way fixed
+effects instead. They also said they plan to retire the baseline leaderboard.
+
 Everything below concerns the tournament board.
 
 ## How the Market Score Is Computed
@@ -133,6 +140,11 @@ The transform checks out. The superforecasters' adjusted market score is −0.01
 so their rescaled score is 0.059635 and `(1 − √0.059635) × 100 = 75.58` against a published 75.6.
 
 ## Data and Methodology
+
+I shared this analysis with FRI before publishing. They were not able to review it in full and did
+not wish to delay publication. They did confirm one methodological point, on why the tournament and
+baseline boards estimate market-question difficulty differently, which is described below. Nothing
+else here has been checked by them.
 
 Eight different populations appear in this piece. They are all correct in their own context and
 easy to confuse, so here they are together.
@@ -424,6 +436,9 @@ reset, because it is computed from the question pool rather than from any foreca
 - Two mechanisms are easy to conflate. Models more than a year past their training cutoff leave the
   difficulty estimation. Separately, new models wait 50 days before joining the leaderboard. Neither
   affects market question difficulty on the tournament board, which comes from the market.
+- The copier line is defined by the tournament board's use of the market Brier as question
+  difficulty. It does not apply to the baseline board, which uses two-way fixed effects and which
+  FRI has said it plans to retire.
 
 ## What FRI Already Published
 
